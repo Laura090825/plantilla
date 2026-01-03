@@ -1,0 +1,684 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="descriptión"
+      content="Pago en Línea - Empresa de Servicios Públicos de Aseo"
+    />
+    <title>Pago en Línea | Empresa de Aseo E.S.P.</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barra de Accesibilidad y Acceso Rápido -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="quick-links">
+            <a href="../usuario/pqr.html"><i class="fas fa-file-alt"></i> PQR</a>
+            <a href="../usuario/certificados.html"
+              ><i class="fas fa-certificate"></i> Certificados</a
+            >
+            <a href="../facturacion/pago.html"
+              ><i class="fas fa-credit-card"></i> Pago en Línea</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="../../index.html">
+              <img
+                src="../../assets/img/logo.png"
+                alt="Logo Empresa"
+                onerror="this.style.display='none'"
+              />
+              <div class="logo-text">
+                <h1>EMPRESA DE ASEO</h1>
+                <span>E.S.P.</span>
+              </div>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle" aria-label="Menú">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+              <li><a href="../../index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#corporativo"
+                  >Corporativo <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="../corporativo/quienes-somos.html">Quiénes Somos</a></li>
+                  <li><a href="../corporativo/mision-vision.html">Misión y Visión</a></li>
+                  <li>
+                    <a href="../corporativo/estructura.html">Estructura Organizacional</a>
+                  </li>
+                  <li><a href="../corporativo/informes.html">Informes de Gestión</a></li>
+                </ul>
+              </li>
+              <li><a href="../corporativo/cobertura.html">Dónde Operamos</a></li>
+              <li class="dropdown">
+                <a href="#servicios"
+                  >Servicios <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="../servicios/recoleccion.html">Recolección de Residuos</a>
+                  </li>
+                  <li><a href="../servicios/barrido.html">Barrido y Limpieza</a></li>
+                  <li><a href="../servicios/aprovechamiento.html">Aprovechamiónto</a></li>
+                  <li><a href="../servicios/especiales.html">Servicios Especiales</a></li>
+                </ul>
+              </li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li class="dropdown">
+                <a href="#atención"
+                  >Atención al Usuario <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="../usuario/pqr.html">PQR</a></li>
+                  <li><a href="../usuario/preguntas.html">Preguntas Frecuentes</a></li>
+                  <li><a href="../usuario/contacto.html">Contáctanos</a></li>
+                </ul>
+              </li>
+              <li><a href="../transparencia/transparencia.html">Transparencia</a></li>
+              <li><a href="../usuario/noticias.html">Noticias</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <sectión class="breadcrumb-sectión">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+          <span class="separator">/</span>
+          <span class="current">Pago en Línea</span>
+        </nav>
+      </div>
+    </sectión>
+
+    <!-- Contenido Principal -->
+    <sectión class="page-content">
+      <div class="container">
+        <div class="content-grid">
+          <main class="main-content">
+            <div class="content-header">
+              <h1><i class="fas fa-credit-card"></i> Pago en Línea</h1>
+              <p class="subtitle">
+                Realiza el pago de tu factura de forma segura y rópida
+              </p>
+            </div>
+
+            <!-- Pasos del Proceso -->
+            <div class="payment-steps">
+              <div class="step active" data-step="1">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h3>Datos del Usuario</h3>
+                  <p>Ingresa tu información</p>
+                </div>
+              </div>
+              <div class="step" data-step="2">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h3>Mótodo de Pago</h3>
+                  <p>Seleccióna cómo pagar</p>
+                </div>
+              </div>
+              <div class="step" data-step="3">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h3>Confirmación</h3>
+                  <p>Verifica y confirma</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 1: Datos del Usuario -->
+            <div class="payment-sectión" id="paso-1">
+              <h2><i class="fas fa-user"></i> Información del Usuario</h2>
+              <form class="payment-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="tipo-identificación"
+                      >Tipo de Identificación *</label
+                    >
+                    <select id="tipo-identificación" required>
+                      <optión value="">Seleccióna...</optión>
+                      <optión value="CC">Códula de Ciudadanóa</optión>
+                      <optión value="CE">Códula de Extranjeróa</optión>
+                      <optión value="NIT">NIT</optión>
+                      <optión value="TI">Tarjeta de Identidad</optión>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="numero-identificación"
+                      >Nómero de Identificación *</label
+                    >
+                    <input
+                      type="text"
+                      id="numero-identificación"
+                      placeholder="Ingresa tu nómero"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="numero-cuenta">Nómero de Cuenta *</label>
+                    <input
+                      type="text"
+                      id="numero-cuenta"
+                      placeholder="Tu nómero de cuenta"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="numero-factura">Nómero de Factura *</label>
+                    <input
+                      type="text"
+                      id="numero-factura"
+                      placeholder="Nómero de factura"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group full-width">
+                    <label for="email-pago">Correo Electrónico *</label>
+                    <input
+                      type="email"
+                      id="email-pago"
+                      placeholder="correo@ejemplo.com"
+                      required
+                    />
+                    <small
+                      >Recibirós el comprobante de pago en este correo</small
+                    >
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="mostrarPaso(2)"
+                >
+                  Continuar <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+
+            <!-- Paso 2: Mótodo de Pago -->
+            <div class="payment-sectión" id="paso-2" style="display: none">
+              <h2><i class="fas fa-wallet"></i> Mótodo de Pago</h2>
+
+              <div class="payment-methods">
+                <div
+                  class="payment-method-card"
+                  onclick="selectPaymentMethod('tarjeta')"
+                >
+                  <input
+                    type="radio"
+                    name="metodo-pago"
+                    id="metodo-tarjeta"
+                    value="tarjeta"
+                  />
+                  <label for="metodo-tarjeta">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Tarjeta Dóbito/Cródito</span>
+                  </label>
+                </div>
+
+                <div
+                  class="payment-method-card"
+                  onclick="selectPaymentMethod('pse')"
+                >
+                  <input
+                    type="radio"
+                    name="metodo-pago"
+                    id="metodo-pse"
+                    value="pse"
+                  />
+                  <label for="metodo-pse">
+                    <i class="fas fa-university"></i>
+                    <span>PSE - Dóbito desde Cuenta</span>
+                  </label>
+                </div>
+
+                <div
+                  class="payment-method-card"
+                  onclick="selectPaymentMethod('efectivo')"
+                >
+                  <input
+                    type="radio"
+                    name="metodo-pago"
+                    id="metodo-efectivo"
+                    value="efectivo"
+                  />
+                  <label for="metodo-efectivo">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Efectivo en Puntos de Pago</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Formulario Tarjeta -->
+              <div
+                class="payment-form-details"
+                id="form-tarjeta"
+                style="display: none"
+              >
+                <h3>Datos de la Tarjeta</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="numero-tarjeta">Nómero de Tarjeta *</label>
+                    <input
+                      type="text"
+                      id="numero-tarjeta"
+                      placeholder="1234 5678 9012 3456"
+                      maxlength="19"
+                    />
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="nombre-tarjeta">Nombre en la Tarjeta *</label>
+                      <input
+                        type="text"
+                        id="nombre-tarjeta"
+                        placeholder="Como aparece en la tarjeta"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="fecha-expiración"
+                        >Fecha de Expiración *</label
+                      >
+                      <input
+                        type="text"
+                        id="fecha-expiración"
+                        placeholder="MM/AA"
+                        maxlength="5"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="cvv">CVV *</label>
+                      <input
+                        type="text"
+                        id="cvv"
+                        placeholder="123"
+                        maxlength="4"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Formulario PSE -->
+              <div
+                class="payment-form-details"
+                id="form-pse"
+                style="display: none"
+              >
+                <h3>Pago con PSE</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="banco">Seleccióna tu Banco *</label>
+                    <select id="banco">
+                      <optión value="">Seleccióna tu banco...</optión>
+                      <optión value="bancolombia">Bancolombia</optión>
+                      <optión value="daviviónda">Daviviónda</optión>
+                      <optión value="bogota">Banco de Bogotó</optión>
+                      <optión value="bbva">BBVA Colombia</optión>
+                      <optión value="scotiabank">Scotiabank Colpatria</optión>
+                      <optión value="occidente">Banco de Occidente</optión>
+                      <optión value="popular">Banco Popular</optión>
+                      <optión value="av-villas">Banco AV Villas</optión>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="tipo-persona">Tipo de Persona *</label>
+                    <select id="tipo-persona">
+                      <optión value="natural">Persona Natural</optión>
+                      <optión value="juridica">Persona Juródica</optión>
+                    </select>
+                  </div>
+
+                  <div class="info-box info">
+                    <i class="fas fa-info-circle"></i>
+                    <p>
+                      Serós redirigido al portal de tu banco para completar la
+                      transacción de forma segura.
+                    </p>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Información Efectivo -->
+              <div
+                class="payment-form-details"
+                id="form-efectivo"
+                style="display: none"
+              >
+                <h3>Pago en Efectivo</h3>
+                <p>
+                  Genera un código de pago y acórcate a cualquiera de nuestros
+                  puntos autorizados:
+                </p>
+                <div class="efectivo-points">
+                  <div class="point-card">
+                    <i class="fas fa-store"></i>
+                    <h4>Corresponsales Bancarios</h4>
+                    <p>Baloto, Efecty, Gana, Su Red</p>
+                  </div>
+                  <div class="point-card">
+                    <i class="fas fa-university"></i>
+                    <h4>Bancos</h4>
+                    <p>Sucursales de bancos aliados</p>
+                  </div>
+                  <div class="point-card">
+                    <i class="fas fa-building"></i>
+                    <h4>Nuestras Oficinas</h4>
+                    <p>Puntos de atención al cliónte</p>
+                  </div>
+                </div>
+                <div class="info-box warning">
+                  <i class="fas fa-exclamatión-trióngle"></i>
+                  <p>El código de pago tióne una validez de 48 horas.</p>
+                </div>
+              </div>
+
+              <div class="payment-navigatión">
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="mostrarPaso(1)"
+                >
+                  <i class="fas fa-arrow-left"></i> Atrós
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="mostrarPaso(3)"
+                >
+                  Continuar <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Paso 3: Confirmación -->
+            <div class="payment-sectión" id="paso-3" style="display: none">
+              <h2><i class="fas fa-check-circle"></i> Confirma tu Pago</h2>
+
+              <div class="payment-summary">
+                <h3>Resumen del Pago</h3>
+                <div class="summary-details">
+                  <div class="summary-row">
+                    <span>Nómero de Cuenta:</span>
+                    <strong id="resumen-cuenta">-</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>Nómero de Factura:</span>
+                    <strong id="resumen-factura">-</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>Mótodo de Pago:</span>
+                    <strong id="resumen-metodo">-</strong>
+                  </div>
+                  <div class="summary-row total">
+                    <span>Total a Pagar:</span>
+                    <strong>$42,800</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="terms-acceptance">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="acepto-terminos" required />
+                  <span
+                    >Acepto los <a href="#">tórminos y condiciónes</a> y
+                    autorizo el cargo a mi cuenta</span
+                  >
+                </label>
+              </div>
+
+              <div class="info-box success">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                  <h4>Pago Seguro</h4>
+                  <p>
+                    Esta transacción estó protegida con encriptación SSL y
+                    cumple con los estóndares PCI-DSS.
+                  </p>
+                </div>
+              </div>
+
+              <div class="payment-navigatión">
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="mostrarPaso(2)"
+                >
+                  <i class="fas fa-arrow-left"></i> Atrós
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="procesarPago()"
+                >
+                  <i class="fas fa-lock"></i> Confirmar Pago
+                </button>
+              </div>
+            </div>
+
+            <!-- Sección de Ayuda -->
+            <div class="help-sectión">
+              <h3><i class="fas fa-questión-circle"></i> Â¿Necesitas Ayuda?</h3>
+              <div class="help-grid">
+                <div class="help-card">
+                  <i class="fas fa-headset"></i>
+                  <h4>Chat en Línea</h4>
+                  <p>Lun - Vie: 8:00 AM - 6:00 PM</p>
+                  <a href="#" class="btn btn-outline btn-sm">Iniciar Chat</a>
+                </div>
+                <div class="help-card">
+                  <i class="fas fa-phone"></i>
+                  <h4>Línea de Atención</h4>
+                  <p>01-8000-123456</p>
+                  <a href="tel:018000123456" class="btn btn-outline btn-sm"
+                    >Llamar</a
+                  >
+                </div>
+                <div class="help-card">
+                  <i class="fas fa-envelope"></i>
+                  <h4>Correo Electrónico</h4>
+                  <p>pagos@empresaaseo.com</p>
+                  <a
+                    href="mailto:pagos@empresaaseo.com"
+                    class="btn btn-outline btn-sm"
+                    >Escribir</a
+                  >
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget info-widget">
+              <h3><i class="fas fa-shield-alt"></i> Pago Seguro</h3>
+              <ul class="security-features">
+                <li><i class="fas fa-check"></i> Encriptación SSL 256-bit</li>
+                <li><i class="fas fa-check"></i> Certificado PCI-DSS</li>
+                <li><i class="fas fa-check"></i> Pasarela verificada</li>
+                <li><i class="fas fa-check"></i> Datos protegidos</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Opciónes de Pago</h3>
+              <div class="payment-logos">
+                <img
+                  src="https://via.placeholder.com/80x50/4169E1/FFFFFF?text=Visa"
+                  alt="Visa"
+                />
+                <img
+                  src="https://via.placeholder.com/80x50/EB001B/FFFFFF?text=Master"
+                  alt="Mastercard"
+                />
+                <img
+                  src="https://via.placeholder.com/80x50/006FCF/FFFFFF?text=Amex"
+                  alt="American Express"
+                />
+                <img
+                  src="https://via.placeholder.com/80x50/32CD32/FFFFFF?text=PSE"
+                  alt="PSE"
+                />
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Servicios Relaciónados</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="../facturacion/factura.html"
+                    ><i class="fas fa-chevron-right"></i> Ver mi Factura</a
+                  >
+                </li>
+                <li>
+                  <a href="../facturacion/tarifas.html"
+                    ><i class="fas fa-chevron-right"></i> Consultar Tarifas</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-chevron-right"></i> Dóbito Automótico</a
+                  >
+                </li>
+                <li>
+                  <a href="../usuario/contacto.html"
+                    ><i class="fas fa-chevron-right"></i> Puntos de Pago</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>Â¿Problemas con el Pago?</h3>
+              <p>Nuestro equipo estó listo para ayudarte</p>
+              <a href="../usuario/contacto.html" class="btn btn-secondary btn-block">
+                Contóctanos
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </sectión>
+
+        <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>
+              Empresa líder en servicios públicos de aseo, comprometida con el
+              medio ambiente y el bienestar de nuestra comunidad.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="../../index.html">Inicio</a></li>
+              <li><a href="../corporativo/quienes-somos.html">Quiénes Somos</a></li>
+              <li><a href="../../index.html#servicios">Servicios</a></li>
+              <li><a href="../corporativo/informes.html">Informes de Gestión</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Atención al Usuario</h3>
+            <ul>
+              <li><a href="../usuario/pqr.html">Radicar PQR</a></li>
+              <li><a href="../usuario/certificados.html">Certificados</a></li>
+              <li><a href="../facturacion/pago.html">Pago en Línea</a></li>
+              <li><a href="../usuario/preguntas.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Carrera 5 # 10-50, Centro administrativo
+              </li>
+              <li><i class="fas fa-phone"></i> (1) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@empresaaseo.gov.co</li>
+              <li><i class="fas fa-clock"></i> Lun - Vie: 8:00 AM - 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Empresa de Aseo E.S.P. Todos los derechos reservados.
+          </p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Mapa del Sitio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empresa de Servicios Públicos de Aseo" />
+    <title>Empresa de Servicios Públicos de Aseo E.S.P.</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- BARRA SUPERIOR CON ACCESO RÁPIDO -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="quick-links">
+            <a href="pages/usuario/pqr.html"
+              ><i class="fas fa-file-alt"></i> PQR</a
+            >
+            <a href="pages/usuario/certificados.html"
+              ><i class="fas fa-certificate"></i> Certificados</a
+            >
+            <a href="pages/facturacion/pago.html"
+              ><i class="fas fa-credit-card"></i> Pago en Línea</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER CON LOGO Y NAVEGACIÓN -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="assets/img/logo.png"
+                alt="Logo Empresa"
+                onerror="this.style.display='none'"
+              />
+              <div class="logo-text">
+                <h1>EMPRESA DE ASEO</h1>
+                <span>E.S.P.</span>
+              </div>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+              <li><a href="index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#corporativo"
+                  >Corporativo <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="pages/corporativo/quienes-somos.html"
+                      >Quiénes Somos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pages/corporativo/mision-vision.html"
+                      >Misión y Visión</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pages/corporativo/estructura.html"
+                      >Estructura Organizacional</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pages/corporativo/informes.html"
+                      >Informes de Gestión</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="pages/corporativo/cobertura.html">Dónde Operamos</a>
+              </li>
+              <li class="dropdown">
+                <a href="#servicios"
+                  >Servicios <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="pages/servicios/recoleccion.html"
+                      >Recolección de Residuos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pages/servicios/barrido.html"
+                      >Barrido y Limpieza</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pages/servicios/aprovechamiento.html"
+                      >Aprovechamiento</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pages/servicios/especiales.html"
+                      >Servicios Especiales</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="pages/facturacion/tarifas.html">Tarifas</a></li>
+              <li class="dropdown">
+                <a href="#atención"
+                  >Atención al Usuario <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="pages/usuario/pqr.html">PQR</a></li>
+                  <li>
+                    <a href="pages/usuario/preguntas.html"
+                      >Preguntas Frecuentes</a
+                    >
+                  </li>
+                  <li><a href="pages/usuario/contacto.html">Contáctenos</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="pages/transparencia/transparencia.html"
+                  >Transparencia</a
+                >
+              </li>
+              <li><a href="pages/usuario/noticias.html">Noticias</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL HERO -->
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Gestión Integral de Residuos Sólidos</h1>
+        <p>Comprometidos con la limpieza y el cuidado ambiental de tu ciudad</p>
+        <div class="hero-buttons">
+          <a href="pages/usuario/contacto.html" class="btn btn-primary"
+            >Contactenos</a
+          >
+          <a href="pages/servicios/recoleccion.html" class="btn btn-secondary"
+            >Ver Servicios</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS (6 SERVICIOS PRINCIPALES) -->
+    <section class="services-section">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <p class="section-subtitle">
+          Ofrecemos una gama completa de servicios para la gestión de residuos
+        </p>
+
+        <div class="services-grid">
+          <!-- Servicio 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Recolección de Residuos</h3>
+            <p>
+              Sistema de recolección ordinaria, selectiva y especial adaptado a
+              tus necesidades.
+            </p>
+            <a href="pages/servicios/recoleccion.html" class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+
+          <!-- Servicio 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Barrido y Limpieza</h3>
+            <p>
+              Mantenimiento de espacios públicos con tecnología e innovación en
+              nuestros procesos.
+            </p>
+            <a href="pages/servicios/barrido.html" class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+
+          <!-- Servicio 3 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Aprovechamiento y Reciclaje</h3>
+            <p>
+              Programa integral de reciclaje para preservar nuestro medio
+              ambiente.
+            </p>
+            <a href="pages/servicios/aprovechamiento.html" class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+
+          <!-- Servicio 4 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Servicios Especiales</h3>
+            <p>
+              Recolección de voluminosos, escombros y servicios personalizados
+              para eventos.
+            </p>
+            <a href="pages/servicios/especiales.html" class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+
+          <!-- Servicio 5 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <h3>Consultas y Trámites</h3>
+            <p>
+              Acceso a facturas, pagos en línea y consulta de servicios desde
+              cualquier lugar.
+            </p>
+            <a href="pages/facturacion/tarifas.html" class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+
+          <!-- Servicio 6 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certificados</h3>
+            <p>
+              Solicita tus certificados de afiliación y estado de cuenta de
+              forma rápida y segura.
+            </p>
+            <a href="pages/usuario/certificados.html" class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS DE INFORMACIÓN RÁPIDA -->
+    <section class="quick-info-section">
+      <div class="container">
+        <h2>Líneas de Atención</h2>
+        <p class="section-subtitle">
+          Contáctanos a través de nuestros diferentes canales de atención
+        </p>
+        <div class="info-cards-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Horario de Atención</h3>
+            <p>
+              Lunes a viernes: 7:00 AM - 6:00 PM<br />Sábados: 8:00 AM - 1:00 PM
+            </p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Línea de Atención</h3>
+            <p>Tel: (1) 123-4567<br />WhatsApp: +57 300 123 4567</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Ubicación</h3>
+            <p>Carrera 5 # 10-50<br />Centro administrativo</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Correo Electrónico</h3>
+            <p>info@empresaaseo.gov.co<br />servicio@empresaaseo.gov.co</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CULTURA CIUDADANA -->
+    <section class="civic-culture-section">
+      <div class="container">
+        <h2>Cultura Ciudadana y Medio Ambiente</h2>
+        <p class="section-subtitle">
+          Juntos construimos una ciudad más limpia y sostenible
+        </p>
+
+        <div class="culture-content">
+          <div class="culture-item">
+            <div class="culture-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Responsabilidad Social</h3>
+            <p>
+              Promovemos prácticas sostenibles y educación ambiental en la
+              comunidad para un futuro mejor.
+            </p>
+          </div>
+          <div class="culture-item">
+            <div class="culture-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Sostenibilidad</h3>
+            <p>
+              Implementamos programas de economía circular y reducción de
+              residuos en rellenos sanitarios.
+            </p>
+          </div>
+          <div class="culture-item">
+            <div class="culture-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3>Reciclaje Activo</h3>
+            <p>
+              Fortalecemos la cadena de recicladores de base con programas de
+              inclusión y capacitación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS CON CONTADOR ANIMADO -->
+    <section class="stats-section">
+      <div class="container">
+        <h2>Nuestro Impacto</h2>
+        <p class="section-subtitle">
+          Números que demuestran nuestro compromiso
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-count="450000">0</div>
+            <div class="stat-label">Usuarios Atendidos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="125000">0</div>
+            <div class="stat-label">Viviendas Conectadas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Municipios Cubiertos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="2850">0</div>
+            <div class="stat-label">Km² Cobertura</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE TRANSPARENCIA Y NORMATIVIDAD -->
+    <section class="transparency-section">
+      <div class="container">
+        <h2>Transparencia y Normatividad</h2>
+        <p class="section-subtitle">
+          Cumplimiento con las regulaciones y disposiciones legales
+        </p>
+
+        <div class="transparency-grid">
+          <div class="transparency-card">
+            <i class="fas fa-file-pdf"></i>
+            <h3>Informes de Gestión</h3>
+            <p>
+              Consulta nuestros informes anuales de desempeño y cumplimiento
+              normativo.
+            </p>
+            <a href="pages/corporativo/informes.html" class="btn-link"
+              >Descargar →</a
+            >
+          </div>
+          <div class="transparency-card">
+            <i class="fas fa-balance-scale"></i>
+            <h3>Marco Legal</h3>
+            <p>
+              Conoce la normatividad que regula nuestras operaciones y
+              servicios.
+            </p>
+            <a href="pages/transparencia/transparencia.html" class="btn-link"
+              >Consultar →</a
+            >
+          </div>
+          <div class="transparency-card">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Indicadores de Gestión</h3>
+            <p>
+              Monitorea nuestros indicadores de desempeño ambiental y
+              operacional.
+            </p>
+            <a
+              href="pages/corporativo/informes.html#indicadores"
+              class="btn-link"
+              >Ver más →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE NOTICIAS Y EVENTOS -->
+    <section class="news-section">
+      <div class="container">
+        <h2>Noticias y Eventos</h2>
+        <p class="section-subtitle">
+          Mantente informado sobre nuestras actividades
+        </p>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div
+              class="news-image"
+              style="background: linear-gradient(135deg, #4caf50, #66bb6a)"
+            >
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="news-content">
+              <span class="news-category">Institucional</span>
+              <h3>Nueva Campaña de Reciclaje 2024</h3>
+              <p>
+                Lanzamos nuestra campaña anual de educación ambiental en toda la
+                región.
+              </p>
+              <a href="pages/usuario/noticias.html" class="btn-link"
+                >Leer más →</a
+              >
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div
+              class="news-image"
+              style="background: linear-gradient(135deg, #2196f3, #42a5f5)"
+            >
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="news-content">
+              <span class="news-category">Ambiental</span>
+              <h3>Programa de Compostaje Doméstico</h3>
+              <p>
+                Acceso gratuito a capacitación para compostar residuos orgánicos
+                en tu hogar.
+              </p>
+              <a href="pages/usuario/noticias.html" class="btn-link"
+                >Leer más →</a
+              >
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div
+              class="news-image"
+              style="background: linear-gradient(135deg, #ffc107, #ffd54f)"
+            >
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="news-content">
+              <span class="news-category">Comunidad</span>
+              <h3>Jornadas de Limpieza Comunitaria</h3>
+              <p>
+                Únete a nuestras jornadas mensuales de limpieza en espacios
+                públicos.
+              </p>
+              <a href="pages/usuario/noticias.html" class="btn-link"
+                >Leer más →</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="news-cta">
+          <a href="pages/usuario/noticias.html" class="btn btn-primary"
+            >Ver todas las noticias</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contact-form-section">
+      <div class="container">
+        <h2>¿Tienes una pregunta?</h2>
+        <p class="section-subtitle">
+          Envía tu mensaje y nos pondremos en contacto contigo
+        </p>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre Completo *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto *</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>
+              Empresa líder en servicios públicos de aseo, comprometida con el
+              medio ambiente y el bienestar de nuestra comunidad.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li>
+                <a href="pages/corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li><a href="index.html#servicios">Servicios</a></li>
+              <li>
+                <a href="pages/corporativo/informes.html"
+                  >Informes de Gestión</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Atención al Usuario</h3>
+            <ul>
+              <li><a href="pages/usuario/pqr.html">Radicar PQR</a></li>
+              <li>
+                <a href="pages/usuario/certificados.html">Certificados</a>
+              </li>
+              <li><a href="pages/facturacion/pago.html">Pago en Línea</a></li>
+              <li>
+                <a href="pages/usuario/preguntas.html">Preguntas Frecuentes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Carrera 5 # 10-50, Centro
+                administrativo
+              </li>
+              <li><i class="fas fa-phone"></i> (1) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@empresaaseo.gov.co</li>
+              <li><i class="fas fa-clock"></i> Lun - Vie: 8:00 AM - 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Empresa de Aseo E.S.P. Todos los derechos reservados.
+          </p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Mapa del Sitio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

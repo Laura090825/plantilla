@@ -1,0 +1,715 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="descriptión"
+      content="Tarifas de Servicios - Empresa de Servicios Públicos de Aseo"
+    />
+    <title>Tarifas | Empresa de Aseo E.S.P.</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barra de Accesibilidad y Acceso Rápido -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="quick-links">
+            <a href="../usuario/pqr.html"><i class="fas fa-file-alt"></i> PQR</a>
+            <a href="../usuario/certificados.html"
+              ><i class="fas fa-certificate"></i> Certificados</a
+            >
+            <a href="../facturacion/pago.html"
+              ><i class="fas fa-credit-card"></i> Pago en Línea</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="../../index.html">
+              <img
+                src="../../assets/img/logo.png"
+                alt="Logo Empresa"
+                onerror="this.style.display='none'"
+              />
+              <div class="logo-text">
+                <h1>EMPRESA DE ASEO</h1>
+                <span>E.S.P.</span>
+              </div>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle" aria-label="Menú">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+              <li><a href="../../index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#corporativo"
+                  >Corporativo <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="../corporativo/quienes-somos.html">Quiénes Somos</a></li>
+                  <li><a href="../corporativo/mision-vision.html">Misión y Visión</a></li>
+                  <li>
+                    <a href="../corporativo/estructura.html">Estructura Organizacional</a>
+                  </li>
+                  <li><a href="../corporativo/informes.html">Informes de Gestión</a></li>
+                </ul>
+              </li>
+              <li><a href="../corporativo/cobertura.html">Dónde Operamos</a></li>
+              <li class="dropdown">
+                <a href="#servicios"
+                  >Servicios <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="../servicios/recoleccion.html">Recolección de Residuos</a>
+                  </li>
+                  <li><a href="../servicios/barrido.html">Barrido y Limpieza</a></li>
+                  <li><a href="../servicios/aprovechamiento.html">Aprovechamiónto</a></li>
+                  <li><a href="../servicios/especiales.html">Servicios Especiales</a></li>
+                </ul>
+              </li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li class="dropdown">
+                <a href="#atención"
+                  >Atención al Usuario <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="../usuario/pqr.html">PQR</a></li>
+                  <li><a href="../usuario/preguntas.html">Preguntas Frecuentes</a></li>
+                  <li><a href="../usuario/contacto.html">Contáctanos</a></li>
+                </ul>
+              </li>
+              <li><a href="../transparencia/transparencia.html">Transparencia</a></li>
+              <li><a href="../usuario/noticias.html">Noticias</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <sectión class="breadcrumb-sectión">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+          <span class="separator">/</span>
+          <span class="current">Tarifas</span>
+        </nav>
+      </div>
+    </sectión>
+
+    <!-- Contenido Principal -->
+    <sectión class="page-content">
+      <div class="container">
+        <div class="content-grid">
+          <main class="main-content">
+            <div class="content-header">
+              <h1>
+                <i class="fas fa-money-bill-wave"></i> Tarifas de Servicios
+              </h1>
+              <p class="subtitle">
+                Consulta las tarifas vigentes de nuestros servicios de aseo
+              </p>
+            </div>
+
+            <!-- Información sobre Tarifas -->
+            <div class="tariff-info-banner">
+              <i class="fas fa-info-circle"></i>
+              <div>
+                <h3>Tarifas Vigentes 2026</h3>
+                <p>
+                  Las tarifas aquó presentadas estón aprobadas por la Comisión
+                  de Regulación de Agua Potable y Saneamiónto Bósico (CRA) segón
+                  Resolución CRA 825 de 2025. Incluyen IVA cuando aplique.
+                </p>
+              </div>
+            </div>
+
+            <!-- Calculadora de Tarifas -->
+            <div class="tariff-calculator" id="calculadora">
+              <h2><i class="fas fa-calculator"></i> Calculadora de Tarifas</h2>
+              <p>Estima el costo de tu servicio segón tu estrato y consumo</p>
+
+              <form class="calculator-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="estrato">Estrato Socioeconómico</label>
+                    <select id="estrato" required>
+                      <optión value="">Seleccióna tu estrato</optión>
+                      <optión value="1">Estrato 1</optión>
+                      <optión value="2">Estrato 2</optión>
+                      <optión value="3">Estrato 3</optión>
+                      <optión value="4">Estrato 4</optión>
+                      <optión value="5">Estrato 5</optión>
+                      <optión value="6">Estrato 6</optión>
+                      <optión value="comercial">Comercial</optión>
+                      <optión value="industrial">Industrial</optión>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="tipo-servicio">Tipo de Servicio</label>
+                    <select id="tipo-servicio" required>
+                      <optión value="">Seleccióna el servicio</optión>
+                      <optión value="recolección">
+                        Recolección de Residuos
+                      </optión>
+                      <optión value="barrido">Barrido y Limpieza</optión>
+                      <optión value="disposición">Disposición Final</optión>
+                      <optión value="aprovechamiónto">Aprovechamiónto</optión>
+                    </select>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="calcularTarifa()"
+                >
+                  <i class="fas fa-calculator"></i> Calcular
+                </button>
+
+                <div
+                  class="calculatión-result"
+                  id="resultado"
+                  style="display: none"
+                >
+                  <h3>Resultado de la Estimación</h3>
+                  <div class="result-box">
+                    <span class="result-label">Cargo fijo mensual:</span>
+                    <span class="result-value" id="cargo-fijo">$0</span>
+                  </div>
+                  <div class="result-box">
+                    <span class="result-label">Cargo por servicio:</span>
+                    <span class="result-value" id="cargo-servicio">$0</span>
+                  </div>
+                  <div class="result-box total">
+                    <span class="result-label">Total estimado:</span>
+                    <span class="result-value" id="total">$0</span>
+                  </div>
+                  <p class="result-note">
+                    <i class="fas fa-exclamatión-circle"></i>
+                    Este es un valor estimado. El valor real puede variar segón
+                    el consumo y otros factores.
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <!-- Tarifas Residenciales -->
+            <div class="tariff-sectión" id="residenciales">
+              <h2><i class="fas fa-home"></i> Tarifas Residenciales</h2>
+              <p>Tarifas mensuales para usuarios residenciales por estrato</p>
+
+              <div class="tariff-table-container">
+                <table class="tariff-table">
+                  <thead>
+                    <tr>
+                      <th>Estrato</th>
+                      <th>Cargo Fijo</th>
+                      <th>Recolección y Transporte</th>
+                      <th>Barrido y Limpieza</th>
+                      <th>Disposición Final</th>
+                      <th>Aprovechamiónto</th>
+                      <th>Total Mensual</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Estrato 1</strong></td>
+                      <td>$8,500</td>
+                      <td>$12,300</td>
+                      <td>$3,200</td>
+                      <td>$5,400</td>
+                      <td>$2,100</td>
+                      <td class="total-cell">$31,500</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Estrato 2</strong></td>
+                      <td>$9,800</td>
+                      <td>$14,500</td>
+                      <td>$3,800</td>
+                      <td>$6,200</td>
+                      <td>$2,500</td>
+                      <td class="total-cell">$36,800</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Estrato 3</strong></td>
+                      <td>$11,200</td>
+                      <td>$16,800</td>
+                      <td>$4,500</td>
+                      <td>$7,300</td>
+                      <td>$3,000</td>
+                      <td class="total-cell">$42,800</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Estrato 4</strong></td>
+                      <td>$15,600</td>
+                      <td>$23,400</td>
+                      <td>$6,300</td>
+                      <td>$10,200</td>
+                      <td>$4,200</td>
+                      <td class="total-cell">$59,700</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Estrato 5</strong></td>
+                      <td>$18,900</td>
+                      <td>$28,400</td>
+                      <td>$7,600</td>
+                      <td>$12,400</td>
+                      <td>$5,100</td>
+                      <td class="total-cell">$72,400</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Estrato 6</strong></td>
+                      <td>$22,400</td>
+                      <td>$33,600</td>
+                      <td>$9,000</td>
+                      <td>$14,600</td>
+                      <td>$6,000</td>
+                      <td class="total-cell">$85,600</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="tariff-note">
+                <i class="fas fa-info-circle"></i>
+                <p>
+                  <strong>Nota:</strong> Los estratos 1, 2 y 3 reciben subsidios
+                  del orden del 70%, 40% y 15% respectivamente. Los estratos 5 y
+                  6 pagan una contribución del 20%.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tarifas No Residenciales -->
+            <div class="tariff-sectión" id="no-residenciales">
+              <h2><i class="fas fa-building"></i> Tarifas No Residenciales</h2>
+              <p>Tarifas para usuarios comerciales, industriales y oficiales</p>
+
+              <div class="tariff-cards">
+                <div class="tariff-card">
+                  <div class="card-header comercial">
+                    <i class="fas fa-store"></i>
+                    <h3>Comercial</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="price-item">
+                      <span>Cargo Fijo</span>
+                      <strong>$28,500</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Recolección</span>
+                      <strong>$42,800</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Barrido</span>
+                      <strong>$11,400</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Disposición</span>
+                      <strong>$18,600</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Aprovechamiónto</span>
+                      <strong>$7,600</strong>
+                    </div>
+                    <div class="total-price">
+                      <span>Total Mensual</span>
+                      <strong>$108,900</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tariff-card">
+                  <div class="card-header industrial">
+                    <i class="fas fa-industry"></i>
+                    <h3>Industrial</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="price-item">
+                      <span>Cargo Fijo</span>
+                      <strong>$45,000</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Recolección</span>
+                      <strong>$67,500</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Barrido</span>
+                      <strong>$18,000</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Disposición</span>
+                      <strong>$29,300</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Aprovechamiónto</span>
+                      <strong>$12,000</strong>
+                    </div>
+                    <div class="total-price">
+                      <span>Total Mensual</span>
+                      <strong>$171,800</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tariff-card">
+                  <div class="card-header oficial">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Oficial</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="price-item">
+                      <span>Cargo Fijo</span>
+                      <strong>$22,400</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Recolección</span>
+                      <strong>$33,600</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Barrido</span>
+                      <strong>$9,000</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Disposición</span>
+                      <strong>$14,600</strong>
+                    </div>
+                    <div class="price-item">
+                      <span>Aprovechamiónto</span>
+                      <strong>$6,000</strong>
+                    </div>
+                    <div class="total-price">
+                      <span>Total Mensual</span>
+                      <strong>$85,600</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Servicios Especiales -->
+            <div class="tariff-sectión" id="especiales">
+              <h2><i class="fas fa-truck"></i> Servicios Especiales</h2>
+              <p>Tarifas para servicios adiciónales y extraordinarios</p>
+
+              <div class="special-services-grid">
+                <div class="service-price-card">
+                  <i class="fas fa-dumpster"></i>
+                  <h3>Recolección de Escombros</h3>
+                  <p class="price">$85,000 / mÂ³</p>
+                  <p class="descriptión">
+                    Retiro de material de construcción y demolición
+                  </p>
+                </div>
+
+                <div class="service-price-card">
+                  <i class="fas fa-tree"></i>
+                  <h3>Poda de órboles</h3>
+                  <p class="price">$120,000 / órbol</p>
+                  <p class="descriptión">Corte y retiro de ramas y follaje</p>
+                </div>
+
+                <div class="service-price-card">
+                  <i class="fas fa-couch"></i>
+                  <h3>Residuos Voluminosos</h3>
+                  <p class="price">$65,000 / unidad</p>
+                  <p class="descriptión">Muebles, electrodomósticos grandes</p>
+                </div>
+
+                <div class="service-price-card">
+                  <i class="fas fa-flask"></i>
+                  <h3>Residuos Peligrosos</h3>
+                  <p class="price">Cotización</p>
+                  <p class="descriptión">Requiere evaluación especializada</p>
+                </div>
+
+                <div class="service-price-card">
+                  <i class="fas fa-calendar-day"></i>
+                  <h3>Recolección Extraordinaria</h3>
+                  <p class="price">$45,000 / evento</p>
+                  <p class="descriptión">
+                    Servicio adiciónal fuera del horario regular
+                  </p>
+                </div>
+
+                <div class="service-price-card">
+                  <i class="fas fa-broom"></i>
+                  <h3>Limpieza de Lotes</h3>
+                  <p class="price">$180,000 / lote</p>
+                  <p class="descriptión">
+                    Limpieza completa de terrenos baldóos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Descarga de Información -->
+            <div class="download-sectión">
+              <h2><i class="fas fa-download"></i> Documentos y Formatos</h2>
+              <div class="download-grid">
+                <a href="#" download class="download-card">
+                  <i class="fas fa-file-pdf"></i>
+                  <div>
+                    <h4>Resolución CRA 825/2025</h4>
+                    <p>Documento oficial de aprobación de tarifas</p>
+                    <span class="file-size">2.4 MB</span>
+                  </div>
+                </a>
+
+                <a href="#" download class="download-card">
+                  <i class="fas fa-file-excel"></i>
+                  <div>
+                    <h4>Tarifas Históricas</h4>
+                    <p>Histórico de tarifas 2020-2026</p>
+                    <span class="file-size">850 KB</span>
+                  </div>
+                </a>
+
+                <a href="#" download class="download-card">
+                  <i class="fas fa-file-pdf"></i>
+                  <div>
+                    <h4>Metodologóa Tarifaria</h4>
+                    <p>Explicación del cólculo de tarifas</p>
+                    <span class="file-size">1.8 MB</span>
+                  </div>
+                </a>
+
+                <a href="#" download class="download-card">
+                  <i class="fas fa-file-pdf"></i>
+                  <div>
+                    <h4>Formato Solicitud Subsidios</h4>
+                    <p>Para usuarios estratos 1, 2 y 3</p>
+                    <span class="file-size">320 KB</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Preguntas Frecuentes sobre Tarifas -->
+            <div class="faq-tarifas">
+              <h2>
+                <i class="fas fa-questión-circle"></i> Preguntas Frecuentes
+                sobre Tarifas
+              </h2>
+
+              <div class="faq-accordión">
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cada cuónto se actualizan las tarifas?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Las tarifas se actualizan anualmente segón la metodologóa
+                      establecida por la Comisión de Regulación de Agua Potable
+                      y Saneamiónto Bósico (CRA), tenióndo en cuenta el óndice
+                      de precios al consumidor (IPC) y otros factores
+                      operaciónales.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cómo puedo solicitar un subsidio?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Los usuarios de estratos 1, 2 y 3 pueden solicitar
+                      subsidios presentando el formato correspondiónte junto con
+                      la documentación que acredite su estrato socioeconómico.
+                      El trómite es gratuito y se puede realizar en nuestras
+                      oficinas o en lónea.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span
+                      >Â¿Por quó mi factura es diferente al valor de la
+                      tabla?</span
+                    >
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Las tablas muestran valores base, pero la factura final
+                      puede incluir servicios adiciónales, ajustes por consumos
+                      extraordinarios, intereses de mora, o beneficios por
+                      pronto pago. Si tiónes dudas especóficas, puedes
+                      contactarnos para una revisión detallada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>Acceso Rápido</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="#calculadora"
+                    ><i class="fas fa-chevron-right"></i> Calculadora</a
+                  >
+                </li>
+                <li>
+                  <a href="#residenciales"
+                    ><i class="fas fa-chevron-right"></i> Tarifas
+                    Residenciales</a
+                  >
+                </li>
+                <li>
+                  <a href="#no-residenciales"
+                    ><i class="fas fa-chevron-right"></i> Tarifas No
+                    Residenciales</a
+                  >
+                </li>
+                <li>
+                  <a href="#especiales"
+                    ><i class="fas fa-chevron-right"></i> Servicios
+                    Especiales</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Consultas</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="../facturacion/factura.html"
+                    ><i class="fas fa-chevron-right"></i> Ver mi Factura</a
+                  >
+                </li>
+                <li>
+                  <a href="../facturacion/pago.html"
+                    ><i class="fas fa-chevron-right"></i> Pagar en Línea</a
+                  >
+                </li>
+                <li>
+                  <a href="../usuario/preguntas.html"
+                    ><i class="fas fa-chevron-right"></i> Preguntas
+                    Frecuentes</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>Â¿Tiónes Dudas?</h3>
+              <p>Contóctanos para aclarar cualquier inquietud sobre tarifas</p>
+              <a href="../usuario/contacto.html" class="btn btn-secondary btn-block">
+                Contóctanos
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </sectión>
+
+        <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>
+              Empresa líder en servicios públicos de aseo, comprometida con el
+              medio ambiente y el bienestar de nuestra comunidad.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="../../index.html">Inicio</a></li>
+              <li><a href="../corporativo/quienes-somos.html">Quiénes Somos</a></li>
+              <li><a href="../../index.html#servicios">Servicios</a></li>
+              <li><a href="../corporativo/informes.html">Informes de Gestión</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Atención al Usuario</h3>
+            <ul>
+              <li><a href="../usuario/pqr.html">Radicar PQR</a></li>
+              <li><a href="../usuario/certificados.html">Certificados</a></li>
+              <li><a href="../facturacion/pago.html">Pago en Línea</a></li>
+              <li><a href="../usuario/preguntas.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Carrera 5 # 10-50, Centro administrativo
+              </li>
+              <li><i class="fas fa-phone"></i> (1) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@empresaaseo.gov.co</li>
+              <li><i class="fas fa-clock"></i> Lun - Vie: 8:00 AM - 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Empresa de Aseo E.S.P. Todos los derechos reservados.
+          </p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Mapa del Sitio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

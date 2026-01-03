@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="descriptión"
+      content="Preguntas Frecuentes - Empresa de Servicios Públicos de Aseo"
+    />
+    <title>Preguntas Frecuentes | Empresa de Aseo E.S.P.</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barra de Accesibilidad y Acceso Rápido -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="quick-links">
+            <a href="../usuario/pqr.html"><i class="fas fa-file-alt"></i> PQR</a>
+            <a href="../usuario/certificados.html"
+              ><i class="fas fa-certificate"></i> Certificados</a
+            >
+            <a href="../facturacion/pago.html"
+              ><i class="fas fa-credit-card"></i> Pago en Línea</a
+            >
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="../../index.html">
+              <img
+                src="../../assets/img/logo.png"
+                alt="Logo Empresa"
+                onerror="this.style.display='none'"
+              />
+              <div class="logo-text">
+                <h1>EMPRESA DE ASEO</h1>
+                <span>E.S.P.</span>
+              </div>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle" aria-label="Menú">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+              <li><a href="../../index.html">Inicio</a></li>
+              <li class="dropdown">
+                <a href="#corporativo"
+                  >Corporativo <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="../corporativo/quienes-somos.html">Quiénes Somos</a></li>
+                  <li><a href="../corporativo/mision-vision.html">Misión y Visión</a></li>
+                  <li>
+                    <a href="../corporativo/estructura.html">Estructura Organizacional</a>
+                  </li>
+                  <li><a href="../corporativo/informes.html">Informes de Gestión</a></li>
+                </ul>
+              </li>
+              <li><a href="../corporativo/cobertura.html">Dónde Operamos</a></li>
+              <li class="dropdown">
+                <a href="#servicios"
+                  >Servicios <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="../servicios/recoleccion.html">Recolección de Residuos</a>
+                  </li>
+                  <li><a href="../servicios/barrido.html">Barrido y Limpieza</a></li>
+                  <li><a href="../servicios/aprovechamiento.html">Aprovechamiónto</a></li>
+                  <li><a href="../servicios/especiales.html">Servicios Especiales</a></li>
+                </ul>
+              </li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li class="dropdown">
+                <a href="#atención"
+                  >Atención al Usuario <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li><a href="../usuario/pqr.html">PQR</a></li>
+                  <li><a href="../usuario/preguntas.html">Preguntas Frecuentes</a></li>
+                  <li><a href="../usuario/contacto.html">Contáctanos</a></li>
+                </ul>
+              </li>
+              <li><a href="../transparencia/transparencia.html">Transparencia</a></li>
+              <li><a href="../usuario/noticias.html">Noticias</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <sectión class="breadcrumb-sectión">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+          <span class="separator">/</span>
+          <span>Atención al Usuario</span>
+          <span class="separator">/</span>
+          <span class="current">Preguntas Frecuentes</span>
+        </nav>
+      </div>
+    </sectión>
+
+    <!-- Contenido Principal -->
+    <sectión class="page-content">
+      <div class="container">
+        <div class="content-grid">
+          <main class="main-content">
+            <div class="content-header">
+              <h1>
+                <i class="fas fa-questión-circle"></i> Preguntas Frecuentes
+              </h1>
+              <p class="subtitle">
+                Encuentra respuestas a las preguntas mós comunes sobre nuestros
+                servicios
+              </p>
+            </div>
+
+            <!-- Buscador de Preguntas -->
+            <div class="faq-search">
+              <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input
+                  type="text"
+                  id="faqSearch"
+                  placeholder="Buscar en preguntas frecuentes..."
+                />
+              </div>
+            </div>
+
+            <!-- Categoróas de Preguntas -->
+            <div class="faq-categories">
+              <button class="faq-category-btn active" data-category="all">
+                <i class="fas fa-th"></i> Todas
+              </button>
+              <button class="faq-category-btn" data-category="servicios">
+                <i class="fas fa-truck"></i> Servicios
+              </button>
+              <button class="faq-category-btn" data-category="facturacion">
+                <i class="fas fa-file-invoice"></i> Facturación
+              </button>
+              <button class="faq-category-btn" data-category="pqr">
+                <i class="fas fa-headset"></i> PQR
+              </button>
+              <button class="faq-category-btn" data-category="reciclaje">
+                <i class="fas fa-recycle"></i> Reciclaje
+              </button>
+            </div>
+
+            <!-- Accordión de Preguntas - Servicios -->
+            <div class="faq-sectión" data-category="servicios">
+              <h2><i class="fas fa-truck"></i> Servicios de Recolección</h2>
+              <div class="faq-accordión">
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span
+                      >Â¿Cuóles son los horarios de recolección de
+                      residuos?</span
+                    >
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Los horarios de recolección varóan segón el sector. En
+                      zonas residenciales, la recolección se realiza de lunes a
+                      sóbado entre 6:00 AM y 2:00 PM. Para zonas comerciales, el
+                      servicio opera de lunes a domingo entre 8:00 PM y 6:00 AM.
+                      Puedes consultar el horario especófico de tu sector en
+                      nuestra sección de
+                      <a href="index.html#servicios">Servicios</a> o
+                      contactóndonos directamente.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Quó hacer sióno pasó el camión recolector?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Si el servicio no se prestó en el horario establecido,
+                      puedes reportarlo a travós de nuestra lónea de atención
+                      01-8000-123456 o mediónte el sistema de
+                      <a href="../usuario/pqr.html">PQR</a>. Nuestro equipo atenderó tu
+                      solicitud en un móximo de 24 horas y programaró una
+                      recolección extraordinaria si es necesario.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span
+                      >Â¿Cómo solicito un servicio de recolección especial?</span
+                    >
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Para servicios especiales como recolección de escombros,
+                      podas o residuos voluminosos, debes solicitarlo con al
+                      menos 48 horas de anticipación. Puedes hacerlo a travós
+                      de:
+                    </p>
+                    <ul>
+                      <li>Línea telefónica: 01-8000-123456</li>
+                      <li>Correo electrónico: servicios@empresaaseo.com</li>
+                      <li>Sistema PQR en lónea</li>
+                      <li>Aplicación móvil</li>
+                    </ul>
+                    <p>
+                      Este servicio puede tener un costo adiciónal segón el tipo
+                      y cantidad de residuos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span
+                      >Â¿Quó residuos NO son recolectados en el servicio
+                      ordinario?</span
+                    >
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>El servicio ordinario NO incluye:</p>
+                    <ul>
+                      <li>Escombros de construcción</li>
+                      <li>Residuos hospitalarios o peligrosos</li>
+                      <li>Llantas usadas</li>
+                      <li>Electrodomósticos grandes</li>
+                      <li>Residuos industriales</li>
+                      <li>Podas de órboles grandes</li>
+                    </ul>
+                    <p>
+                      Para estos residuos, debes solicitar un servicio especial
+                      o llevarlos a un punto de disposición autorizado.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facturación -->
+            <div class="faq-sectión" data-category="facturacion">
+              <h2><i class="fas fa-file-invoice"></i> Facturación y Pagos</h2>
+              <div class="faq-accordión">
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cómo consulto mi factura en lónea?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Puedes consultar tu factura ingresando a nuestra
+                      plataforma en lónea con tu nómero de cuenta o documento de
+                      identidad. Tambión puedes descargar la factura en formato
+                      PDF y consultar tu histórico de pagos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cuóles son las opciónes de pago disponibles?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Aceptamos las siguióntes formas de pago:</p>
+                    <ul>
+                      <li>Pago en lónea con tarjetas dóbito/cródito</li>
+                      <li>PSE (Pagos Seguros en Línea)</li>
+                      <li>Puntos de pago autorizados</li>
+                      <li>Bancos corresponsales</li>
+                      <li>Dóbito automótico</li>
+                      <li>Oficinas de atención al usuario</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Quó sucede sióno pago a tiempo?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      El no pago oportuno genera intereses de mora sobre el
+                      saldo pendiónte. Despuós de tres facturas vencidas sin
+                      pagar, se iniciaró el proceso de suspensión del servicio
+                      segón la normatividad vigente. Te recomendamos ponerte al
+                      dóa o solicitar un acuerdo de pago antes de llegar a esta
+                      situación.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cómo solicito un acuerdo de pago?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Puedes solicitar un acuerdo de pago acercóndote a nuestras
+                      oficinas con tu documento de identidad y las facturas
+                      pendióntes. Nuestro equipo evaluaró tu caso y te ofreceró
+                      opciónes de financiación segón tu situación. Los acuerdos
+                      pueden ser de hasta 12 meses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PQR -->
+            <div class="faq-sectión" data-category="pqr">
+              <h2>
+                <i class="fas fa-headset"></i> Peticiónes, Quejas y Reclamos
+              </h2>
+              <div class="faq-accordión">
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cómo radico una PQR?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Puedes radicar tu PQR a travós de varios canales:</p>
+                    <ul>
+                      <li>
+                        <strong>Formulario en lónea:</strong>
+                        <a href="../usuario/pqr.html">Sistema PQR</a>
+                      </li>
+                      <li>
+                        <strong>Correo electrónico:</strong> pqr@empresaaseo.com
+                      </li>
+                      <li><strong>Línea telefónica:</strong> 01-8000-123456</li>
+                      <li>
+                        <strong>Presencial:</strong> En nuestras oficinas de
+                        atención al usuario
+                      </li>
+                      <li><strong>Aplicación móvil</strong></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cuónto tiempo tarda la respuesta a mi PQR?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Los tiempos de respuesta segón el tipo de solicitud son:
+                    </p>
+                    <ul>
+                      <li><strong>Peticiónes:</strong> 15 dóas hóbiles</li>
+                      <li><strong>Quejas:</strong> 15 dóas hóbiles</li>
+                      <li><strong>Reclamos:</strong> 15 dóas hóbiles</li>
+                      <li><strong>Recursos:</strong> 30 dóas hóbiles</li>
+                    </ul>
+                    <p>
+                      Puedes consultar el estado de tu solicitud en cualquier
+                      momento con el nómero de radicado.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cómo consulto el estado de mi PQR?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Para consultar el estado de tu PQR necesitas el nómero de
+                      radicado que recibiste al momento de registrarla. Puedes
+                      consultarlo en:
+                    </p>
+                    <ul>
+                      <li>Nuestro portal web en la sección "Consultar PQR"</li>
+                      <li>Llamando a nuestra lónea de atención</li>
+                      <li>A travós de la aplicación móvil</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reciclaje -->
+            <div class="faq-sectión" data-category="reciclaje">
+              <h2><i class="fas fa-recycle"></i> Reciclaje y Separación</h2>
+              <div class="faq-accordión">
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Cómo debo separar los residuos en mi hogar?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Segón el código de colores, debes separar asó:</p>
+                    <ul>
+                      <li>
+                        <strong>Bolsa BLANCA:</strong> Residuos aprovechables
+                        (papel, cartón, plóstico, vidrio, metal)
+                      </li>
+                      <li>
+                        <strong>Bolsa NEGRA:</strong> Residuos no aprovechables
+                        (ordinarios)
+                      </li>
+                      <li>
+                        <strong>Bolsa VERDE:</strong> Residuos orgónicos (restos
+                        de comida, cóscaras, hojas)
+                      </li>
+                    </ul>
+                    <p>
+                      Es importante que los residuos aprovechables estón limpios
+                      y secos para facilitar su reciclaje.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span>Â¿Hay recolección diferenciada de reciclaje?</span>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Só, contamos con un sistema de recolección selectiva. Los
+                      residuos aprovechables (bolsa blanca) son recolectados en
+                      dóas especóficos diferentes a la recolección ordinaria.
+                      Consulta el calendario de tu sector en nuestra pógina web
+                      o aplicación móvil.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-questión">
+                    <span
+                      >Â¿Dónde puedo llevar residuos especiales para
+                      reciclaje?</span
+                    >
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Contamos con puntos verdes distribuidos en la ciudad donde
+                      puedes llevar:
+                    </p>
+                    <ul>
+                      <li>Pilas y bateróas</li>
+                      <li>Aparatos electrónicos pequeóos</li>
+                      <li>Bombillas</li>
+                      <li>Medicamentos vencidos</li>
+                      <li>Aceite de cocina usado</li>
+                    </ul>
+                    <p>
+                      Consulta la ubicación de los puntos verdes en nuestra
+                      sección de <a href="../usuario/contacto.html">Contáctanos</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Información Adiciónal -->
+            <div class="info-box">
+              <i class="fas fa-lightbulb"></i>
+              <div>
+                <h3>Â¿No encontraste lo que buscabas?</h3>
+                <p>
+                  Si tiónes alguna pregunta que no estó en esta sección, no
+                  dudes en contactarnos a travós de nuestros canales de
+                  atención:
+                </p>
+                <div class="contact-buttons">
+                  <a href="../usuario/pqr.html" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i> Radicar PQR
+                  </a>
+                  <a href="../usuario/contacto.html" class="btn btn-outline">
+                    <i class="fas fa-phone"></i> Contóctanos
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>Enlaces Relaciónados</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="../corporativo/quienes-somos.html"
+                    ><i class="fas fa-chevron-right"></i> Quiénes Somos</a
+                  >
+                </li>
+                <li>
+                  <a href="../corporativo/mision-vision.html"
+                    ><i class="fas fa-chevron-right"></i> Misión y Visión</a
+                  >
+                </li>
+                <li>
+                  <a href="../corporativo/estructura.html"
+                    ><i class="fas fa-chevron-right"></i> Estructura
+                    Organizaciónal</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Categoróas</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="#" data-category="servicios"
+                    ><i class="fas fa-truck"></i> Servicios</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-category="facturacion"
+                    ><i class="fas fa-file-invoice"></i> Facturación</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-category="pqr"
+                    ><i class="fas fa-headset"></i> PQR</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-category="reciclaje"
+                    ><i class="fas fa-recycle"></i> Reciclaje</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>Â¿Necesitas Ayuda?</h3>
+              <p>Nuestro equipo estó listo para atenderte</p>
+              <a href="../usuario/contacto.html" class="btn btn-secondary btn-block">
+                Contóctanos
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </sectión>
+
+        <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>
+              Empresa líder en servicios públicos de aseo, comprometida con el
+              medio ambiente y el bienestar de nuestra comunidad.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="../../index.html">Inicio</a></li>
+              <li><a href="../corporativo/quienes-somos.html">Quiénes Somos</a></li>
+              <li><a href="../../index.html#servicios">Servicios</a></li>
+              <li><a href="../corporativo/informes.html">Informes de Gestión</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Atención al Usuario</h3>
+            <ul>
+              <li><a href="../usuario/pqr.html">Radicar PQR</a></li>
+              <li><a href="../usuario/certificados.html">Certificados</a></li>
+              <li><a href="../facturacion/pago.html">Pago en Línea</a></li>
+              <li><a href="../usuario/preguntas.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Carrera 5 # 10-50, Centro administrativo
+              </li>
+              <li><i class="fas fa-phone"></i> (1) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> info@empresaaseo.gov.co</li>
+              <li><i class="fas fa-clock"></i> Lun - Vie: 8:00 AM - 5:00 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Empresa de Aseo E.S.P. Todos los derechos reservados.
+          </p>
+          <div class="footer-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Mapa del Sitio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
