@@ -112,7 +112,7 @@
     </header>
 
     <!-- Breadcrumb -->
-    <sectión class="breadcrumb-sectión">
+    <section class="breadcrumb-section">
       <div class="container">
         <nav class="breadcrumb">
           <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
@@ -120,17 +120,17 @@
           <span class="current">Pago en Línea</span>
         </nav>
       </div>
-    </sectión>
+    </section>
 
     <!-- Contenido Principal -->
-    <sectión class="page-content">
+    <section class="page-content">
       <div class="container">
         <div class="content-grid">
           <main class="main-content">
             <div class="content-header">
               <h1><i class="fas fa-credit-card"></i> Pago en Línea</h1>
               <p class="subtitle">
-                Realiza el pago de tu factura de forma segura y rópida
+                Realiza el pago de tu factura de forma segura y rápida
               </p>
             </div>
 
@@ -146,8 +146,8 @@
               <div class="step" data-step="2">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                  <h3>Mótodo de Pago</h3>
-                  <p>Seleccióna cómo pagar</p>
+                  <h3>Método de Pago</h3>
+                  <p>Selecciona cómo pagar</p>
                 </div>
               </div>
               <div class="step" data-step="3">
@@ -160,7 +160,7 @@
             </div>
 
             <!-- Paso 1: Datos del Usuario -->
-            <div class="payment-sectión" id="paso-1">
+            <div class="payment-section" id="paso-1">
               <h2><i class="fas fa-user"></i> Información del Usuario</h2>
               <form class="payment-form">
                 <div class="form-row">
@@ -169,22 +169,22 @@
                       >Tipo de Identificación *</label
                     >
                     <select id="tipo-identificación" required>
-                      <optión value="">Seleccióna...</optión>
-                      <optión value="CC">Códula de Ciudadanóa</optión>
-                      <optión value="CE">Códula de Extranjeróa</optión>
-                      <optión value="NIT">NIT</optión>
-                      <optión value="TI">Tarjeta de Identidad</optión>
+                      <option value="">Selecciona...</option>
+                      <option value="CC">Cédula de Ciudadanía</option>
+                      <option value="CE">Cédula de Extranjería</option>
+                      <option value="NIT">NIT</option>
+                      <option value="TI">Tarjeta de Identidad</option>
                     </select>
                   </div>
 
                   <div class="form-group">
                     <label for="numero-identificación"
-                      >Nómero de Identificación *</label
+                      >Número de Identificación *</label
                     >
                     <input
                       type="text"
                       id="numero-identificación"
-                      placeholder="Ingresa tu nómero"
+                      placeholder="Ingresa tu número"
                       required
                     />
                   </div>
@@ -192,21 +192,21 @@
 
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="numero-cuenta">Nómero de Cuenta *</label>
+                    <label for="numero-cuenta">Número de Cuenta *</label>
                     <input
                       type="text"
                       id="numero-cuenta"
-                      placeholder="Tu nómero de cuenta"
+                      placeholder="Tu número de cuenta"
                       required
                     />
                   </div>
 
                   <div class="form-group">
-                    <label for="numero-factura">Nómero de Factura *</label>
+                    <label for="numero-factura">Número de Factura *</label>
                     <input
                       type="text"
                       id="numero-factura"
-                      placeholder="Nómero de factura"
+                      placeholder="Número de factura"
                       required
                     />
                   </div>
@@ -222,7 +222,7 @@
                       required
                     />
                     <small
-                      >Recibirós el comprobante de pago en este correo</small
+                      >Recibirás el comprobante de pago en este correo</small
                     >
                   </div>
                 </div>
@@ -237,9 +237,9 @@
               </form>
             </div>
 
-            <!-- Paso 2: Mótodo de Pago -->
-            <div class="payment-sectión" id="paso-2" style="display: none">
-              <h2><i class="fas fa-wallet"></i> Mótodo de Pago</h2>
+            <!-- Paso 2: Método de Pago -->
+            <div class="payment-section" id="paso-2" style="display: none">
+              <h2><i class="fas fa-wallet"></i> Método de Pago</h2>
 
               <div class="payment-methods">
                 <div
@@ -254,7 +254,7 @@
                   />
                   <label for="metodo-tarjeta">
                     <i class="fas fa-credit-card"></i>
-                    <span>Tarjeta Dóbito/Cródito</span>
+                    <span>Tarjeta Débito/Crédito</span>
                   </label>
                 </div>
 
@@ -270,7 +270,7 @@
                   />
                   <label for="metodo-pse">
                     <i class="fas fa-university"></i>
-                    <span>PSE - Dóbito desde Cuenta</span>
+                    <span>PSE - Débito desde Cuenta</span>
                   </label>
                 </div>
 
@@ -300,7 +300,7 @@
                 <h3>Datos de la Tarjeta</h3>
                 <form>
                   <div class="form-group">
-                    <label for="numero-tarjeta">Nómero de Tarjeta *</label>
+                    <label for="numero-tarjeta">Número de Tarjeta *</label>
                     <input
                       type="text"
                       id="numero-tarjeta"
@@ -355,32 +355,32 @@
                 <h3>Pago con PSE</h3>
                 <form>
                   <div class="form-group">
-                    <label for="banco">Seleccióna tu Banco *</label>
+                    <label for="banco">Selecciona tu Banco *</label>
                     <select id="banco">
-                      <optión value="">Seleccióna tu banco...</optión>
-                      <optión value="bancolombia">Bancolombia</optión>
-                      <optión value="daviviónda">Daviviónda</optión>
-                      <optión value="bogota">Banco de Bogotó</optión>
-                      <optión value="bbva">BBVA Colombia</optión>
-                      <optión value="scotiabank">Scotiabank Colpatria</optión>
-                      <optión value="occidente">Banco de Occidente</optión>
-                      <optión value="popular">Banco Popular</optión>
-                      <optión value="av-villas">Banco AV Villas</optión>
+                      <option value="">Selecciona tu banco...</option>
+                      <option value="bancolombia">Bancolombia</option>
+                      <option value="davivienda">Davivienda</option>
+                      <option value="bogota">Banco de Bogotá</option>
+                      <option value="bbva">BBVA Colombia</option>
+                      <option value="scotiabank">Scotiabank Colpatria</option>
+                      <option value="occidente">Banco de Occidente</option>
+                      <option value="popular">Banco Popular</option>
+                      <option value="av-villas">Banco AV Villas</option>
                     </select>
                   </div>
 
                   <div class="form-group">
                     <label for="tipo-persona">Tipo de Persona *</label>
                     <select id="tipo-persona">
-                      <optión value="natural">Persona Natural</optión>
-                      <optión value="juridica">Persona Juródica</optión>
+                      <option value="natural">Persona Natural</option>
+                      <option value="juridica">Persona Jurídica</option>
                     </select>
                   </div>
 
                   <div class="info-box info">
                     <i class="fas fa-info-circle"></i>
                     <p>
-                      Serós redirigido al portal de tu banco para completar la
+                      Serás redirigido al portal de tu banco para completar la
                       transacción de forma segura.
                     </p>
                   </div>
@@ -395,7 +395,7 @@
               >
                 <h3>Pago en Efectivo</h3>
                 <p>
-                  Genera un código de pago y acórcate a cualquiera de nuestros
+                  Genera un código de pago y acércate a cualquiera de nuestros
                   puntos autorizados:
                 </p>
                 <div class="efectivo-points">
@@ -412,22 +412,22 @@
                   <div class="point-card">
                     <i class="fas fa-building"></i>
                     <h4>Nuestras Oficinas</h4>
-                    <p>Puntos de atención al cliónte</p>
+                    <p>Puntos de atención al cliente</p>
                   </div>
                 </div>
                 <div class="info-box warning">
-                  <i class="fas fa-exclamatión-trióngle"></i>
-                  <p>El código de pago tióne una validez de 48 horas.</p>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <p>El código de pago tiene una validez de 48 horas.</p>
                 </div>
               </div>
 
-              <div class="payment-navigatión">
+              <div class="payment-navigation">
                 <button
                   type="button"
                   class="btn btn-outline"
                   onclick="mostrarPaso(1)"
                 >
-                  <i class="fas fa-arrow-left"></i> Atrós
+                  <i class="fas fa-arrow-left"></i> Atrás
                 </button>
                 <button
                   type="button"
@@ -440,22 +440,22 @@
             </div>
 
             <!-- Paso 3: Confirmación -->
-            <div class="payment-sectión" id="paso-3" style="display: none">
+            <div class="payment-section" id="paso-3" style="display: none">
               <h2><i class="fas fa-check-circle"></i> Confirma tu Pago</h2>
 
               <div class="payment-summary">
                 <h3>Resumen del Pago</h3>
                 <div class="summary-details">
                   <div class="summary-row">
-                    <span>Nómero de Cuenta:</span>
+                    <span>Número de Cuenta:</span>
                     <strong id="resumen-cuenta">-</strong>
                   </div>
                   <div class="summary-row">
-                    <span>Nómero de Factura:</span>
+                    <span>Número de Factura:</span>
                     <strong id="resumen-factura">-</strong>
                   </div>
                   <div class="summary-row">
-                    <span>Mótodo de Pago:</span>
+                    <span>Método de Pago:</span>
                     <strong id="resumen-metodo">-</strong>
                   </div>
                   <div class="summary-row total">
@@ -469,7 +469,7 @@
                 <label class="checkbox-label">
                   <input type="checkbox" id="acepto-terminos" required />
                   <span
-                    >Acepto los <a href="#">tórminos y condiciónes</a> y
+                    >Acepto los <a href="#">términos y condiciones</a> y
                     autorizo el cargo a mi cuenta</span
                   >
                 </label>
@@ -480,19 +480,19 @@
                 <div>
                   <h4>Pago Seguro</h4>
                   <p>
-                    Esta transacción estó protegida con encriptación SSL y
-                    cumple con los estóndares PCI-DSS.
+                    Esta transacción está protegida con encriptación SSL y
+                    cumple con los estándares PCI-DSS.
                   </p>
                 </div>
               </div>
 
-              <div class="payment-navigatión">
+              <div class="payment-navigation">
                 <button
                   type="button"
                   class="btn btn-outline"
                   onclick="mostrarPaso(2)"
                 >
-                  <i class="fas fa-arrow-left"></i> Atrós
+                  <i class="fas fa-arrow-left"></i> Atrás
                 </button>
                 <button
                   type="button"
@@ -505,8 +505,8 @@
             </div>
 
             <!-- Sección de Ayuda -->
-            <div class="help-sectión">
-              <h3><i class="fas fa-questión-circle"></i> ¿Necesitas Ayuda?</h3>
+            <div class="help-section">
+              <h3><i class="fas fa-question-circle"></i> ¿Necesitas Ayuda?</h3>
               <div class="help-grid">
                 <div class="help-card">
                   <i class="fas fa-headset"></i>
@@ -549,7 +549,7 @@
             </div>
 
             <div class="sidebar-widget">
-              <h3>Opciónes de Pago</h3>
+              <h3>Opciones de Pago</h3>
               <div class="payment-logos">
                 <img
                   src="https://via.placeholder.com/80x50/4169E1/FFFFFF?text=Visa"
@@ -571,7 +571,7 @@
             </div>
 
             <div class="sidebar-widget">
-              <h3>Servicios Relaciónados</h3>
+              <h3>Servicios Relacionados</h3>
               <ul class="sidebar-links">
                 <li>
                   <a href="../facturacion/factura.html"
@@ -585,7 +585,7 @@
                 </li>
                 <li>
                   <a href="#"
-                    ><i class="fas fa-chevron-right"></i> Dóbito Automótico</a
+                    ><i class="fas fa-chevron-right"></i> Débito Automático</a
                   >
                 </li>
                 <li>
@@ -598,17 +598,17 @@
 
             <div class="sidebar-widget cta-widget">
               <h3>¿Problemas con el Pago?</h3>
-              <p>Nuestro equipo estó listo para ayudarte</p>
+              <p>Nuestro equipo está listo para ayudarte</p>
               <a href="../usuario/contacto.html" class="btn btn-secondary btn-block">
-                Contóctanos
+                Contáctanos
               </a>
             </div>
           </aside>
         </div>
       </div>
-    </sectión>
+    </section>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-content">
@@ -676,9 +676,3 @@
     <script src="../../assets/js/script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
