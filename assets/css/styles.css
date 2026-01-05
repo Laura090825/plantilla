@@ -238,15 +238,25 @@ ul {
   color: var(--primary-color);
 }
 
-.dropdown .fa-chevron-down {
-  font-size: 0.65rem;
-  margin-left: 6px;
-  transition: var(--transition);
-  display: inline-block;
-  vertical-align: middle;
+.dropdown {
+  position: relative;
 }
 
-.dropdown:hover .fa-chevron-down {
+.dropdown .fa-chevron-down {
+  font-size: 0.7rem;
+  margin-left: 8px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  opacity: 1;
+}
+
+.dropdown:hover > a .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.dropdown.active > a .fa-chevron-down {
   transform: rotate(180deg);
 }
 
@@ -261,12 +271,25 @@ ul {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px) scale(0.95);
-  transition: var(--transition);
-  z-index: 100;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
   backdrop-filter: blur(10px);
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
 }
 
-.dropdown:hover .submenu {
+.dropdown:hover > .submenu,
+.nav-menu .dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.dropdown.active > .submenu,
+.nav-menu .dropdown.active .submenu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
@@ -285,6 +308,55 @@ ul {
   background-color: var(--light-color);
   color: var(--primary-color);
   padding-left: 26px;
+}
+
+/* Submenús anidados (dos niveles) */
+.submenu .dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.submenu .dropdown > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.submenu .dropdown > a .fa-chevron-down {
+  font-size: 0.65rem;
+  margin-left: 8px;
+  transition: var(--transition);
+  transform: rotate(-90deg);
+}
+
+.submenu .dropdown:hover > a .fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.submenu .dropdown.active > a .fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  bottom: auto;
+  min-width: 220px;
+  margin-left: 8px;
+}
+
+.submenu .dropdown:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.submenu .dropdown.active > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
 }
 
 /* ==========================================
@@ -1172,10 +1244,10 @@ section h2 {
   }
 
   .submenu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
     box-shadow: none;
     background-color: var(--gray-100);
     margin-top: 10px;
@@ -1365,6 +1437,8 @@ section h2 {
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .content-main {

@@ -9,6 +9,7 @@
     />
     <title>Dónde Operamos | Empresa de Aseo E.S.P.</title>
     <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/municipalities.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -94,8 +95,36 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <a href="../corporativo/cobertura.html">Dónde Operamos</a>
+              <li class="dropdown">
+                <a href="../corporativo/cobertura.html"
+                  >Dónde Operamos <i class="fas fa-chevron-down"></i
+                ></a>
+                <ul class="submenu">
+                  <li>
+                    <a href="../corporativo/cobertura.html"
+                      ><i class="fas fa-map-marked-alt"></i> Ver Cobertura
+                      General</a
+                    >
+                  </li>
+                  <li
+                    style="
+                      border-top: 1px solid #e0e0e0;
+                      margin-top: 8px;
+                      padding-top: 8px;
+                    "
+                  >
+                    <a href="../municipios/socorro.html">Socorro</a>
+                  </li>
+                  <li>
+                    <a href="../municipios/sangil.html">San Gil</a>
+                  </li>
+                  <li>
+                    <a href="../municipios/oiba.html">Oiba</a>
+                  </li>
+                  <li>
+                    <a href="../municipios/palmas.html">Palmas</a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown">
                 <a href="#servicios"
@@ -163,502 +192,778 @@
       <div class="container">
         <div class="content-grid">
           <main class="main-content">
+            <!-- Page Header -->
             <div class="content-header">
               <h1><i class="fas fa-map-marked-alt"></i> Dónde Operamos</h1>
               <p class="subtitle">
-                Cobertura territorial y presencia regional de nuestros servicios
+                Conoce nuestra presencia en los municipios de la región
               </p>
             </div>
 
-            <!-- Resumen de Cobertura -->
-            <div class="coverage-summary">
-              <div class="summary-card">
-                <i class="fas fa-city"></i>
-                <div class="summary-content">
-                  <h3>12 Municipios</h3>
-                  <p>Zona de influencia</p>
-                </div>
+            <!-- Municipios Atendidos -->
+            <div class="coverage-section" id="municipios">
+              <div style="text-align: center; margin-bottom: 50px">
+                <h2
+                  style="
+                    font-size: 2.2rem;
+                    color: #27753f;
+                    margin-bottom: 12px;
+                    font-weight: 800;
+                    letter-spacing: -0.5px;
+                  "
+                >
+                  Nuestras Zonas de Operación
+                </h2>
+                <p
+                  style="
+                    color: #64748b;
+                    font-size: 1.05rem;
+                    line-height: 1.6;
+                    max-width: 650px;
+                    margin: 0 auto;
+                  "
+                >
+                  Presencia operativa en 4 municipios estratégicos de la región
+                  con servicios de calidad certificada
+                </p>
               </div>
 
-              <div class="summary-card">
-                <i class="fas fa-users"></i>
-                <div class="summary-content">
-                  <h3>450,000</h3>
-                  <p>Usuarios atendidos</p>
+              <div
+                class="municipality-grid"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 25px;
+                  margin-bottom: 40px;
+                "
+              >
+                <!-- Socorro -->
+                <div
+                  style="
+                    background: white;
+                    border: 1px solid #d1e7d4;
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #27753f, #5ec576);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #27753f;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Socorro
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Municipio con importante cobertura de servicios de
+                    recolección y barrido integral.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+573121234567"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >+57 312-123-4567</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-envelope"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:socorro@empresaaseo.com"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >socorro@empresaaseo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-clock"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="../municipios/socorro.html"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #27753f;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
                 </div>
-              </div>
 
-              <div class="summary-card">
-                <i class="fas fa-home"></i>
-                <div class="summary-content">
-                  <h3>125,000</h3>
-                  <p>Viviendas conectadas</p>
+                <!-- San Gil -->
+                <div
+                  style="
+                    background: white;
+                    border: 1px solid #d1e7d4;
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #27753f, #5ec576);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #27753f;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    San Gil
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Capital de la aventura con cobertura completa en servicios
+                    de aseo integral.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+573121234568"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >+57 312-123-4568</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-envelope"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:sangil@empresaaseo.com"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >sangil@empresaaseo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-clock"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 7:00 AM - 6:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="../municipios/sangil.html"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #27753f;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
                 </div>
-              </div>
 
-              <div class="summary-card">
-                <i class="fas fa-map"></i>
-                <div class="summary-content">
-                  <h3>2,850 km²</h3>
-                  <p>Área de cobertura</p>
+                <!-- Oiba -->
+                <div
+                  style="
+                    background: white;
+                    border: 1px solid #d1e7d4;
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #27753f, #5ec576);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #27753f;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Oiba
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Municipio del Guanentá con cobertura completa de servicios
+                    de calidad.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+573121234569"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >+57 312-123-4569</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-envelope"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:oiba@empresaaseo.com"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >oiba@empresaaseo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-clock"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="../municipios/oiba.html"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #27753f;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
+                </div>
+
+                <!-- Palmas -->
+                <div
+                  style="
+                    background: white;
+                    border: 1px solid #d1e7d4;
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #27753f, #5ec576);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #27753f;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Palmas
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Territorio con presencia estratégica en servicios integrales
+                    de aseo.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+573121234570"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >+57 312-123-4570</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-envelope"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:palmas@empresaaseo.com"
+                        style="
+                          color: #27753f;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#5ec576';"
+                        onmouseout="this.style.color='#27753f';"
+                        >palmas@empresaaseo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-clock"
+                        style="
+                          color: #5ec576;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="../municipios/palmas.html"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #27753f;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
                 </div>
               </div>
             </div>
 
-            <!-- Mapa de Cobertura -->
-            <section id="mapa" class="coverage-section">
-              <h2><i class="fas fa-globe"></i> Mapa de Cobertura</h2>
-              <div class="map-container-large">
-                <img
-                  src="https://via.placeholder.com/1200x600/4CAF50/FFFFFF?text=Mapa+de+Cobertura+regional"
-                  alt="Mapa de Cobertura"
-                />
-                <div class="map-legend">
-                  <div class="legend-item">
-                    <span
-                      class="legend-color"
-                      style="background-color: #4caf50"
-                    ></span>
-                    <span>Cobertura Total</span>
-                  </div>
-                  <div class="legend-item">
-                    <span
-                      class="legend-color"
-                      style="background-color: #8bc34a"
-                    ></span>
-                    <span>Cobertura Parcial</span>
-                  </div>
-                  <div class="legend-item">
-                    <span
-                      class="legend-color"
-                      style="background-color: #ffc107"
-                    ></span>
-                    <span>En Expansión</span>
-                  </div>
-                </div>
+            <!-- Servicios por Municipio -->
+            <section
+              style="
+                margin-top: 60px;
+                padding-top: 50px;
+                border-top: 2px solid #e8f5e9;
+              "
+            >
+              <div style="text-align: center; margin-bottom: 45px">
+                <h2
+                  style="
+                    color: #27753f;
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                    font-weight: 800;
+                    letter-spacing: -0.5px;
+                  "
+                >
+                  Servicios por Municipio
+                </h2>
+                <p
+                  style="
+                    color: #64748b;
+                    font-size: 1rem;
+                    max-width: 600px;
+                    margin: 0 auto;
+                  "
+                >
+                  Soluciones integrales de aseo adaptadas a cada localidad
+                </p>
               </div>
-            </section>
-
-            <!-- Municipios Atendidos -->
-            <section id="municipios" class="coverage-section">
-              <h2><i class="fas fa-building"></i> Municipios Atendidos</h2>
-              <div class="municipalities-grid">
-                <div class="municipality-card featured">
-                  <div class="municipality-header">
-                    <h3>Ciudad Principal</h3>
-                    <span class="coverage-badge total">Cobertura Total</span>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 30px;
+                "
+              >
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 1px solid #d1e7d4;
+                    border-radius: 12px;
+                    padding: 35px;
+                    text-align: center;
+                    box-shadow: 0 2px 8px rgba(39, 117, 63, 0.06);
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.boxShadow='0 6px 16px rgba(39, 117, 63, 0.12)'; this.style.transform='translateY(-3px)';"
+                  onmouseout="this.style.boxShadow='0 2px 8px rgba(39, 117, 63, 0.06)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      background: linear-gradient(135deg, #27753f, #5ec576);
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 20px;
+                      box-shadow: 0 4px 12px rgba(39, 117, 63, 0.2);
+                    "
+                  >
+                    <i
+                      class="fas fa-trash-alt"
+                      style="font-size: 1.8rem; color: white"
+                    ></i>
                   </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>245,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>98.5% urbana</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>85% rural</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Zona urbana y 12 corregimientos rurales con servicios
-                    completos de recolección, barrido y aprovechamiento.
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 12px;
+                      font-size: 1.25rem;
+                      font-weight: 700;
+                      letter-spacing: -0.2px;
+                    "
+                  >
+                    Recolección de Residuos
+                  </h3>
+                  <p
+                    style="color: #64748b; line-height: 1.7; font-size: 0.95rem"
+                  >
+                    Servicios de recolección domiciliaria con cobertura en los 4
+                    municipios operados.
                   </p>
                 </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>Municipio Norte</h3>
-                    <span class="coverage-badge total">Cobertura Total</span>
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>45,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>96% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Cabecera municipio y 5 veredas. Recolección 3 veces por
-                    semana.
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 2px solid #e8f5e9;
+                    border-radius: 16px;
+                    padding: 30px;
+                    text-align: center;
+                  "
+                >
+                  <i
+                    class="fas fa-broom"
+                    style="
+                      font-size: 2.8rem;
+                      color: #27753f;
+                      margin-bottom: 15px;
+                      display: block;
+                    "
+                  ></i>
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 15px;
+                      font-size: 1.3rem;
+                    "
+                  >
+                    Barrido y Limpieza
+                  </h3>
+                  <p style="color: #64748b; line-height: 1.6">
+                    Limpieza de espacios públicos y barrido de calles en zonas
+                    urbanas.
                   </p>
                 </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>Municipio Sur</h3>
-                    <span class="coverage-badge total">Cobertura Total</span>
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>38,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>94% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Zona urbana consolidada con programa de reciclaje activo.
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 2px solid #e8f5e9;
+                    border-radius: 16px;
+                    padding: 30px;
+                    text-align: center;
+                  "
+                >
+                  <i
+                    class="fas fa-leaf"
+                    style="
+                      font-size: 2.8rem;
+                      color: #27753f;
+                      margin-bottom: 15px;
+                      display: block;
+                    "
+                  ></i>
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 15px;
+                      font-size: 1.3rem;
+                    "
+                  >
+                    Aprovechamiento
+                  </h3>
+                  <p style="color: #64748b; line-height: 1.6">
+                    Programa de aprovechamiento y reciclaje para reducir
+                    residuos.
                   </p>
                 </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>Municipio Oriental</h3>
-                    <span class="coverage-badge partial"
-                      >Cobertura Parcial</span
-                    >
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>28,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>92% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Casco urbano con servicios completos, rural en proceso de
-                    expansión.
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 2px solid #e8f5e9;
+                    border-radius: 16px;
+                    padding: 30px;
+                    text-align: center;
+                  "
+                >
+                  <i
+                    class="fas fa-plus-circle"
+                    style="
+                      font-size: 2.8rem;
+                      color: #27753f;
+                      margin-bottom: 15px;
+                      display: block;
+                    "
+                  ></i>
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 15px;
+                      font-size: 1.3rem;
+                    "
+                  >
+                    Servicios Especiales
+                  </h3>
+                  <p style="color: #64748b; line-height: 1.6">
+                    Servicios especiales según necesidades del sector comercial.
                   </p>
-                </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>Municipio Occidental</h3>
-                    <span class="coverage-badge total">Cobertura Total</span>
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>32,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>95% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Servicio completo con énfasis en aprovechamiento de
-                    orgánicos.
-                  </p>
-                </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>Villa Centro</h3>
-                    <span class="coverage-badge total">Cobertura Total</span>
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>22,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>89% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Municipio turístico con programa especial de limpieza.
-                  </p>
-                </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>Pueblo Verde</h3>
-                    <span class="coverage-badge expansion">En Expansión</span>
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>18,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>85% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Servicio urbano establecido, expansión rural en progreso.
-                  </p>
-                </div>
-
-                <div class="municipality-card">
-                  <div class="municipality-header">
-                    <h3>San Pedro</h3>
-                    <span class="coverage-badge total">Cobertura Total</span>
-                  </div>
-                  <div class="municipality-stats">
-                    <div class="stat-item">
-                      <i class="fas fa-users"></i>
-                      <span>15,000 habitantes</span>
-                    </div>
-                    <div class="stat-item">
-                      <i class="fas fa-percentage"></i>
-                      <span>91% urbana</span>
-                    </div>
-                  </div>
-                  <p class="municipality-description">
-                    Municipio agrícola con gestión especial de residuos
-                    orgánicos.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <!-- Oficinas regionales -->
-            <section id="oficinas" class="coverage-section">
-              <h2><i class="fas fa-building"></i> Oficinas Regionales</h2>
-              <div class="regional-offices">
-                <div class="office-regional">
-                  <div class="office-regional-header">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                      <h3>Oficina Principal</h3>
-                      <p class="office-location">Ciudad Principal</p>
-                    </div>
-                  </div>
-                  <div class="office-regional-content">
-                    <div class="office-detail">
-                      <i class="fas fa-map"></i>
-                      <div>
-                        <strong>Dirección:</strong>
-                        <p>Calle 123 #45-67, Centro Administrativo</p>
-                      </div>
-                    </div>
-                    <div class="office-detail">
-                      <i class="fas fa-phone"></i>
-                      <div>
-                        <strong>Teléfono:</strong>
-                        <p>01-8000-123456 / (601) 234-5678</p>
-                      </div>
-                    </div>
-                    <div class="office-detail">
-                      <i class="fas fa-clock"></i>
-                      <div>
-                        <strong>Horario:</strong>
-                        <p>
-                          Lun - Vie: 8:00 AM - 5:00 PM | Sáb: 8:00 AM - 12:00 PM
-                        </p>
-                      </div>
-                    </div>
-                    <div class="office-services">
-                      <span class="service-tag">Atención al Usuario</span>
-                      <span class="service-tag">PQR</span>
-                      <span class="service-tag">Facturación</span>
-                      <span class="service-tag">Pagos</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="office-regional">
-                  <div class="office-regional-header">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                      <h3>Oficina Regional Norte</h3>
-                      <p class="office-location">Municipio Norte</p>
-                    </div>
-                  </div>
-                  <div class="office-regional-content">
-                    <div class="office-detail">
-                      <i class="fas fa-map"></i>
-                      <div>
-                        <strong>Dirección:</strong>
-                        <p>Carrera 10 #15-23, Centro</p>
-                      </div>
-                    </div>
-                    <div class="office-detail">
-                      <i class="fas fa-phone"></i>
-                      <div>
-                        <strong>Teléfono:</strong>
-                        <p>(601) 345-6789</p>
-                      </div>
-                    </div>
-                    <div class="office-detail">
-                      <i class="fas fa-clock"></i>
-                      <div>
-                        <strong>Horario:</strong>
-                        <p>Lun - Vie: 8:00 AM - 4:00 PM</p>
-                      </div>
-                    </div>
-                    <div class="office-services">
-                      <span class="service-tag">Atención al Usuario</span>
-                      <span class="service-tag">PQR</span>
-                      <span class="service-tag">Pagos</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="office-regional">
-                  <div class="office-regional-header">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                      <h3>Oficina Regional Sur</h3>
-                      <p class="office-location">Municipio Sur</p>
-                    </div>
-                  </div>
-                  <div class="office-regional-content">
-                    <div class="office-detail">
-                      <i class="fas fa-map"></i>
-                      <div>
-                        <strong>Dirección:</strong>
-                        <p>Avenida Principal #28-45</p>
-                      </div>
-                    </div>
-                    <div class="office-detail">
-                      <i class="fas fa-phone"></i>
-                      <div>
-                        <strong>Teléfono:</strong>
-                        <p>(601) 456-7890</p>
-                      </div>
-                    </div>
-                    <div class="office-detail">
-                      <i class="fas fa-clock"></i>
-                      <div>
-                        <strong>Horario:</strong>
-                        <p>Lun - Vie: 8:00 AM - 4:00 PM</p>
-                      </div>
-                    </div>
-                    <div class="office-services">
-                      <span class="service-tag">Atención al Usuario</span>
-                      <span class="service-tag">PQR</span>
-                      <span class="service-tag">Pagos</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Centros Operativos -->
-            <section id="centros" class="coverage-section">
-              <h2><i class="fas fa-warehouse"></i> Centros Operativos</h2>
-              <div class="operative-centers">
-                <div class="center-card">
-                  <i class="fas fa-truck"></i>
-                  <h3>Centro de Operaciones Principal</h3>
-                  <p>
-                    <strong>Ubicación:</strong> Zona Industrial, Ciudad
-                    Principal
-                  </p>
-                  <p><strong>Flota:</strong> 45 vehículos recolectores</p>
-                  <p><strong>Personal:</strong> 280 operarios</p>
-                  <ul class="center-services">
-                    <li><i class="fas fa-check"></i> Parque automotor</li>
-                    <li>
-                      <i class="fas fa-check"></i> Mantenimiento de equipos
-                    </li>
-                    <li>
-                      <i class="fas fa-check"></i> Centro de control y monitoreo
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="center-card">
-                  <i class="fas fa-recycle"></i>
-                  <h3>Estación de Aprovechamiento</h3>
-                  <p><strong>Ubicación:</strong> Vía regional Km 8</p>
-                  <p><strong>Capacidad:</strong> 500 ton/mes</p>
-                  <p><strong>Personal:</strong> 45 operarios</p>
-                  <ul class="center-services">
-                    <li>
-                      <i class="fas fa-check"></i> Clasificación de materiales
-                    </li>
-                    <li><i class="fas fa-check"></i> Compostaje</li>
-                    <li><i class="fas fa-check"></i> Comercialización</li>
-                  </ul>
-                </div>
-
-                <div class="center-card">
-                  <i class="fas fa-dumpster"></i>
-                  <h3>Relleno Sanitario Regional</h3>
-                  <p><strong>Ubicación:</strong> Vereda El Progreso</p>
-                  <p><strong>Vida útil:</strong> 15 años (hasta 2039)</p>
-                  <p><strong>Capacidad:</strong> 350 ton/día</p>
-                  <ul class="center-services">
-                    <li><i class="fas fa-check"></i> Disposición final</li>
-                    <li>
-                      <i class="fas fa-check"></i> Tratamiento de lixiviados
-                    </li>
-                    <li>
-                      <i class="fas fa-check"></i> Aprovechamiento de biogás
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <!-- Expansión y Proyectos -->
-            <section id="expansion" class="coverage-section">
-              <h2><i class="fas fa-chart-line"></i> Planes de Expansión</h2>
-              <div class="expansion-timeline">
-                <div class="timeline-item">
-                  <div class="timeline-marker current">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <div class="timeline-content">
-                    <h3>2024-2025</h3>
-                    <h4>Consolidación Actual</h4>
-                    <p>
-                      Mejora de cobertura rural en 4 municipios y optimización
-                      de rutas urbanas con tecnología GPS.
-                    </p>
-                    <span class="timeline-status completed">Completado</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="timeline-marker active">
-                    <i class="fas fa-spinner"></i>
-                  </div>
-                  <div class="timeline-content">
-                    <h3>2026</h3>
-                    <h4>Expansión Regional</h4>
-                    <p>
-                      Incorporación de 3 nuevos municipios vecinos y ampliación
-                      de la estación de aprovechamiento.
-                    </p>
-                    <span class="timeline-status in-progress">En Progreso</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="timeline-marker">
-                    <i class="fas fa-clock"></i>
-                  </div>
-                  <div class="timeline-content">
-                    <h3>2027-2028</h3>
-                    <h4>Modernización Tecnológica</h4>
-                    <p>
-                      Implementación de contenedores inteligentes y sistema de
-                      monitoreo en tiempo real en toda el área de cobertura.
-                    </p>
-                    <span class="timeline-status planned">Planeado</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="timeline-marker">
-                    <i class="fas fa-flag"></i>
-                  </div>
-                  <div class="timeline-content">
-                    <h3>2029-2030</h3>
-                    <h4>Economía Circular</h4>
-                    <p>
-                      Meta de 35% de aprovechamiento de residuos y construcción
-                      de planta de tratamiento de orgánicos.
-                    </p>
-                    <span class="timeline-status planned">Planeado</span>
-                  </div>
                 </div>
               </div>
             </section>
@@ -667,85 +972,42 @@
           <!-- Sidebar -->
           <aside class="sidebar">
             <div class="sidebar-widget">
-              <h3>Navegación Rápida</h3>
+              <h3>Municipios</h3>
               <ul class="sidebar-links">
                 <li>
-                  <a href="#mapa"
-                    ><i class="fas fa-chevron-right"></i> Mapa de Cobertura</a
+                  <a href="../municipios/socorro.html"
+                    ><i class="fas fa-chevron-right"></i> Socorro</a
                   >
                 </li>
                 <li>
-                  <a href="#municipios"
-                    ><i class="fas fa-chevron-right"></i> Municipios</a
+                  <a href="../municipios/sangil.html"
+                    ><i class="fas fa-chevron-right"></i> San Gil</a
                   >
                 </li>
                 <li>
-                  <a href="#oficinas"
-                    ><i class="fas fa-chevron-right"></i> Oficinas Regionales</a
+                  <a href="../municipios/oiba.html"
+                    ><i class="fas fa-chevron-right"></i> Oiba</a
                   >
                 </li>
                 <li>
-                  <a href="#centros"
-                    ><i class="fas fa-chevron-right"></i> Centros Operativos</a
-                  >
-                </li>
-                <li>
-                  <a href="#expansion"
-                    ><i class="fas fa-chevron-right"></i> Expansión</a
+                  <a href="../municipios/palmas.html"
+                    ><i class="fas fa-chevron-right"></i> Palmas</a
                   >
                 </li>
               </ul>
             </div>
 
-            <div class="sidebar-widget info-widget">
-              <h3>
-                <i class="fas fa-info-circle"></i> ¿Tu Zona no está Cubierta?
-              </h3>
-              <p class="small-text">
-                Si tu municipio o vereda no cuenta aún con nuestro servicio,
-                contáctanos para información sobre planes de expansión.
+            <div class="sidebar-widget cta-widget">
+              <h3>¿Necesitas Ayuda?</h3>
+              <p>
+                Contáctanos para obtener más información sobre nuestros
+                servicios
               </p>
               <a
                 href="../usuario/contacto.html"
-                class="btn btn-secondary btn-block btn-sm"
+                class="btn btn-secondary btn-block"
+                >Contáctanos</a
               >
-                Contáctanos
-              </a>
-            </div>
-
-            <div class="sidebar-widget">
-              <h3>Cobertura por Servicio</h3>
-              <div class="coverage-by-service">
-                <div class="service-coverage-item">
-                  <span class="service-name">Recolección</span>
-                  <div class="progress-bar">
-                    <div class="progress-fill" style="width: 96%"></div>
-                  </div>
-                  <span class="percentage">96%</span>
-                </div>
-                <div class="service-coverage-item">
-                  <span class="service-name">Barrido</span>
-                  <div class="progress-bar">
-                    <div class="progress-fill" style="width: 92%"></div>
-                  </div>
-                  <span class="percentage">92%</span>
-                </div>
-                <div class="service-coverage-item">
-                  <span class="service-name">Aprovechamiento</span>
-                  <div class="progress-bar">
-                    <div class="progress-fill" style="width: 78%"></div>
-                  </div>
-                  <span class="percentage">78%</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="sidebar-widget cta-widget">
-              <h3>Descarga Nuestro Mapa</h3>
-              <p>Mapa detallado con todas las zonas de cobertura</p>
-              <a href="#" class="btn btn-secondary btn-block" download>
-                <i class="fas fa-download"></i> Descargar PDF
-              </a>
             </div>
           </aside>
         </div>
@@ -824,5 +1086,64 @@
     </button>
 
     <script src="../../assets/js/script.js"></script>
+    <script>
+      // Script para manejar la visualización de municipios específicos
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const municipio = urlParams.get("municipio");
+
+        if (municipio) {
+          const municipioMap = {
+            socorro: {
+              nombre: "Socorro",
+              cobertura: "Total",
+              poblacion: "25,000",
+              area: "150 km²",
+              descripcion:
+                "En Socorro tenemos cobertura total con servicio de recolección de residuos, barrido y limpieza en todas sus áreas urbanas.",
+            },
+            sangil: {
+              nombre: "San Gil",
+              cobertura: "Total",
+              poblacion: "45,000",
+              area: "200 km²",
+              descripcion:
+                "San Gil es uno de nuestros principales centros de operación con cobertura completa en zona urbana y suburbana.",
+            },
+            oiba: {
+              nombre: "Oiba",
+              cobertura: "Total",
+              poblacion: "12,000",
+              area: "100 km²",
+              descripcion:
+                "En Oiba operamos con cobertura total brindando servicios de calidad a toda la comunidad.",
+            },
+            palmas: {
+              nombre: "Palmas",
+              cobertura: "Parcial",
+              poblacion: "8,000",
+              area: "80 km²",
+              descripcion:
+                "En Palmas contamos con cobertura en las zonas urbanas principales con planes de expansión.",
+            },
+          };
+
+          if (municipioMap[municipio]) {
+            const muni = municipioMap[municipio];
+            // Actualizar el título de la página
+            document.title =
+              muni.nombre + " | Dónde Operamos | Empresa de Aseo E.S.P.";
+
+            // Scroll a la sección de municipios
+            const municipiosSection = document.getElementById("municipios");
+            if (municipiosSection) {
+              setTimeout(() => {
+                municipiosSection.scrollIntoView({ behavior: "smooth" });
+              }, 300);
+            }
+          }
+        }
+      });
+    </script>
   </body>
 </html>
