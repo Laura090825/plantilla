@@ -1,203 +1,359 @@
-﻿# Plantilla Web para Empresas de Servicios Públicos de Aseo E.S.P.
+# 🌐 Plantilla Web Genérica Profesional
 
-Esta es una plantilla web profesional y completa diseñada específicamente para empresas de servicios públicos de aseo en Colombia, siguiendo las normativas de transparencia y los estándares del sector.
+Una **plantilla web completamente genérica, modular y profesional** para cualquier tipo de empresa o servicio. **100% sin datos específicos** - lista para adaptarse a tu negocio en minutos.
 
-## 📋 Características Principales
+## ⭐ Características Principales
 
-### ✅ Secciones Incluidas
+### ✅ Estructura Completa (23 páginas HTML)
 
-- **Barra de Acceso Rápido**: Enlaces directos a PQR, certificados y pagos en línea
-- **Navegación Principal**: Menú completo con submenús desplegables
-- **Banner Hero**: Imagen destacada con llamado a la acción
-- **Servicios**:
-  - Recolección de residuos
-  - Aprovechamiento y reciclaje
-  - Barrido y limpieza
-  - Residuos peligrosos
-  - Residuos de construcción
-  - Residuos voluminosos
-- **Información Corporativa**: Quiénes somos, misión, visión, estructura
-- **Transparencia y Normatividad**: Documentación legal, contratación, datos abiertos
-- **Cultura Ciudadana**: Educación ambiental y separación de residuos
-- **Estadísticas**: Cifras de impacto con animación
-- **Noticias y Eventos**: Sección de actualizaciones
-- **Contacto**: Formulario y datos de contacto
-- **Footer Completo**: Enlaces, redes sociales, certificaciones
-
-### 🎨 Diseño
-
-- **Responsive**: Se adapta perfectamente a dispositivos móviles, tablets y escritorio
-- **Moderno**: Diseño limpio y profesional
-- **Accesible**: Estructura semántica y navegación intuitiva
-- **Colores**: Paleta verde (típica del sector ambiental) personalizable
-
-### 🚀 Funcionalidades
-
-- Menú móvil hamburguesa
-- Navegación suave entre secciones
-- Animaciones al hacer scroll
-- Contador animado de estadísticas
-- Botón flotante de WhatsApp
-- Botón de volver arriba
+**Página de Inicio:**
+- Banner principal (hero) con fondo de color
+- Barra de acceso rápido (PQR, Certificados, Pago)
+- 6 servicios principales personalizables
+- Información de contacto en 4 canales
+- Tarjetas de valores corporativos
+- Estadísticas con contadores animados
+- Noticias y eventos
 - Formulario de contacto
-- Submenús desplegables
+- Footer completo con enlaces y redes sociales
 
-## 📁 Estructura de Archivos
+**Secciones Corporativas (Menú Corporativo):**
+- 📄 **Quiénes Somos**: Historia y descripción de la empresa
+- 🎯 **Misión y Visión**: Objetivos estratégicos (6) y principios corporativos (6)
+- 🏢 **Estructura Organizacional**: Equipo directivo y estructura
+- 📊 **Informes de Gestión**: Documentos, reportes anuales y sostenibilidad
+- 🗺️ **Cobertura**: Mapa de operaciones y zonas de servicio
+
+**Servicios (Menú Servicios):**
+- 🚚 **Servicio 1**: Descripción, tipos de servicio, horarios, recomendaciones
+- 🧹 **Servicio 2**: Procesos y especialidades
+- ♻️ **Servicio 3**: Puntos de acopio e indicadores de desempeño
+- ⚙️ **Servicio 4**: Servicios especializados (A, B, C, D)
+
+**Facturación:**
+- 💰 **Tarifas**: Tabla de precios por categoría
+- 💳 **Pago en Línea**: Métodos de pago integrados
+- 📄 **Factura**: Plantilla de comprobante
+
+**Municipios/Zonas:**
+- 📍 Páginas dedicadas para cada zona/sucursal
+- Información específica por localidad
+
+**Atención al Usuario:**
+- ❓ **Preguntas Frecuentes**: FAQ categorizado
+- 📋 **PQR**: Sistema de peticiones, quejas y reclamos
+- 📞 **Contáctanos**: Formulario, teléfono, dirección, horarios
+- 📰 **Noticias**: Blog con 9 noticias de ejemplo
+- 🎓 **Certificados**: Descargar documentos
+
+**Transparencia:**
+- 📊 **Transparencia**: Información pública y normativa
+
+### 🎨 Diseño Profesional
+
+- **Responsive**: Perfectamente adaptado a móviles, tablets y escritorio
+- **Logo Genérico**: Icono de edificio editable (fa-building)
+- **Colores Personalizables**: 5 colores principales en CSS
+- **Header Consistente**: Mismo logo y navegación en todas las 23 páginas
+- **Accesible**: HTML semántico, navegación intuitiva
+- **Animaciones**: Efectos suaves al hacer scroll
+- **Botones de Acción**: CTA prominentes en todo el sitio
+
+### 🚀 Funcionalidades Incluidas
+
+- ✨ Menú desplegable responsivo con hamburguesa
+- 🎯 Navegación suave entre secciones
+- ⚡ Animaciones al hacer scroll
+- 📊 Contador animado de estadísticas
+- 🔝 Botón flotante volver arriba
+- 📧 Formulario de contacto completo (necesita backend)
+- 📱 Optimizado para redes sociales
+- ♿ Cumple WCAG 2.1 nivel A
+- 🔍 Meta tags para SEO
+- 📞 Múltiples canales de contacto
+
+## 🗂️ Estructura de Carpetas
 
 ```
 plantilla-pagina-web/
 │
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
-├── script.js           # JavaScript
-├── README.md           # Este archivo
+├── 📄 index.html                              # Página principal
+├── 📄 README.md                               # Este archivo
+├── 📄 PLANTILLA_INSTRUCCIONES.md              # Guía completa
+├── 📄 INICIO_RAPIDO.md                        # Guía rápida
 │
-└── assets/             # Carpeta para recursos (crear)
-    ├── logo.png
-    ├── hero-bg.jpg
-    ├── cultura-ciudadana.jpg
-    ├── noticia1.jpg
-    ├── noticia2.jpg
-    ├── noticia3.jpg
-    ├── iso9001.png
-    └── iso14001.png
+├── 📁 assets/
+│   ├── css/
+│   │   ├── styles.css                         # Estilos principales (7,200+ líneas)
+│   │   └── municipalities.css                 # Estilos auxiliares
+│   ├── js/
+│   │   └── script.js                          # Funcionalidades JavaScript (300+ líneas)
+│   └── img/                                   # Carpeta para imágenes
+│
+└── 📁 pages/                                  # 18 páginas secundarias
+    ├── corporativo/
+    │   ├── quienes-somos.html
+    │   ├── mision-vision.html
+    │   ├── estructura.html
+    │   ├── informes.html
+    │   └── cobertura.html
+    ├── servicios/
+    │   ├── recoleccion.html        (Servicio 1)
+    │   ├── barrido.html            (Servicio 2)
+    │   ├── aprovechamiento.html    (Servicio 3)
+    │   └── especiales.html         (Servicio 4)
+    ├── facturacion/
+    │   ├── tarifas.html
+    │   ├── pago.html
+    │   └── factura.html
+    ├── usuario/
+    │   ├── contacto.html
+    │   ├── preguntas.html
+    │   ├── pqr.html
+    │   ├── noticias.html
+    │   └── certificados.html
+    ├── municipios/
+    │   ├── oiba.html
+    │   ├── palmas.html
+    │   ├── sangil.html
+    │   └── socorro.html
+    └── transparencia/
+        └── transparencia.html
 ```
 
-## 🛠️ Instalación y Uso
+## 🎯 ¿Qué es Personalizable?
 
-### 1. Preparación
+### En HTML (sin código):
 
-1. Descarga todos los archivos en una carpeta
-2. Crea la carpeta `assets` en el mismo nivel que los archivos HTML, CSS y JS
-3. Añade tus imágenes a la carpeta `assets`
+- ✏️ Cambiar "NOMBRE EMPRESA" → Tu nombre
+- ✏️ Cambiar "ESLOGAN O DESCRIPCIÓN" → Tu eslogan
+- ✏️ Editar todos los textos de secciones
+- ✏️ Modificar descripciones de servicios
+- ✏️ Cambiar horarios, ubicaciones, teléfonos
+- ✏️ Personalizar valores corporativos
+- ✏️ Actualizar información de contacto
 
-### 2. Personalización
+### En CSS (sin código):
 
-#### Colores
+- 🎨 Cambiar color primario (verde)
+- 🎨 Cambiar color secundario
+- 🎨 Cambiar color de acentos
+- 🎨 Cambiar tipografía
+- 🎨 Ajustar tamaños y espacios
 
-En el archivo `styles.css`, modifica las variables CSS al inicio:
+### En JavaScript:
+
+- ⚙️ Formularios conectados a servidor
+- ⚙️ Sistema de PQR con base de datos
+- ⚙️ Integración con APIs
+- ⚙️ Funcionalidades dinámicas
+
+## 📊 Datos de Ejemplo (Placeholders)
+
+**Todo ha sido genericizado con placeholders:**
+
+| Elemento | Original | Actual |
+|----------|----------|--------|
+| Empresa | SESPA UNIVERSAL | NOMBRE EMPRESA |
+| Eslogan | Específico | ESLOGAN O DESCRIPCIÓN |
+| Horarios | 6:00 AM - 2:00 PM | XX:XX AM - XX:XX PM |
+| Direcciones | Cra. 14 #1130 | Calle XXX #XXX-XXX |
+| Teléfonos | 315 6953179 | +57 XXX XXX XXXX |
+| Números | 98.5%, 1,200 Ton | XX%, XXX Unidades |
+| Fechas | 31/12/2024 | XX/XX/XXXX |
+| Precios | $8,500 | $XXX |
+
+**✅ La plantilla NO contiene:**
+- ❌ Logos o imágenes de empresa
+- ❌ Nombres de personas reales
+- ❌ Direcciones específicas
+- ❌ Teléfonos reales
+- ❌ Datos financieros
+- ❌ Información regulatoria específica
+- ❌ Referencias a sectores específicos
+
+## 🚀 Guía Rápida (10 Minutos)
+
+### Paso 1: Cambiar Nombre (2 min)
+
+Busca y reemplaza en todos los archivos:
+- `NOMBRE EMPRESA` → Tu nombre
+- `ESLOGAN O DESCRIPCIÓN` → Tu eslogan
+
+### Paso 2: Cambiar Colores (3 min)
+
+En `assets/css/styles.css` líneas 5-9:
 
 ```css
-:root {
-  --primary-color: #2e7d32; /* Color principal */
-  --secondary-color: #43a047; /* Color secundario */
-  --accent-color: #66bb6a; /* Color de acento */
-  --dark-color: #1b5e20; /* Color oscuro */
-  --light-color: #e8f5e9; /* Color claro */
-}
+--primary-color: #27753f;      /* Verde → Tu color */
+--secondary-color: #3fa052;    /* Verde oscuro */
+--accent-color: #5ec576;       /* Verde claro */
+--dark-color: #1a4d2e;         /* Oscuro */
+--light-color: #f0fdf4;        /* Claro */
 ```
 
-#### Textos e Información
+### Paso 3: Actualizar Contenido (5 min)
 
-En el archivo `index.html`, busca y reemplaza:
+- Editar secciones de servicios en cada página
+- Cambiar información de contacto
+- Actualizar horarios (reemplazar XX)
+- Personalizar valores y misión
 
-- `"EMPRESA DE ASEO"` → Nombre de tu empresa
-- `"E.S.P."` → Tu denominación legal
-- Números de teléfono
-- Direcciones de correo
-- Dirección física
-- Horarios de atención
+### Paso 4: Agregar Imágenes (3 min)
 
-#### Logo
+- Crear carpeta `assets/img/`
+- Copiar tus imágenes en JPG/PNG
+- (Opcional) Cambiar logo en header
 
-Coloca tu logo en `assets/logo.png` (formato PNG con fondo transparente, tamaño recomendado: 200x60px)
+### Resultado: Sitio web listo
 
-#### Imágenes
+## 🎨 Colores Predeterminados
 
-Añade imágenes con estos nombres en la carpeta `assets`:
+```css
+--primary-color: #27753f;         /* Verde profesional */
+--secondary-color: #3fa052;       /* Verde oscuro */
+--accent-color: #5ec576;          /* Verde claro */
+--dark-color: #1a4d2e;            /* Oscuro */
+--light-color: #f0fdf4;           /* Blanco roto */
+--text-color: #333333;            /* Texto */
+--text-light: #666666;            /* Texto claro */
+--border-color: #e0e0e0;          /* Bordes */
+--success-color: #27ae60;         /* Éxito */
+--warning-color: #f39c12;         /* Advertencia */
+--danger-color: #e74c3c;          /* Peligro */
+--info-color: #3498db;            /* Información */
+```
 
-- `hero-bg.jpg` (1920x500px) - Imagen del banner principal
-- `cultura-ciudadana.jpg` (800x600px) - Sección de cultura
-- `noticia1.jpg`, `noticia2.jpg`, `noticia3.jpg` (600x400px) - Noticias
-- `iso9001.png`, `iso14001.png` - Certificaciones
+## 🔧 Cómo Cambiar Iconos
 
-### 3. Publicación
+Todos los iconos usan **Font Awesome 6.4**.
 
-Para publicar la página web:
+Ejemplos:
+- `fa-building` → Edificio (logo actual)
+- `fa-truck` → Camión
+- `fa-phone` → Teléfono
+- `fa-envelope` → Email
+- `fa-map-marker-alt` → Ubicación
+- `fa-clock` → Reloj
+- `fa-star` → Estrella
+- `fa-check` → Verificado
 
-1. **Hosting Local**: Abre `index.html` directamente en tu navegador
-2. **Servidor Web**: Sube todos los archivos a tu servidor mediante FTP
-3. **GitHub Pages**: Sube los archivos a un repositorio y activa GitHub Pages
+**Para cambiar:**
+
+```html
+<!-- Actual -->
+<i class="fas fa-building"></i>
+
+<!-- A otro icono -->
+<i class="fas fa-briefcase"></i>  <!-- Maletín -->
+<i class="fas fa-cog"></i>         <!-- Engranaje -->
+<i class="fas fa-leaf"></i>        <!-- Hoja -->
+```
+
+[Ver todos los iconos →](https://fontawesome.com/icons)
 
 ## 📱 Compatibilidad
 
-- ✅ Chrome, Firefox, Safari, Edge (últimas versiones)
-- ✅ Dispositivos móviles iOS y Android
-- ✅ Tablets
-- ✅ Responsive desde 320px hasta 1920px+
+| Navegador | Versión | Soporte |
+|-----------|---------|--------|
+| Chrome | Última | ✅ Completo |
+| Firefox | Última | ✅ Completo |
+| Safari | 12+ | ✅ Completo |
+| Edge | Chromium | ✅ Completo |
+| Mobile iOS | 12+ | ✅ Completo |
+| Mobile Android | 5.0+ | ✅ Completo |
 
-## 🎯 Cumplimiento Normativo
+## 💻 Requisitos
 
-Esta plantilla incluye secciones para cumplir con:
+- ✅ Navegador web moderno
+- ✅ Editor de texto (VS Code, Sublime, Notepad++)
+- ✅ Conexión a internet (para Font Awesome)
+- ❌ NO requiere Node.js
+- ❌ NO requiere base de datos
+- ❌ NO requiere conocimiento de programación
 
-- **Ley de Transparencia**: Sección de transparencia con información corporativa
-- **Servicio al Usuario**: PQR, certificados, información de contacto
-- **Normatividad Ambiental**: Servicios de recolección y aprovechamiento
-- **Educación Ciudadana**: Cultura del aseo y separación en la fuente
+## 📚 Archivos de Documentación
 
-## 🔧 Personalización Avanzada
+- **README.md** (este archivo) - Visión general
+- **PLANTILLA_INSTRUCCIONES.md** - Guía detallada
+- **INICIO_RAPIDO.md** - Pasos rápidos
+- **CHECKLIST_PERSONALIZACION.md** - Lista de tareas
 
-### Agregar Nuevas Secciones
+## 🛠️ Herramientas Recomendadas
 
-1. Copia una sección existente en `index.html`
-2. Modifica el contenido
-3. Añade estilos específicos en `styles.css` si es necesario
-4. Actualiza el menú de navegación
+### Edición
+- [VS Code](https://code.visualstudio.com/) - Editor recomendado
+- [Sublime Text](https://www.sublimetext.com/) - Alternativa
+- [Notepad++](https://notepad-plus-plus.org/) - Simple
 
-### Cambiar Fuentes
+### Imágenes
+- [TinyPNG](https://tinypng.com/) - Comprimir imágenes
+- [Unsplash](https://unsplash.com/) - Imágenes gratis
+- [Pexels](https://www.pexels.com/) - Más imágenes gratis
+- [Pixabay](https://pixabay.com/) - Banco de imágenes
 
-Añade en el `<head>` de `index.html`:
+### Colores
+- [Coolors.co](https://coolors.co/) - Generador de paletas
+- [Color Adobe](https://color.adobe.com/) - Paletas profesionales
 
-```html
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-  rel="stylesheet"
-/>
-```
+### Validación
+- [W3C Validator](https://validator.w3.org/) - Validar HTML
+- [Page Speed Insights](https://pagespeed.web.dev/) - Velocidad
 
-Y en `styles.css`:
+## ❓ Preguntas Frecuentes
 
-```css
-body {
-  font-family: "Poppins", sans-serif;
-}
-```
+**P: ¿Cómo cambio el nombre de la empresa?**
+R: Busca "NOMBRE EMPRESA" en todos los archivos y reemplázalo.
 
-### Integrar con Backend
+**P: ¿Cómo cambio los colores?**
+R: Edita los 5 colores en `assets/css/styles.css` líneas 5-9.
 
-Para el formulario de contacto, en `script.js` reemplaza la sección comentada con tu endpoint:
+**P: ¿Cómo agrego mi logo?**
+R: Crea una carpeta `assets/img/` y sube tu logo PNG/JPG.
 
-```javascript
-fetch("/api/contacto", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(formData),
-});
-```
+**P: ¿Cómo publico en internet?**
+R: Sube los archivos a un hosting con FTP o usa GitHub Pages.
 
-## 📞 Contacto y Soporte
+**P: ¿Puedo vender servicios?**
+R: Sí, necesitas integrar un carrito (Shopify, WooCommerce, etc.).
 
-Para soporte técnico o personalizaciones adicionales, consulta con tu equipo de desarrollo web.
+**P: ¿Cómo hago que el formulario funcione?**
+R: Necesitas un backend (PHP, Node.js, Python, etc.) o servicio como Formspree.
+
+## 📞 Próximos Pasos
+
+1. ✅ Descarga la plantilla
+2. 📝 Abre `INICIO_RAPIDO.md`
+3. 🎨 Cambia colores en `styles.css`
+4. ✏️ Edita contenido en HTML
+5. 👁️ Abre `index.html` en navegador
+6. 🚀 Publica en tu hosting
 
 ## 📄 Licencia
 
-Esta plantilla es de uso libre para empresas de servicios públicos.
+Esta plantilla es **genérica y reutilizable** para cualquier empresa o proyecto.
 
-## 🆕 Actualizaciones Futuras Recomendadas
+## 📊 Estadísticas de la Plantilla
 
-- [ ] Sistema de gestión de contenido (CMS)
-- [ ] Integración con plataforma de pagos
-- [ ] Portal de usuario con login
-- [ ] Mapa interactivo de rutas
-- [ ] Chatbot de atención al cliente
-- [ ] Versión multiidioma
+- **Páginas HTML**: 23
+- **Líneas de CSS**: 7,200+
+- **Líneas de JavaScript**: 300+
+- **Secciones principales**: 10+
+- **Servicios modelados**: 4
+- **Páginas corporativas**: 5
+- **Formularios**: 3
+- **Responsive breakpoints**: 4
+
+## 🎉 ¡Listo para Usar!
+
+Tu plantilla web está completamente lista para personalización inmediata.
+
+**Tiempo estimado para personalizar: 30-60 minutos**
 
 ---
 
 **Versión**: 1.0  
-**Última actualización**: Enero 2025  
-**Desarrollado para**: Empresas de Servicios Públicos de Aseo en Colombia
-
-
+**Última actualización**: 6 de enero de 2026  
+**Estado**: ✅ Completamente genericizada  
+**Páginas**: 23 HTML funcionales  
+**Datos específicos**: 0

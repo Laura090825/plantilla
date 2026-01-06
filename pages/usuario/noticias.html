@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Noticias y Novedades - Empresa de Servicios Públicos de Aseo"
+      content="Noticias y Novedades - Empresa de Servicios"
     />
-    <title>Noticias | Empresa de Aseo E.S.P.</title>
+    <title>Noticias | Tu Empresa</title>
     <link rel="stylesheet" href="../../assets/css/styles.css" />
     <link
       rel="stylesheet"
@@ -50,14 +50,12 @@
         <div class="header-content">
           <div class="logo">
             <a href="../../index.html">
-              <img
-                src="../../assets/img/logo.png"
-                alt="Logo Empresa"
-                onerror="this.style.display='none'"
-              />
+              <div class="logo-placeholder">
+                <i class="fas fa-building"></i>
+              </div>
               <div class="logo-text">
-                <h1>EMPRESA DE ASEO</h1>
-                <span>E.S.P.</span>
+                <h1>NOMBRE<br />EMPRESA</h1>
+                <span>ESLOGAN O DESCRIPCIÓN</span>
               </div>
             </a>
           </div>
@@ -110,19 +108,38 @@
                       border-top: 1px solid #e0e0e0;
                       margin-top: 8px;
                       padding-top: 8px;
+                      font-weight: 600;
+                      color: var(--primary-color);
                     "
                   >
-                    <a href="../municipios/socorro.html">Socorro</a>
+                    Región 1
                   </li>
-                  <li>
-                    <a href="../municipios/sangil.html">San Gil</a>
+                  <li><a href="#">Zona 1</a></li>
+                  <li><a href="#">Zona 2</a></li>
+                  <li
+                    style="
+                      border-top: 1px solid #e0e0e0;
+                      margin-top: 8px;
+                      padding-top: 8px;
+                      font-weight: 600;
+                      color: var(--primary-color);
+                    "
+                  >
+                    Región 2
                   </li>
-                  <li>
-                    <a href="../municipios/oiba.html">Oiba</a>
+                  <li><a href="#">Zona 3</a></li>
+                  <li
+                    style="
+                      border-top: 1px solid #e0e0e0;
+                      margin-top: 8px;
+                      padding-top: 8px;
+                      font-weight: 600;
+                      color: var(--primary-color);
+                    "
+                  >
+                    Región 3
                   </li>
-                  <li>
-                    <a href="../municipios/palmas.html">Palmas</a>
-                  </li>
+                  <li><a href="#">Zona 4</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -131,22 +148,16 @@
                 ></a>
                 <ul class="submenu">
                   <li>
-                    <a href="../servicios/recoleccion.html"
-                      >Recolección de Residuos</a
-                    >
+                    <a href="../servicios/recoleccion.html">Servicio 1</a>
                   </li>
                   <li>
-                    <a href="../servicios/barrido.html">Barrido y Limpieza</a>
+                    <a href="../servicios/Servicio.html">Servicio 2</a>
                   </li>
                   <li>
-                    <a href="../servicios/aprovechamiento.html"
-                      >Aprovechamiento</a
-                    >
+                    <a href="../servicios/Servicio 3.html">Servicio 3</a>
                   </li>
                   <li>
-                    <a href="../servicios/especiales.html"
-                      >Servicios Especiales</a
-                    >
+                    <a href="../servicios/especiales.html">Servicio 4</a>
                   </li>
                 </ul>
               </li>
@@ -205,10 +216,10 @@
                 >
                 <select id="category-filter">
                   <option value="all">Todas las categorías</option>
-                  <option value="institucional">Institucional</option>
-                  <option value="servicios">Servicios</option>
-                  <option value="ambiental">Ambiental</option>
-                  <option value="comunidad">Comunidad</option>
+                  <option value="categoria1">Categoría 1</option>
+                  <option value="categoria2">Categoría 2</option>
+                  <option value="categoria3">Categoría 3</option>
+                  <option value="categoria4">Categoría 4</option>
                 </select>
               </div>
               <div class="filter-group">
@@ -235,22 +246,13 @@
               </div>
               <div class="news-content">
                 <div class="news-meta">
-                  <span class="category">Institucional</span>
+                  <span class="category">Categoría 1</span>
                   <span class="date"
                     ><i class="fas fa-calendar"></i> 2 Enero 2026</span
                   >
                 </div>
-                <h2>
-                  Empresa de Aseo implementa nueva tecnología para mejorar la
-                  eficiencia en recolección
-                </h2>
-                <p>
-                  Nuestra empresa ha invertido en tecnología de punta para
-                  optimizar las rutas de recolección y mejorar los tiempos de
-                  respuesta. El nuevo sistema GPS y de gestión de flota
-                  permitirá un servicio más eficiente y reduce el impacto
-                  ambiental al minimizar el consumo de combustible.
-                </p>
+                <h2>Noticia Destacada</h2>
+                <p>Descripción breve de la noticia destacada de la empresa.</p>
                 <a href="#" class="btn btn-primary"
                   >Leer más <i class="fas fa-arrow-right"></i
                 ></a>
@@ -261,7 +263,7 @@
             <div class="news-grid">
               <article
                 class="news-card"
-                data-category="ambiental"
+                data-category="categoria1"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -269,7 +271,9 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge ambiental">Ambiental</span>
+                  <span class="news-category-badge categoria1"
+                    >Categoría 1</span
+                  >
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -277,14 +281,8 @@
                       ><i class="fas fa-calendar"></i> 28 Diciembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Balance positivo en reciclaje: 45% más de material
-                    aprovechable
-                  </h3>
-                  <p>
-                    Durante 2025, la empresa logró recuperar 3,500 toneladas de
-                    material reciclable, superando las metas establecidas...
-                  </p>
+                  <h3>Noticia 1</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -293,7 +291,7 @@
 
               <article
                 class="news-card"
-                data-category="comunidad"
+                data-category="categoria2"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -301,7 +299,9 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge comunidad">Comunidad</span>
+                  <span class="news-category-badge categoria2"
+                    >Categoría 2</span
+                  >
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -309,13 +309,8 @@
                       ><i class="fas fa-calendar"></i> 20 Diciembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Programa educativo ambiental llegó a más de 50 colegios
-                  </h3>
-                  <p>
-                    Más de 10,000 estudiantes participaron en talleres sobre
-                    separación adecuada de residuos y cultura ambiental...
-                  </p>
+                  <h3>Noticia 2</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -324,7 +319,7 @@
 
               <article
                 class="news-card"
-                data-category="servicios"
+                data-category="categoria3"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -332,7 +327,9 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge servicios">Servicios</span>
+                  <span class="news-category-badge categoria3"
+                    >Categoría 3</span
+                  >
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -340,14 +337,8 @@
                       ><i class="fas fa-calendar"></i> 15 Diciembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Nuevos horarios de recolección para temporada de fin de año
-                  </h3>
-                  <p>
-                    Informamos los ajustes en los horarios de recolección
-                    durante las festividades decembrinas para garantizar el
-                    servicio...
-                  </p>
+                  <h3>Noticia 3</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -356,7 +347,7 @@
 
               <article
                 class="news-card"
-                data-category="institucional"
+                data-category="categoria4"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -365,7 +356,7 @@
                     alt="Noticia"
                   />
                   <span class="news-category-badge institucional"
-                    >Institucional</span
+                    >Categoría 4</span
                   >
                 </div>
                 <div class="news-card-content">
@@ -374,13 +365,8 @@
                       ><i class="fas fa-calendar"></i> 10 Diciembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Empresa recibe certificación ISO 14001 por gestión ambiental
-                  </h3>
-                  <p>
-                    Este importante reconocimiento internacional destaca nuestro
-                    compromiso con prácticas sostenibles y responsables...
-                  </p>
+                  <h3>Noticia 4</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -389,7 +375,7 @@
 
               <article
                 class="news-card"
-                data-category="ambiental"
+                data-category="categoria1"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -397,7 +383,7 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge ambiental">Ambiental</span>
+                  <span class="news-category-badge ambiental">Categoría 1</span>
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -405,11 +391,8 @@
                       ><i class="fas fa-calendar"></i> 1 Diciembre 2025</span
                     >
                   </div>
-                  <h3>Inauguración de nuevo punto verde en sector norte</h3>
-                  <p>
-                    Los ciudadanos ya pueden disponer de residuos especiales en
-                    la nueva estación ecológica ubicada en...
-                  </p>
+                  <h3>Noticia 5</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -418,7 +401,7 @@
 
               <article
                 class="news-card"
-                data-category="servicios"
+                data-category="categoria2"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -426,7 +409,7 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge servicios">Servicios</span>
+                  <span class="news-category-badge servicios">Categoría 2</span>
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -434,13 +417,8 @@
                       ><i class="fas fa-calendar"></i> 25 Noviembre 2025</span
                     >
                   </div>
-                  <h3>
-                    App móvil supera las 15,000 descargas en su primer mes
-                  </h3>
-                  <p>
-                    La nueva aplicación permite consultar horarios, reportar
-                    novedades y pagar facturas de manera fácil y rápida...
-                  </p>
+                  <h3>Noticia 6</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -449,7 +427,7 @@
 
               <article
                 class="news-card"
-                data-category="comunidad"
+                data-category="categoria3"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -457,7 +435,7 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge comunidad">Comunidad</span>
+                  <span class="news-category-badge comunidad">Categoría 3</span>
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -465,14 +443,8 @@
                       ><i class="fas fa-calendar"></i> 18 Noviembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Jornada de limpieza comunitaria reunió a 500 voluntarios
-                  </h3>
-                  <p>
-                    Exitosa jornada de limpieza en sectores vulnerables con
-                    participación de empleados, familias y líderes
-                    comunitarios...
-                  </p>
+                  <h3>Noticia 7</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -481,7 +453,7 @@
 
               <article
                 class="news-card"
-                data-category="institucional"
+                data-category="categoria4"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -490,7 +462,7 @@
                     alt="Noticia"
                   />
                   <span class="news-category-badge institucional"
-                    >Institucional</span
+                    >Categoría 4</span
                   >
                 </div>
                 <div class="news-card-content">
@@ -499,13 +471,8 @@
                       ><i class="fas fa-calendar"></i> 10 Noviembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Empresa renueva flota vehicular con unidades ecoamigables
-                  </h3>
-                  <p>
-                    Inversión de $2,500 millones en nuevos camiones que reducen
-                    emisiones contaminantes en un 40%...
-                  </p>
+                  <h3>Noticia 8</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -514,7 +481,7 @@
 
               <article
                 class="news-card"
-                data-category="ambiental"
+                data-category="categoria1"
                 data-year="2025"
               >
                 <div class="news-card-image">
@@ -522,7 +489,7 @@
                     src="https://via.placeholder.com/400x250"
                     alt="Noticia"
                   />
-                  <span class="news-category-badge ambiental">Ambiental</span>
+                  <span class="news-category-badge ambiental">Categoría 1</span>
                 </div>
                 <div class="news-card-content">
                   <div class="news-card-meta">
@@ -530,13 +497,8 @@
                       ><i class="fas fa-calendar"></i> 5 Noviembre 2025</span
                     >
                   </div>
-                  <h3>
-                    Proyecto de compostaje comunitario beneficia a 200 familias
-                  </h3>
-                  <p>
-                    Iniciativa piloto convierte residuos orgánicos en abono
-                    natural para huertas urbanas y jardines...
-                  </p>
+                  <h3>Noticia 9</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
                   <a href="#" class="news-link">
                     Leer más <i class="fas fa-arrow-right"></i>
                   </a>
@@ -563,31 +525,31 @@
                 <li>
                   <a href="#" data-category="all">
                     <span>Todas</span>
-                    <span class="count">28</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-category="institucional">
-                    <span>Institucional</span>
-                    <span class="count">8</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-category="servicios">
-                    <span>Servicios</span>
-                    <span class="count">7</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" data-category="ambiental">
-                    <span>Ambiental</span>
                     <span class="count">9</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" data-category="comunidad">
-                    <span>Comunidad</span>
-                    <span class="count">4</span>
+                  <a href="#" data-category="categoria1">
+                    <span>Categoría 1</span>
+                    <span class="count">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria2">
+                    <span>Categoría 2</span>
+                    <span class="count">2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria3">
+                    <span>Categoría 3</span>
+                    <span class="count">2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria4">
+                    <span>Categoría 4</span>
+                    <span class="count">2</span>
                   </a>
                 </li>
               </ul>
@@ -598,33 +560,33 @@
               <div class="recent-news-list">
                 <article class="recent-news-item">
                   <div class="recent-news-date">
-                    <span class="day">02</span>
-                    <span class="month">ENE</span>
+                    <span class="day">XX</span>
+                    <span class="month">MES</span>
                   </div>
                   <div class="recent-news-content">
-                    <h4>Nueva tecnología para recolección</h4>
+                    <h4>Noticia 1</h4>
                     <a href="#" class="small-link">Leer más</a>
                   </div>
                 </article>
 
                 <article class="recent-news-item">
                   <div class="recent-news-date">
-                    <span class="day">28</span>
-                    <span class="month">DIC</span>
+                    <span class="day">XX</span>
+                    <span class="month">MES</span>
                   </div>
                   <div class="recent-news-content">
-                    <h4>Balance positivo en reciclaje</h4>
+                    <h4>Noticia 2</h4>
                     <a href="#" class="small-link">Leer más</a>
                   </div>
                 </article>
 
                 <article class="recent-news-item">
                   <div class="recent-news-date">
-                    <span class="day">20</span>
-                    <span class="month">DIC</span>
+                    <span class="day">XX</span>
+                    <span class="month">MES</span>
                   </div>
                   <div class="recent-news-content">
-                    <h4>Programa educativo en colegios</h4>
+                    <h4>Noticia 3</h4>
                     <a href="#" class="small-link">Leer más</a>
                   </div>
                 </article>
@@ -665,8 +627,8 @@
           <div class="footer-section">
             <h3>Sobre Nosotros</h3>
             <p>
-              Empresa líder en servicios públicos de aseo, comprometida con el
-              medio ambiente y el bienestar de nuestra comunidad.
+              Descripción breve de tu empresa, su misión y compromiso con los
+              clientes.
             </p>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -682,18 +644,20 @@
               <li>
                 <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
               </li>
-              <li><a href="index.html#servicios">Servicios</a></li>
+              <li><a href="../../index.html#servicios">Servicios</a></li>
               <li>
-                <a href="../corporativo/informes.html">Informes de Gestión</a>
+                <a href="../corporativo/informes.html">Documentos</a>
               </li>
             </ul>
           </div>
           <div class="footer-section">
             <h3>Atención al Usuario</h3>
             <ul>
-              <li><a href="../usuario/pqr.html">Radicar PQR</a></li>
-              <li><a href="../usuario/certificados.html">Certificados</a></li>
-              <li><a href="../facturacion/pago.html">Pago en Línea</a></li>
+              <li><a href="../usuario/pqr.html">Contacto</a></li>
+              <li>
+                <a href="../usuario/certificados.html">Certificados</a>
+              </li>
+              <li><a href="../facturacion/pago.html">Servicios</a></li>
               <li>
                 <a href="../usuario/preguntas.html">Preguntas Frecuentes</a>
               </li>
@@ -702,19 +666,15 @@
           <div class="footer-section">
             <h3>Contacto</h3>
             <ul class="contact-info">
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Calle 123 #45-67, Ciudad
-              </li>
-              <li><i class="fas fa-phone"></i> 01-8000-123456</li>
-              <li><i class="fas fa-envelope"></i> info@empresaaseo.com</li>
-              <li><i class="fas fa-clock"></i> Lun - Vie: 8:00 AM - 5:00 PM</li>
+              <li><i class="fas fa-map-marker-alt"></i> Calle, Ciudad, País</li>
+              <li><i class="fas fa-phone"></i> (XX) XXX-XXXX</li>
+              <li><i class="fas fa-envelope"></i> contacto@ejemplo.com</li>
+              <li><i class="fas fa-clock"></i> Lun - Vie: 9:00 AM - 5:00 PM</li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>
-            &copy; 2024 Empresa de Aseo E.S.P. Todos los derechos reservados.
-          </p>
+          <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
           <div class="footer-links">
             <a href="#">Política de Privacidad</a>
             <a href="#">Términos y Condiciones</a>

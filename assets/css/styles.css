@@ -142,16 +142,18 @@ ul {
 }
 
 .header-content {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  gap: 20px;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
+  min-width: fit-content;
 }
 
 .logo a {
@@ -169,6 +171,23 @@ ul {
 .logo img {
   height: 56px;
   width: auto;
+}
+
+.logo-placeholder {
+  height: 56px;
+  width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 1.8rem;
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -365,12 +384,9 @@ ul {
 .hero-banner {
   position: relative;
   height: 550px;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 50%,
-    var(--accent-color) 100%
-  );
+  background-color: var(--primary-color);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,7 +400,6 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.2;
@@ -396,7 +411,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(39, 117, 63, 0.5);
 }
 
 .hero-content {
