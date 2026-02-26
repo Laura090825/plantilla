@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subsidios y Contribuciones - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+      .subsidy-section {
+        background: var(--blanco-puro);
+        padding: var(--spacing-3xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-2xl);
+      }
+      .table-responsive {
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: var(--spacing-lg);
+      }
+      table th,
+      table td {
+        padding: var(--spacing-md);
+        border: 1px solid var(--border-light);
+        text-align: left;
+      }
+      table th {
+        background: var(--color-primary);
+        color: var(--blanco-puro);
+        font-weight: 600;
+      }
+      table tr:nth-child(even) {
+        background: var(--bg-tertiary);
+      }
+      .info-box {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-xl);
+        border-left: 4px solid var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Subsidios y Contribuciones</h1>
+        <p class="page-subtitle">
+          Sistema de solidaridad y redistribución - Ley 142 de 1994
+        </p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="info-box">
+        <h3>⚖️ Marco Legal</h3>
+        <p>
+          Conforme a los
+          <strong>artículos 89 y 99 de la Ley 142 de 1994</strong>, se establece
+          un sistema de subsidios y contribuciones que permite que los usuarios
+          de estratos altos (5 y 6) y usuarios no residenciales contribuyan al
+          pago del servicio de usuarios de estratos bajos (1, 2 y 3).
+        </p>
+      </div>
+
+      <section class="subsidy-section">
+        <h2>💰 Porcentajes de Subsidios</h2>
+        <p>Usuarios residenciales que reciben subsidio:</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Estrato</th>
+                <th>Porcentaje de Subsidio</th>
+                <th>Tarifa Real</th>
+                <th>Tarifa con Subsidio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Estrato 1</td>
+                <td>70%</td>
+                <td>$52,300</td>
+                <td>$15,700</td>
+              </tr>
+              <tr>
+                <td>Estrato 2</td>
+                <td>40%</td>
+                <td>$28,800</td>
+                <td>$17,300</td>
+              </tr>
+              <tr>
+                <td>Estrato 3</td>
+                <td>15%</td>
+                <td>$23,900</td>
+                <td>$20,300</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="subsidy-section">
+        <h2>📊 Contribuciones</h2>
+        <p>Usuarios que realizan contribución solidaria:</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de Usuario</th>
+                <th>Porcentaje de Contribución</th>
+                <th>Tarifa Base</th>
+                <th>Tarifa con Contribución</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Estrato 5</td>
+                <td>20%</td>
+                <td>$29,200</td>
+                <td>$35,000</td>
+              </tr>
+              <tr>
+                <td>Estrato 6</td>
+                <td>20%</td>
+                <td>$33,800</td>
+                <td>$40,600</td>
+              </tr>
+              <tr>
+                <td>Comercial</td>
+                <td>30%</td>
+                <td>Según producción</td>
+                <td>+ 30% sobre tarifa</td>
+              </tr>
+              <tr>
+                <td>Industrial</td>
+                <td>30%</td>
+                <td>Según producción</td>
+                <td>+ 30% sobre tarifa</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="subsidy-section">
+        <h2>📋 Requisitos para Subsidios</h2>
+
+        <h3>¿Quiénes pueden acceder?</h3>
+        <ul style="line-height: 2">
+          <li>Usuarios residenciales de estratos 1, 2 y 3</li>
+          <li>Con inmueble debidamente estratificado</li>
+          <li>Sin deudas pendientes con la empresa</li>
+          <li>Inscrito en el SISBEN (para estrato 1)</li>
+        </ul>
+
+        <h3>Documentos Requeridos</h3>
+        <ul style="line-height: 2">
+          <li>Copia de la cédula de ciudadanía</li>
+          <li>Recibo de servicios públicos</li>
+          <li>Certificado de estratificación</li>
+          <li>Ficha SISBEN actualizada (estrato 1)</li>
+        </ul>
+      </section>
+
+      <section class="subsidy-section">
+        <h2>🔄 Aplicación del Subsidio</h2>
+        <p>
+          El subsidio se aplica automáticamente en su factura mensual según la
+          estratificación registrada de su predio.
+        </p>
+
+        <h3>Verificación de Estratificación</h3>
+        <p>
+          Si considera que su estrato está mal clasificado, puede solicitar
+          revisión ante la Alcaldía Municipal o entidad competente.
+        </p>
+
+        <h3>Actualización de Datos</h3>
+        <p>
+          Mantenga actualizados sus datos para garantizar la correcta aplicación
+          de subsidios. Cualquier cambio debe ser reportado dentro de los 30
+          días siguientes.
+        </p>
+      </section>
+
+      <div class="info-box">
+        <h3>📞 Más Información</h3>
+        <p>Para consultas sobre subsidios y contribuciones:</p>
+        <ul>
+          <li><strong>Línea de atención:</strong> [Número telefónico]</li>
+          <li><strong>Correo:</strong> subsidios@bgreenconsulting.com</li>
+          <li>
+            <strong>Oficina:</strong> [Dirección] - Horario: Lunes a Viernes
+            8:00 AM - 5:00 PM
+          </li>
+        </ul>
+      </div>
+
+      <section class="subsidy-section">
+        <h2>📖 Normatividad</h2>
+        <ul>
+          <li>
+            <strong>Ley 142 de 1994:</strong> Artículos 89 (subsidios) y 99
+            (contribuciones)
+          </li>
+          <li>
+            <strong>Ley 632 de 2000:</strong> Régimen de estratificación
+            socioeconómica
+          </li>
+          <li>
+            <strong>Decreto 1013 de 2005:</strong> Reglamentación de subsidios
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/ccu.html">CCU</a></li>
+              <li>
+                <a href="../transparencia/indicadores.html">Transparencia</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+              <li><a href="tarifas.html">Tarifas</a></li>
+              <li><a href="../usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="../corporativo/politicas.html">Marco Legal</a>
+            <a href="../corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="../corporativo/habeas-data.html">Habeas Data</a>
+            <a href="../corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

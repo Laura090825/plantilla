@@ -1,0 +1,231 @@
+<!-- ============================================
+     HERO COMPONENT - Reutilizable para todas las páginas
+     ============================================ 
+     
+     USO:
+     1. Incluir en cualquier página HTML
+     2. Agregar el atributo data-hero-bg con el nombre de la imagen
+     3. Las imágenes deben estar en assets/img/
+     
+     Ejemplo:
+     <div id="hero-container" data-hero-bg="principal.jpg" 
+          data-hero-title="Tu Título" 
+          data-hero-subtitle="Tu Subtítulo"
+          data-hero-badge="Tu Badge"></div>
+     ============================================ -->
+
+<section class="hero-modern">
+  <div class="hero-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+  </div>
+
+  <div class="container-modern hero-content-modern">
+    <div class="hero-badge">
+      <i class="fas fa-leaf"></i>
+      <span id="hero-badge-text">Compromiso Verde 2026</span>
+    </div>
+
+    <h1 class="hero-title-modern">
+      <span class="title-line">Protegiendo</span>
+      <span class="title-line highlight-gradient" id="hero-title-highlight"
+        >Nuestro Planeta</span
+      >
+    </h1>
+
+    <p class="hero-subtitle" id="hero-subtitle-text">
+      Soluciones ambientales sostenibles con pasión por la naturaleza,
+      compromiso ecológico y respeto por el medio ambiente
+    </p>
+
+    <div class="hero-cta-group">
+      <a href="#servicios" class="btn-primary-sespa">
+        Explorar Servicios <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="#demo" class="btn-secondary-sespa">
+        <i class="fas fa-play-circle"></i> Ver Demo
+      </a>
+    </div>
+
+    <!-- Estadísticas -->
+    <div
+      style="
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        margin-top: 80px;
+        flex-wrap: wrap;
+      "
+    >
+      <div style="text-align: center">
+        <div
+          style="
+            font-size: 3rem;
+            font-weight: 900;
+            color: #2196f3;
+            text-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
+          "
+        >
+          15+
+        </div>
+        <div
+          style="
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            margin-top: 8px;
+          "
+        >
+          Años
+        </div>
+      </div>
+      <div style="text-align: center">
+        <div
+          style="
+            font-size: 3rem;
+            font-weight: 900;
+            color: #2196f3;
+            text-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
+          "
+        >
+          98%
+        </div>
+        <div
+          style="
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            margin-top: 8px;
+          "
+        >
+          Satisfacción
+        </div>
+      </div>
+      <div style="text-align: center">
+        <div
+          style="
+            font-size: 3rem;
+            font-weight: 900;
+            color: #2196f3;
+            text-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
+          "
+        >
+          2.5M
+        </div>
+        <div
+          style="
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            margin-top: 8px;
+          "
+        >
+          Ton. Procesadas
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="#content"
+      style="
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: underline;
+        margin-top: 40px;
+        display: inline-block;
+        font-weight: 500;
+      "
+    >
+      Desliza para descubrir
+    </a>
+  </div>
+</section>
+
+<!-- Script para personalizar el Hero -->
+<script>
+  // Configuración de fondos para cada página
+  const heroBackgrounds = {
+    "index.html": "principal.jpg",
+    "quienes-somos.html": "quienes-somos.jpg",
+    "mision-vision.html": "mision-vision.jpg",
+    "estructura.html": "estructura.jpg",
+    "informes.html": "informes.jpg",
+    "barrido-limpieza.html": "barrido.jpg",
+    "recoleccion-transporte.html": "recoleccion.jpg",
+    "jornadas.html": "jornadas.jpg",
+    "contacto.html": "contacto.jpg",
+    "pqr.html": "pqr.jpg",
+    default: "principal.jpg",
+  };
+
+  // Obtener el nombre de la página actual
+  function getCurrentPage() {
+    const path = window.location.pathname;
+    const page = path.split("/").pop() || "index.html";
+    return page;
+  }
+
+  // Aplicar fondo según la página
+  function applyHeroBackground() {
+    const currentPage = getCurrentPage();
+    const hero = document.querySelector(".hero-modern");
+
+    if (hero) {
+      // Obtener imagen configurada o usar default
+      const bgImage =
+        heroBackgrounds[currentPage] || heroBackgrounds["default"];
+
+      // Verificar si hay un data-hero-bg personalizado
+      const customBg = hero.getAttribute("data-hero-bg");
+      const finalBg = customBg || bgImage;
+
+      // Aplicar el fondo
+      hero.style.backgroundImage = `
+        linear-gradient(135deg, rgba(255, 112, 67, 0.4), rgba(230, 74, 25, 0.4)),
+        url('../assets/img/${finalBg}')
+      `;
+
+      // Para rutas relativas desde la raíz
+      if (
+        currentPage === "index.html" ||
+        window.location.pathname.endsWith("/")
+      ) {
+        hero.style.backgroundImage = `
+          linear-gradient(135deg, rgba(255, 112, 67, 0.4), rgba(230, 74, 25, 0.4)),
+          url('./assets/img/${finalBg}')
+        `;
+      }
+    }
+  }
+
+  // Personalizar textos del hero si hay atributos data-*
+  function customizeHeroContent() {
+    const hero = document.querySelector(".hero-modern");
+
+    if (hero) {
+      // Badge
+      const badge = hero.getAttribute("data-hero-badge");
+      if (badge) {
+        const badgeText = document.getElementById("hero-badge-text");
+        if (badgeText) badgeText.textContent = badge;
+      }
+
+      // Título destacado
+      const title = hero.getAttribute("data-hero-title");
+      if (title) {
+        const titleHighlight = document.getElementById("hero-title-highlight");
+        if (titleHighlight) titleHighlight.textContent = title;
+      }
+
+      // Subtítulo
+      const subtitle = hero.getAttribute("data-hero-subtitle");
+      if (subtitle) {
+        const subtitleText = document.getElementById("hero-subtitle-text");
+        if (subtitleText) subtitleText.textContent = subtitle;
+      }
+    }
+  }
+
+  // Ejecutar al cargar la página
+  document.addEventListener("DOMContentLoaded", () => {
+    applyHeroBackground();
+    customizeHeroContent();
+  });
+</script>

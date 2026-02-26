@@ -1,0 +1,349 @@
+/* ==========================================
+   CARRUSEL DISEÑO EXPANDIDO - ECOSANGIL
+   1 tarjeta grande al centro + 3 visibles alrededor
+   ========================================== */
+
+/* Contenedor de servicios - asegurar overflow visible */
+.services-modern {
+  overflow: visible !important;
+}
+
+/* Contenedor principal */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 820px;
+  perspective: 1500px;
+  overflow: visible;
+  padding: 30px 0 60px 0;
+  margin-top: 10px;
+}
+
+/* Wrapper que contiene las tarjetas */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid de servicios adaptado */
+.services-grid-modern.carousel-mode {
+  display: block;
+  position: relative;
+  overflow: visible !important;
+  height: 670px;
+  padding: 0;
+}
+
+/* Tarjetas - posición base (ocultas) */
+.services-grid-modern.carousel-mode .service-card-modern {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* TARJETA ACTIVA - Grande al centro */
+.services-grid-modern.carousel-mode .service-card-modern.active {
+  width: 380px;
+  height: 560px;
+  margin: -280px 0 0 -190px;
+  opacity: 1;
+  z-index: 10;
+  transform: translateX(0) translateY(0) scale(1) translateZ(0);
+  pointer-events: auto;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  filter: brightness(1);
+  overflow: hidden;
+}
+
+/* TARJETA IZQUIERDA - Pequeña lateral izquierdo */
+.services-grid-modern.carousel-mode .service-card-modern.left {
+  width: 280px;
+  height: 430px;
+  margin: -215px 0 0 -140px;
+  opacity: 0.7;
+  z-index: 5;
+  transform: translateX(-420px) translateY(30px) scale(0.85) translateZ(-150px);
+  filter: brightness(0.85);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* TARJETA DERECHA - Pequeña lateral derecho */
+.services-grid-modern.carousel-mode .service-card-modern.right {
+  width: 280px;
+  height: 430px;
+  margin: -215px 0 0 -140px;
+  opacity: 0.7;
+  z-index: 5;
+  transform: translateX(420px) translateY(30px) scale(0.85) translateZ(-150px);
+  filter: brightness(0.85);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* TARJETA SUPERIOR - Pequeña arriba */
+.services-grid-modern.carousel-mode .service-card-modern.top {
+  width: 260px;
+  height: 410px;
+  margin: -205px 0 0 -130px;
+  opacity: 0.6;
+  z-index: 3;
+  transform: translateX(0) translateY(-200px) scale(0.8) translateZ(-200px);
+  filter: brightness(0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Controles de navegación */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+/* Indicador de carrusel expandido */
+.carousel-controls::before {
+  content: "🎯";
+  position: absolute;
+  top: -35px;
+  font-size: 1.6rem;
+  opacity: 0.4;
+  animation: expandPulse 2s ease-in-out infinite;
+}
+
+@keyframes expandPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+.carousel-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #FF9933 0%, #FF7F2A 100%);
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+  z-index: 100;
+  position: relative;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 30px rgba(30, 64, 175, 0.6);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
+/* Botones siempre activos */
+.carousel-controls .carousel-btn {
+  animation: breathe 2.5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+  }
+  50% {
+    box-shadow: 0 6px 25px rgba(30, 64, 175, 0.5);
+  }
+}
+
+/* Indicadores de puntos */
+.carousel-indicators {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(30, 64, 175, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  width: 32px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #FF9933 0%, #FF7F2A 100%);
+  box-shadow: 0 2px 10px rgba(30, 64, 175, 0.4);
+}
+
+.carousel-dot:hover {
+  background: rgba(30, 64, 175, 0.6);
+  transform: scale(1.2);
+}
+
+/* Contador de slides */
+.carousel-counter {
+  font-size: 0.95rem;
+  color: #FF9933;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+/* ==========================================
+   RESPONSIVE CAROUSEL EXPANDIDO
+   ========================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .carousel-container {
+    height: 900px;
+    perspective: 1200px;
+    padding: 0 0 60px 0;
+  }
+
+  .services-grid-modern.carousel-mode {
+    height: 780px;
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.active {
+    width: 340px;
+    height: 650px;
+    margin: -325px 0 0 -170px;
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.left,
+  .services-grid-modern.carousel-mode .service-card-modern.right {
+    width: 250px;
+    height: 520px;
+    margin: -260px 0 0 -125px;
+    transform: translateX(-360px) translateY(30px) scale(0.85)
+      translateZ(-150px);
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.right {
+    transform: translateX(360px) translateY(30px) scale(0.85) translateZ(-150px);
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.top {
+    width: 230px;
+    height: 500px;
+    margin: -250px 0 0 -115px;
+    transform: translateX(0) translateY(-180px) scale(0.8) translateZ(-200px);
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 900px;
+    perspective: 1000px;
+    padding: 0 0 60px 0;
+  }
+
+  .services-grid-modern.carousel-mode {
+    height: 780px;
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.active {
+    width: 300px;
+    height: 640px;
+    margin: -320px 0 0 -150px;
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.left,
+  .services-grid-modern.carousel-mode .service-card-modern.right {
+    width: 220px;
+    height: 500px;
+    margin: -250px 0 0 -110px;
+    transform: translateX(-280px) translateY(40px) scale(0.82)
+      translateZ(-180px);
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.right {
+    transform: translateX(280px) translateY(40px) scale(0.82) translateZ(-180px);
+  }
+
+  .services-grid-modern.carousel-mode .service-card-modern.top {
+    width: 200px;
+    height: 480px;
+    margin: -240px 0 0 -100px;
+    transform: translateX(0) translateY(-160px) scale(0.75) translateZ(-220px);
+    opacity: 0.5;
+  }
+
+  .carousel-controls {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .carousel-controls::before {
+    top: -30px;
+    font-size: 1.4rem;
+  }
+
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  .carousel-counter::after {
+    font-size: 0.6rem;
+  }
+}
+
+/* Mejoras de accesibilidad */
+.carousel-btn:focus,
+.carousel-dot:focus {
+  outline: 3px solid #FF9933;
+  outline-offset: 3px;
+}
+
+/* Animación suave al cargar */
+.carousel-wrapper {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,560 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultar Factura - ECOSANGIL</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/ecosangil-styles.css" />
+    <link rel="stylesheet" href="../../assets/css/ecosangil-modern.css" />
+    <link rel="stylesheet" href="../../assets/css/pages-modern.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="ecosangil-modern">
+    <!-- ============================================
+         NAVEGACIÓN FLOTANTE MODERNA
+         ============================================ -->
+    <nav class="nav-floating">
+      <div class="nav-container">
+        <div class="logo-modern">
+          <img src="../../assets/img/image.png" alt="ECOSANGIL" class="logo-img" />
+          <span class="logo-text">ECOSANGIL</span>
+        </div>
+
+        <ul class="nav-links-modern">
+          <li><a href="../../index.html" class="nav-link">Principal</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link">
+              La Empresa <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="submenu-modern">
+              <li>
+                <a href="../corporativo/quienes-somos.html"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html"
+                  >Proposito y Horizonte</a
+                >
+              </li>
+              <li>
+                <a href="../corporativo/estructura.html">Organigrama</a>
+              </li>
+              <li>
+                <a href="../corporativo/informes.html">Reportes </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="../corporativo/cobertura.html" class="nav-link">
+              Cobertura Geográfica <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="submenu-modern">
+              <li>
+                <a href="../corporativo/cobertura.html"
+                  ><i class="fas fa-map-marked-alt"></i> Ver Cobertura</a
+                >
+              </li>
+              <li class="submenu-header">Santander</li>
+              <li>
+                <a href="../corporativo/socorro.html">Socorro</a>
+              </li>
+              <li>
+                <a href="../corporativo/palmas-del-socorro.html"
+                  >Palmas del Socorro</a
+                >
+              </li>
+              <li><a href="../corporativo/moniquira.html">Moniquirá</a></li>
+              <li><a href="../corporativo/barrancas.html">Barrancas</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link">
+              Nuestros Servicios <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="submenu-modern">
+              <li>
+                <a href="../servicios/barrido-limpieza.html"
+                  >Barrido y Limpieza en Vías Públicas</a
+                >
+              </li>
+              <li>
+                <a href="../servicios/jornadas.html">Campañas de Aseo</a>
+              </li>
+              <li>
+                <a href="../servicios/recoleccion-transporte.html"
+                  >Recolección y Transporte de Desechos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="tarifas.html" class="nav-link"
+              >Planes y Costos</a
+            >
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link">
+              Servicio al Cliente <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="submenu-modern">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li>
+                <a href="../usuario/preguntas.html">Ayuda Común</a>
+              </li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../transparencia/transparencia.html" class="nav-link"
+              >Información Pública</a
+            >
+          </li>
+          <li>
+            <a href="../usuario/noticias.html" class="nav-link"
+              >Actualidad</a
+            >
+          </li>
+        </ul>
+
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero de Página Interna -->
+    <section class="page-hero-modern">
+      <div class="page-hero-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+      </div>
+      <div class="container-modern">
+        <div class="page-hero-content">
+          <div class="breadcrumb-modern">
+            <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+            <span>/</span>
+            <span class="current">Consultar Factura</span>
+          </div>
+          <h1 class="page-title-modern">
+            Consultar <span class="text-gradient">Factura</span>
+          </h1>
+          <p class="page-subtitle-modern">
+            Consulta el estado de tu facturación
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-modern">
+      <div class="container-modern">
+        <div class="content-grid">
+          <main class="main-content">
+            <div class="content-header">
+              <h1><i class="fas fa-receipt"></i> Consulta tu Factura</h1>
+              <p class="subtitle">
+                Consulta el estado de tu cuenta y descarga tu factura en línea
+              </p>
+            </div>
+
+            <!-- Formulario de Consulta -->
+            <div class="invoice-search-section">
+              <h2><i class="fas fa-search-plus"></i> Buscar Factura</h2>
+              <p>
+                Ingresa tu número de cuenta o documento de identidad para
+                consultar tu factura
+              </p>
+
+              <form class="invoice-search-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="tipo-busqueda">Buscar por</label>
+                    <select id="tipo-busqueda" required>
+                      <option value="cuenta">Número de Cuenta</option>
+                      <option value="documento">Documento de Identidad</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="numero-busqueda">Número</label>
+                    <input
+                      type="text"
+                      id="numero-busqueda"
+                      placeholder="Ingresa el número"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-search-plus"></i> Consultar
+                </button>
+              </form>
+            </div>
+
+            <!-- Resultado de la Consulta (Ejemplo) -->
+            <div
+              class="invoice-result"
+              id="resultado-factura"
+              style="display: none"
+            >
+              <h2>
+                <i class="fas fa-receipt-dollar"></i> Información de tu Factura
+              </h2>
+
+              <div class="invoice-card">
+                <div class="invoice-header">
+                  <div class="invoice-info">
+                    <h3>Factura N° 2026-001234</h3>
+                    <p>Período: Diciembre 2025</p>
+                  </div>
+                  <div class="invoice-status pending">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Pendiente de Pago</span>
+                  </div>
+                </div>
+
+                <div class="invoice-body">
+                  <div class="invoice-details">
+                    <div class="detail-row">
+                      <span class="label">Cuenta:</span>
+                      <span class="value">123456789</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Usuario:</span>
+                      <span class="value">JUAN PÉREZ GÓMEZ</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Dirección:</span>
+                      <span class="value">Calle 123 #45-67, Apt 301</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Estrato:</span>
+                      <span class="value">3</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Fecha de Vencimiento:</span>
+                      <span class="value red">15 Enero 2026</span>
+                    </div>
+                  </div>
+
+                  <div class="invoice-amounts">
+                    <div class="amount-row">
+                      <span>Cargo Fijo</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 1</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 2</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 4</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 3</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row subtotal">
+                      <span>Subtotal</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row total">
+                      <span>Total a Pagar</span>
+                      <span>$XXX</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="invoice-actions">
+                  <a href="#" class="btn btn-outline" download>
+                    <i class="fas fa-cloud-download-alt"></i> Descargar PDF
+                  </a>
+                  <a href="../facturacion/pago.html" class="btn btn-primary">
+                    <i class="fas fa-money-check-alt"></i> Pagar Ahora
+                  </a>
+                </div>
+              </div>
+
+              <!-- Histórico de Facturas -->
+              <div class="invoice-history">
+                <h3><i class="fas fa-history"></i> Histórico de Facturas</h3>
+                <div class="history-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Factura</th>
+                        <th>Período</th>
+                        <th>Valor</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2026-001234</td>
+                        <td>Diciembre 2025</td>
+                        <td>$XXX</td>
+                        <td>
+                          <span class="status-badge pending">Pendiente</span>
+                        </td>
+                        <td>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-eye"></i
+                          ></a>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-cloud-download-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2025-012345</td>
+                        <td>Noviembre 2025</td>
+                        <td>$XXX</td>
+                        <td><span class="status-badge paid">Pagada</span></td>
+                        <td>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-eye"></i
+                          ></a>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-cloud-download-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2025-011234</td>
+                        <td>Octubre 2025</td>
+                        <td>$XXX</td>
+                        <td><span class="status-badge paid">Pagada</span></td>
+                        <td>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-eye"></i
+                          ></a>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-cloud-download-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opciones de Pago -->
+            <div class="payment-options-section">
+              <h2><i class="fas fa-money-check-alt"></i> Opciones de Pago</h2>
+              <div class="payment-grid">
+                <div class="payment-card">
+                  <i class="fas fa-laptop"></i>
+                  <h3>Pago en Línea</h3>
+                  <p>Paga con tarjeta débito, crédito o PSE</p>
+                  <a href="../facturacion/pago.html" class="btn btn-outline"
+                    >Pagar Ahora</a
+                  >
+                </div>
+
+                <div class="payment-card">
+                  <i class="fas fa-landmark"></i>
+                  <h3>Bancos y Corresponsales</h3>
+                  <p>Efectivo en puntos autorizados</p>
+                  <a href="#" class="btn btn-outline">Ver Puntos</a>
+                </div>
+
+                <div class="payment-card">
+                  <i class="fas fa-money-check-alt"></i>
+                  <h3>Débito Automático</h3>
+                  <p>Inscribe tu cuenta bancaria</p>
+                  <a href="#" class="btn btn-outline">Inscribir</a>
+                </div>
+
+                <div class="payment-card">
+                  <i class="fas fa-city"></i>
+                  <h3>Oficinas</h3>
+                  <p>Paga en nuestras oficinas de atención</p>
+                  <a href="../usuario/contacto.html" class="btn btn-outline"
+                    >Ver Ubicaciones</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Información Adicional -->
+            <div class="info-box">
+              <i class="fas fa-info"></i>
+              <div>
+                <h3>¿Necesitas Ayuda?</h3>
+                <p>
+                  Si tienes problemas para consultar tu factura o encuentras
+                  algún error en la información, contáctanos:
+                </p>
+                <ul>
+                  <li><strong>Línea de atención:</strong> +57 XXX XXX XXXX</li>
+                  <li><strong>Correo:</strong> facturacion@ejemplo.com</li>
+                  <li><strong>WhatsApp:</strong> +57 XXX XXX XXXX</li>
+                </ul>
+              </div>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>Servicios en Línea</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="../facturacion/factura.html"
+                    ><i class="fas fa-angle-right"></i> Ver mi Factura</a
+                  >
+                </li>
+                <li>
+                  <a href="../facturacion/pago.html"
+                    ><i class="fas fa-angle-right"></i> Pagar en Línea</a
+                  >
+                </li>
+                <li>
+                  <a href="../facturacion/tarifas.html"
+                    ><i class="fas fa-angle-right"></i> Consultar Tarifas</a
+                  >
+                </li>
+                <li>
+                  <a href="../usuario/pqr.html"
+                    ><i class="fas fa-angle-right"></i> Radicar PQR</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Preguntas Frecuentes</h3>
+              <div class="faq-sidebar">
+                <div class="faq-sidebar-item">
+                  <h4>¿Cómo descargo mi factura?</h4>
+                  <p>Consulta tu factura y haz clic en "Descargar PDF"</p>
+                </div>
+                <div class="faq-sidebar-item">
+                  <h4>¿Hasta cuándo puedo pagar?</h4>
+                  <p>Verifica la fecha de vencimiento en tu factura</p>
+                </div>
+              </div>
+              <a
+                href="../usuario/preguntas.html"
+                class="btn btn-outline btn-block btn-sm"
+              >
+                Ver Todas las Preguntas
+              </a>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>Facilita tus Pagos</h3>
+              <p>
+                Activa el débito automático y olvídate de las fechas de pago
+              </p>
+              <a href="#" class="btn btn-secondary btn-block">
+                Activar Débito
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+      <div class="container-modern">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="../../assets/img/image.png"
+                alt="ECOSANGIL"
+                class="logo-img"
+                style="width: 40px; height: 40px"
+              />
+              <span class="logo-text">ECOSANGIL</span>
+            </div>
+            <p class="footer-description">
+              Protegiendo el medio ambiente con pasión, dedicación y compromiso
+              sostenible para las futuras generaciones.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Corporativo</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/estructura.html">Estructura</a></li>
+              <li><a href="../corporativo/informes.html">Informes</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../servicios/barrido-limpieza.html"
+                  >Barrido y Limpieza</a
+                >
+              </li>
+              <li>
+                <a href="../servicios/recoleccion-transporte.html"
+                  >Recolección y Transporte</a
+                >
+              </li>
+              <li>
+                <a href="../servicios/jornadas.html">Jornadas Especiales</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/contacto.html">Contáctanos</a></li>
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/preguntas.html">Preguntas</a></li>
+              <li><a href="../usuario/noticias.html">Noticias</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 ECOSANGIL. Todos los derechos reservados.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button class="back-to-top-modern" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../../assets/js/ecosangil-modern.js"></script>
+  </body>
+</html>

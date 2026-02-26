@@ -1,0 +1,945 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dónde Operamos - ECOSANGIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/ecosangil-styles.css">
+    <link rel="stylesheet" href="../../assets/css/ecosangil-modern.css">
+    <link rel="stylesheet" href="../../assets/css/pages-modern.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="ecosangil-modern">
+    <!-- ============================================
+         NAVEGACIÓN FLOTANTE MODERNA
+         ============================================ -->
+<nav class="nav-floating">
+  <div class="nav-container">
+    <div class="logo-modern">
+      <img src="../../assets/img/image.png" alt="ECOSANGIL" class="logo-img" />
+      <span class="logo-text">ECOSANGIL</span>
+    </div>
+    <ul class="nav-links-modern">
+      <li><a href="../../index.html" class="nav-link">Principal</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">La Empresa <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu-modern">
+          <li><a href="quienes-somos.html">Acerca de Nosotros</a></li>
+          <li><a href="mision-vision.html">Proposito y Horizonte</a></li>
+          <li><a href="estructura.html">Organigrama</a></li>
+          <li><a href="informes.html">Reportes </a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="cobertura.html" class="nav-link active">Cobertura Geográfica <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu-modern">
+          <li><a href="cobertura.html"><i class="fas fa-map-marked-alt"></i> Ver Cobertura</a></li>
+          <li class="submenu-header">Santander</li>
+          <li><a href="socorro.html">Socorro</a></li>
+          <li><a href="palmas-del-socorro.html">Palmas del Socorro</a></li>
+          <li><a href="moniquira.html">Moniquirá</a></li>
+          <li><a href="barrancas.html">Barrancas</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">Nuestros Servicios <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu-modern">
+          <li><a href="../servicios/barrido-limpieza.html">Barrido y Limpieza en Vías Públicas</a></li>
+          <li><a href="../servicios/jornadas.html">Campañas de Aseo</a></li>
+          <li><a href="../servicios/recoleccion-transporte.html">Recolección y Transporte de Desechos</a></li>
+        </ul>
+      </li>
+      <li><a href="../facturacion/tarifas.html" class="nav-link">Planes y Costos</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">Servicio al Cliente <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu-modern">
+          <li><a href="../usuario/pqr.html">PQR</a></li>
+          <li><a href="../usuario/preguntas.html">Ayuda Común</a></li>
+          <li><a href="../usuario/contacto.html">Contacto</a></li>
+        </ul>
+      </li>
+      <li><a href="../transparencia/transparencia.html" class="nav-link">Información Pública</a></li>
+      <li><a href="../usuario/noticias.html" class="nav-link">Actualidad</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="page-hero-modern">
+  <div class="page-hero-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
+  <div class="container-modern">
+    <div class="page-hero-content">
+      <div class="breadcrumb-modern">
+        <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+        <span>/</span>
+        <a href="#">Cobertura Geográfica</a>
+        <span>/</span>
+        <span class="current">Dónde Operamos</span>
+      </div>
+      <h1 class="page-title-modern">
+        Nuestra <span class="text-gradient">Cobertura</span>
+      </h1>
+      <p class="page-subtitle-modern">Conoce los municipios donde prestamos nuestros servicios ambientales</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Contenido Principal -->
+    <section class="about-modern">
+      <div class="container-modern">
+        <div class="content-grid">
+          <main class="main-content">
+            <!-- Page Header -->
+            <div class="content-header">
+              <h1><i class="fas fa-map-marked-alt"></i> Dónde Operamos</h1>
+              <p class="subtitle">
+                Conoce nuestra presencia en los municipios de la región
+              </p>
+            </div>
+
+            <!-- Municipios Atendidos -->
+            <div class="coverage-section" id="municipios">
+              <div style="text-align: center; margin-bottom: 50px">
+                <h2
+                  style="
+                    font-size: 2.2rem;
+                    color: #1e40af;
+                    margin-bottom: 12px;
+                    font-weight: 800;
+                    letter-spacing: -0.5px;
+                  "
+                >
+                  Nuestras Zonas de Operación
+                  >Municipios donde Operamos</h2>
+                <p
+                  style="
+                    color: #64748b;
+                    font-size: 1.05rem;
+                    line-height: 1.6;
+                    max-width: 650px;
+                    margin: 0 auto;
+                  "
+                >
+                  SESPA tiene presencia en 4 municipios de los departamentos de Santander, Boyacá y La Guajira
+                </p>
+              </div>
+
+              <div
+                class="municipality-grid"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 25px;
+                  margin-bottom: 40px;
+                "
+              >
+                <!-- Socorro -->
+                <div
+                  id="socorro"
+                  style="
+                    background: white;
+                    border: 1px solid rgba(30, 64, 175, 0.2);
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(30, 64, 175, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(30, 64, 175, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #1e40af, #dc2626);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #1e40af;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Socorro, Santander
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Municipio del departamento de Santander con servicios ambientales integrales de SESPA.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+57 XXX XXX XXXX"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >+57 XXX XXX XXXX</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-location-arrow"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:zona@ejemplo.com"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >zona@ejemplo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-hourglass-half"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #1e40af;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#dc2626'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#1e40af'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-circle-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
+                </div>
+
+                <!-- Palmas del Socorro -->
+                <div
+                  id="palmas"
+                  style="
+                    background: white;
+                    border: 1px solid rgba(30, 64, 175, 0.2);
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(30, 64, 175, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(30, 64, 175, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #1e40af, #dc2626);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #1e40af;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Palmas del Socorro, Santander
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Municipio del departamento de Santander atendido por SESPA con servicios de protección ambiental.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+57 XXX XXX XXXX"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >+57 XXX XXX XXXX</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-location-arrow"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:zona@ejemplo.com"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >zona@ejemplo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-hourglass-half"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #1e40af;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#dc2626'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#1e40af'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-circle-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
+                </div>
+
+                <!-- Moniquirá -->
+                <div
+                  id="moniquira"
+                  style="
+                    background: white;
+                    border: 1px solid rgba(30, 64, 175, 0.2);
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(30, 64, 175, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(30, 64, 175, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #1e40af, #dc2626);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #1e40af;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Moniquirá, Boyacá
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Municipio del departamento de Boyacá con cobertura de servicios ambientales de SESPA.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+57 XXX XXX XXXX"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >+57 XXX XXX XXXX</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-location-arrow"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:zona@ejemplo.com"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >zona@ejemplo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-hourglass-half"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #1e40af;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#dc2626'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#1e40af'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-circle-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
+                </div>
+
+                <!-- Barrancas -->
+                <div
+                  id="barrancas"
+                  style="
+                    background: white;
+                    border: 1px solid rgba(30, 64, 175, 0.2);
+                    border-radius: 10px;
+                    padding: 35px;
+                    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+                    transition: all 0.3s ease;
+                    position: relative;
+                  "
+                  onmouseover="this.style.boxShadow='0 8px 24px rgba(30, 64, 175, 0.15)'; this.style.transform='translateY(-4px)';"
+                  onmouseout="this.style.boxShadow='0 2px 12px rgba(30, 64, 175, 0.08)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      height: 4px;
+                      background: linear-gradient(90deg, #1e40af, #dc2626);
+                      border-radius: 10px 10px 0 0;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      color: #1e40af;
+                      margin: 15px 0 12px 0;
+                      font-size: 1.5rem;
+                      font-weight: 700;
+                      letter-spacing: -0.3px;
+                    "
+                  >
+                    Barrancas, La Guajira
+                  </h3>
+                  <p
+                    style="
+                      color: #64748b;
+                      margin-bottom: 22px;
+                      line-height: 1.7;
+                      font-size: 0.95rem;
+                    "
+                  >
+                    Municipio del departamento de La Guajira con servicios ambientales profesionales de SESPA.
+                  </p>
+                  <ul
+                    style="
+                      list-style: none;
+                      padding: 0;
+                      border-top: 1px solid #e8f5e9;
+                      padding-top: 20px;
+                    "
+                  >
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="tel:+57 XXX XXX XXXX"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >+57 XXX XXX XXXX</a
+                      >
+                    </li>
+                    <li style="margin-bottom: 12px; font-size: 0.95rem">
+                      <i
+                        class="fas fa-location-arrow"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      ><a
+                        href="mailto:zona@ejemplo.com"
+                        style="
+                          color: #1e40af;
+                          text-decoration: none;
+                          font-weight: 500;
+                          transition: color 0.3s;
+                        "
+                        onmouseover="this.style.color='#dc2626';"
+                        onmouseout="this.style.color='#1e40af';"
+                        >zona@ejemplo.com</a
+                      >
+                    </li>
+                    <li style="font-size: 0.95rem; color: #64748b">
+                      <i
+                        class="fas fa-hourglass-half"
+                        style="
+                          color: #dc2626;
+                          margin-right: 10px;
+                          width: 18px;
+                          display: inline-block;
+                        "
+                      ></i
+                      >Lun - Vie: 8:00 AM - 5:00 PM
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    style="
+                      display: inline-flex;
+                      align-items: center;
+                      margin-top: 25px;
+                      color: #1e40af;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                      transition: all 0.3s;
+                    "
+                    onmouseover="this.style.color='#dc2626'; this.querySelector('i').style.transform='translateX(4px)';"
+                    onmouseout="this.style.color='#1e40af'; this.querySelector('i').style.transform='translateX(0)';"
+                    >Ver Detalles
+                    <i
+                      class="fas fa-arrow-circle-right"
+                      style="margin-left: 8px; transition: transform 0.3s"
+                    ></i
+                  ></a>
+                </div>
+
+            <!-- Servicios por Municipio -->
+            <section
+              style="
+                margin-top: 60px;
+                padding-top: 50px;
+                border-top: 2px solid #e8f5e9;
+              "
+            >
+              <div style="text-align: center; margin-bottom: 45px">
+                <h2
+                  style="
+                    color: #1e40af;
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                    font-weight: 800;
+                    letter-spacing: -0.5px;
+                  "
+                >
+                  Servicios por Municipio
+                </h2>
+                <p
+                  style="
+                    color: #64748b;
+                    font-size: 1rem;
+                    max-width: 600px;
+                    margin: 0 auto;
+                  "
+                >
+                  Soluciones integrales de servicios adaptadas a cada localidad
+                </p>
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                  gap: 30px;
+                "
+              >
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 1px solid rgba(30, 64, 175, 0.2);
+                    border-radius: 12px;
+                    padding: 35px;
+                    text-align: center;
+                    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.06);
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.boxShadow='0 6px 16px rgba(30, 64, 175, 0.12)'; this.style.transform='translateY(-3px)';"
+                  onmouseout="this.style.boxShadow='0 2px 8px rgba(30, 64, 175, 0.06)'; this.style.transform='translateY(0)';"
+                >
+                  <div
+                    style="
+                      background: linear-gradient(135deg, #1e40af, #dc2626);
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 20px;
+                      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+                    "
+                  >
+                    <i
+                      class="fas fa-trash-alt"
+                      style="font-size: 1.8rem; color: white"
+                    ></i>
+                  </div>
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 12px;
+                      font-size: 1.25rem;
+                      font-weight: 700;
+                      letter-spacing: -0.2px;
+                    "
+                  >
+                    Servicio 1
+                  </h3>
+                  <p
+                    style="color: #64748b; line-height: 1.7; font-size: 0.95rem"
+                  >
+                    Descripción del servicio 1 disponible en todas nuestras zonas operativas. Servicio de calidad certificada con estándares internacionales.
+                  </p>
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 2px solid #e8f5e9;
+                    border-radius: 16px;
+                    padding: 30px;
+                    text-align: center;
+                  "
+                >
+                  <i
+                    class="fas fa-broom"
+                    style="
+                      font-size: 2.8rem;
+                      color: #1e40af;
+                      margin-bottom: 15px;
+                      display: block;
+                    "
+                  ></i>
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 15px;
+                      font-size: 1.3rem;
+                    "
+                  >
+                    Servicio 2
+                  </h3>
+                  <p style="color: #64748b; line-height: 1.6">
+                    Descripción del servicio 2 con cobertura en todas nuestras áreas de operación. Nuestros especialistas están capacitados para brindar un servicio de excelencia.
+                  </p>
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(135deg, #f9fafb, #ffffff);
+                    border: 2px solid #e8f5e9;
+                    border-radius: 16px;
+                    padding: 30px;
+                    text-align: center;
+                  "
+                >
+                  <i
+                    class="fas fa-calendar-day-week"
+                    style="
+                      font-size: 2.8rem;
+                      color: #1e40af;
+                      margin-bottom: 15px;
+                      display: block;
+                    "
+                  ></i>
+                  <h3
+                    style="
+                      color: #1e293b;
+                      margin-bottom: 15px;
+                      font-size: 1.3rem;
+                    "
+                  >
+                    Servicio 3
+                  </h3>
+                  <p style="color: #64748b; line-height: 1.6">
+                    Descripción del servicio 3 personalizado según las necesidades de cada zona. Contamos con un equipo profesional dedicado a la satisfacción del cliente.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>Municipios</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="#socorro"
+                    ><i class="fas fa-angle-right"></i> Socorro</a
+                  >
+                </li>
+                <li>
+                  <a href="#palmas"
+                    ><i class="fas fa-angle-right"></i> Palmas del Socorro</a
+                  >
+                </li>
+                <li>
+                  <a href="#moniquira"
+                    ><i class="fas fa-angle-right"></i> Moniquirá</a
+                  >
+                </li>
+                <li>
+                  <a href="#barrancas"
+                    ><i class="fas fa-angle-right"></i> Barrancas</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>¿Necesitas Ayuda?</h3>
+              <p>
+                Contáctanos para obtener más información sobre nuestros
+                servicios
+              </p>
+              <a
+                href="../usuario/contacto.html"
+                class="btn btn-secondary btn-block"
+                >Contáctanos</a
+              >
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+<footer class="footer-modern">
+  <div class="container-modern">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../../assets/img/image.png" alt="ECOSANGIL" class="logo-img" style="width: 40px; height: 40px;" />
+          <span class="logo-text">ECOSANGIL</span>
+        </div>
+        <p class="footer-description">Protegiendo el medio ambiente con pasión, dedicación y compromiso sostenible para las futuras generaciones.</p>
+      </div>
+
+      <div class="footer-col">
+          <h4>La Empresa</h4>
+          <ul class="footer-links">
+            <li><a href="quienes-somos.html">Acerca de Nosotros</a></li>
+            <li><a href="mision-vision.html">Propósito y Horizonte</a></li>
+            <li><a href="estructura.html">Organigrama</a></li>
+            <li><a href="informes.html">Reportes</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="../servicios/barrido-limpieza.html">Barrido y Limpieza</a></li>
+          <li><a href="../servicios/recoleccion-transporte.html">Recolección y Transporte</a></li>
+          <li><a href="../servicios/jornadas.html">Jornadas Especiales</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="../usuario/contacto.html">Contáctanos</a></li>
+          <li><a href="../usuario/pqr.html">PQR</a></li>
+          <li><a href="../usuario/preguntas.html">Preguntas</a></li>
+          <li><a href="../usuario/noticias.html">Noticias</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ECOSANGIL. Todos los derechos reservados.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top-modern" id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script src="../../assets/js/ecosangil-modern.js"></script>
+</body>
+</html>
+

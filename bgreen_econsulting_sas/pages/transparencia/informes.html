@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informes y Reportes - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+      .reports-section {
+        background: var(--blanco-puro);
+        padding: var(--spacing-3xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-2xl);
+      }
+      .report-list {
+        list-style: none;
+        padding: 0;
+      }
+      .report-item {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--spacing-md);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .btn-download {
+        background: var(--color-primary);
+        color: var(--blanco-puro);
+        padding: var(--spacing-sm) var(--spacing-lg);
+        border: none;
+        border-radius: var(--radius-md);
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .info-box {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-xl);
+        border-left: 4px solid var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Informes y Reportes</h1>
+        <p class="page-subtitle">
+          Información pública y transparencia corporativa
+        </p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="info-box">
+        <h3>📋 Transparencia y Acceso a la Información</h3>
+        <p>
+          Conforme a la <strong>Ley 1712 de 2014</strong> (Ley de
+          Transparencia), ponemos a disposición de la ciudadanía nuestros
+          informes de gestión financiera, operativa y administrativa.
+        </p>
+      </div>
+
+      <section class="reports-section">
+        <h2>💰 Informes Financieros</h2>
+
+        <ul class="report-list">
+          <li class="report-item">
+            <div>
+              <h3>Estados Financieros 2024 - Trimestre I</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Marzo 2024 | PDF - 2.5 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Estados Financieros 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2023 | PDF - 3.1 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Estados Financieros 2022</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2022 | PDF - 2.8 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Informe de Revisoría Fiscal 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Febrero 2024 | PDF - 1.2 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reports-section">
+        <h2>📊 Informes de Gestión Operativa</h2>
+
+        <ul class="report-list">
+          <li class="report-item">
+            <div>
+              <h3>Informe de Gestión Anual 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Enero 2024 | PDF - 4.5 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Reporte de Cobertura y Continuidad - Trimestre I 2024</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Abril 2024 | PDF - 1.8 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Estadísticas de Recolección 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2023 | PDF - 2.1 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reports-section">
+        <h2>🌍 Informes Ambientales</h2>
+
+        <ul class="report-list">
+          <li class="report-item">
+            <div>
+              <h3>Informe de Gestión Ambiental 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2023 | PDF - 3.2 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Reporte de Aprovechamiento y Reciclaje 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2023 | PDF - 1.5 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Plan de Gestión Integral de Residuos Sólidos (PGIRS)</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Actualización 2024 | PDF - 5.8 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reports-section">
+        <h2>📑 Informes a la SSPD</h2>
+        <p>
+          Reportes presentados ante la Superintendencia de Servicios Públicos
+          Domiciliarios:
+        </p>
+
+        <ul class="report-list">
+          <li class="report-item">
+            <div>
+              <h3>Informe SUI - Trimestre I 2024</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Abril 2024 | PDF - 2.2 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Informe Anual SSPD 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Febrero 2024 | PDF - 3.5 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reports-section">
+        <h2>👥 Informes de Atención al Usuario</h2>
+
+        <ul class="report-list">
+          <li class="report-item">
+            <div>
+              <h3>Consolidado PQR 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2023 | PDF - 1.1 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+
+          <li class="report-item">
+            <div>
+              <h3>Informe de Satisfacción del Usuario 2023</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary)">
+                Diciembre 2023 | PDF - 1.8 MB
+              </p>
+            </div>
+            <a href="#" class="btn-download">📥 Descargar</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="info-box">
+        <h3>📞 Solicitud de Información</h3>
+        <p>
+          Si requiere información adicional o documentos no publicados, puede
+          solicitarlos a través de:
+        </p>
+        <ul>
+          <li><strong>Correo:</strong> transparencia@bgreenconsulting.com</li>
+          <li><strong>Derecho de petición:</strong> Ley 1755 de 2015</li>
+          <li><strong>Tiempo de respuesta:</strong> 15 días hábiles</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/ccu.html">CCU</a></li>
+              <li><a href="indicadores.html">Transparencia</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="../usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="../corporativo/politicas.html">Marco Legal</a>
+            <a href="../corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="../corporativo/habeas-data.html">Habeas Data</a>
+            <a href="../corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

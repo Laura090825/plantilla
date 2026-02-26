@@ -1,0 +1,315 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PQR - SESPA</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Componentes Web SESPA -->
+    <site-topbar></site-topbar>
+    <site-header></site-header>
+
+    <div class="breadcrumb-section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-house-user"></i> Inicio</a>
+          <span class="separator">/</span>
+          <a href="#atencion">Atención al Usuario</a>
+          <span class="separator">/</span>
+          <span>PQR</span>
+        </nav>
+      </div>
+    </div>
+
+    <main class="page-content">
+      <div class="container">
+        <section class="content-section">
+          <div class="page-header">
+            <h1>Peticiones, Quejas y Reclamos (PQR)</h1>
+            <p class="subtitle">
+              Estamos aquí para escucharte y atender tus solicitudes
+            </p>
+          </div>
+
+          <div class="pqr-info-section">
+            <div class="info-alert">
+              <i class="fas fa-info"></i>
+              <div>
+                <h3>Información Importante</h3>
+                <p>
+                  Todos tus derechos como usuario están respaldados por la
+                  normativas vigentes aplicables. Nos comprometemos a dar
+                  respuesta a tu solicitud en los términos establecidos por la
+                  ley.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pqr-types-grid">
+            <div class="pqr-type-card">
+              <i class="fas fa-location-arrow"></i>
+              <h3>Petición</h3>
+              <p>
+                Solicitud de información, documentos o cualquier acción a la que
+                tienes derecho.
+              </p>
+              <span class="response-time">Respuesta: 15 días hábiles</span>
+            </div>
+            <div class="pqr-type-card">
+              <i class="fas fa-exclamation-circle"></i>
+              <h3>Queja</h3>
+              <p>
+                Manifestación de insatisfacción por el servicio o comportamiento
+                de funcionarios.
+              </p>
+              <span class="response-time">Respuesta: 15 días hábiles</span>
+            </div>
+            <div class="pqr-type-card">
+              <i class="fas fa-bookmark"></i>
+              <h3>Reclamo</h3>
+              <p>
+                Exigencia de corrección por incumplimiento en la prestación del
+                servicio.
+              </p>
+              <span class="response-time">Respuesta: 15 días hábiles</span>
+            </div>
+            <div class="pqr-type-card">
+              <i class="fas fa-brain"></i>
+              <h3>Sugerencia</h3>
+              <p>Propuesta para mejorar nuestros servicios o procesos.</p>
+              <span class="response-time">Respuesta: 15 días hábiles</span>
+            </div>
+          </div>
+
+          <div class="pqr-form-section">
+            <h2>Radicar una PQR</h2>
+            <p>
+              Completa el siguiente formulario con tu solicitud. Recuerda
+              proporcionar información clara y precisa.
+            </p>
+
+            <form class="pqr-form" id="pqrForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tipo_pqr">Tipo de Solicitud *</label>
+                  <select id="tipo_pqr" required>
+                    <option value="">Seleccione...</option>
+                    <option value="peticion">Petición</option>
+                    <option value="queja">Queja</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="sugerencia">Sugerencia</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="codigo_usuario"
+                    >Código de Usuario (si aplica)</label
+                  >
+                  <input
+                    type="text"
+                    id="codigo_usuario"
+                    placeholder="Ej: 123456"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre_completo">Nombre Completo *</label>
+                  <input
+                    type="text"
+                    id="nombre_completo"
+                    required
+                    placeholder="Ingrese su nombre completo"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tipo_documento">Tipo de Documento *</label>
+                  <select id="tipo_documento" required>
+                    <option value="">Seleccione...</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="NIT">NIT</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="numero_documento">Número de Documento *</label>
+                  <input
+                    type="text"
+                    id="numero_documento"
+                    required
+                    placeholder="Número de documento"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono *</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    required
+                    placeholder="Número de contacto"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email_pqr">Correo Electrónico *</label>
+                  <input
+                    type="email"
+                    id="email_pqr"
+                    required
+                    placeholder="correo@ejemplo.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="direccion">Dirección</label>
+                  <input
+                    type="text"
+                    id="direccion"
+                    placeholder="Dirección completa"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="asunto">Asunto *</label>
+                <input
+                  type="text"
+                  id="asunto"
+                  required
+                  placeholder="Resumen breve de su solicitud"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="description">Descripción Detallada *</label>
+                <textarea
+                  id="description"
+                  rows="6"
+                  required
+                  placeholder="Describa detalladamente su petición, queja, reclamo o sugerencia..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="archivos">Adjuntar Archivos (opcional)</label>
+                <input
+                  type="file"
+                  id="archivos"
+                  multiple
+                  accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                />
+                <small
+                  >Formatos permitidos: PDF, JPG, PNG, DOC, DOCX. Máximo 5 MB
+                  por archivo.</small
+                >
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="autorizacion" required />
+                <label for="autorizacion">
+                  Autorizo el tratamiento de mis datos personales de acuerdo con
+                  la política de privacidad y protección de datos de la empresa.
+                  *
+                </label>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="terminos" required />
+                <label for="terminos">
+                  He leído y acepto los términos y condiciones para la
+                  radicación de PQR. *
+                </label>
+              </div>
+
+              <div class="form-acciones">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-location-arrow"></i> Enviar PQR
+                </button>
+                <button type="reset" class="btn btn-outline">
+                  <i class="fas fa-sync"></i> Limpiar Formulario
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="pqr-consult-section">
+            <h2>Consultar Estado de tu PQR</h2>
+            <p>
+              Si ya radicaste una PQR, puedes consultar su estado ingresando tu
+              Número de radicado.
+            </p>
+
+            <form class="consult-form">
+              <div class="consult-input-group">
+                <input
+                  type="text"
+                  placeholder="Número de radicado"
+                  id="numero_radicado"
+                />
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-search-plus"></i> Consultar
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="pqr-channels">
+            <h2>Otros Canales de Atención</h2>
+            <div class="channels-grid">
+              <div class="channel-card">
+                <i class="fas fa-phone"></i>
+                <h4>Línea Telefónica</h4>
+                <p>+57 XXX XXX XXXX</p>
+                <p>+57 XXX XXX XXXX</p>
+                <small>Lun - Vie: 8:00 AM - 5:00 PM</small>
+              </div>
+              <div class="channel-card">
+                <i class="fas fa-location-arrow"></i>
+                <h4>Correo Electrónico</h4>
+                <p>pqr@ejemplo.com</p>
+                <small>Respuesta en 24-48 horas</small>
+              </div>
+              <div class="channel-card">
+                <i class="fas fa-map-pin"></i>
+                <h4>Oficina Presencial</h4>
+                <p>Calle XXX #XXX-XXX</p>
+                <small
+                  >Lun - Vie: 8:00 AM - 5:00 PM<br />Sáb: 8:00 AM - 12:00
+                  PM</small
+                >
+              </div>
+              <div class="channel-card">
+                <i class="fab fa-whatsapp"></i>
+                <h4>WhatsApp</h4>
+                <p>+57 XXX XXX XXXX</p>
+                <small>Lun - Vie: 8:00 AM - 5:00 PM</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer y Componentes -->
+    <site-footer></site-footer>
+    <site-backtotop></site-backtotop>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

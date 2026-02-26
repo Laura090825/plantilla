@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misión y Visión - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+
+      .mission-vision-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+
+      .mv-card {
+        background: var(--blanco-puro);
+        border-radius: var(--radius-xl);
+        padding: var(--spacing-3xl);
+        box-shadow: var(--shadow-lg);
+        border-top: 5px solid var(--color-primary);
+      }
+
+      .mv-icon {
+        font-size: 4rem;
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .mv-title {
+        font-size: var(--text-3xl);
+        color: var(--color-primary);
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .mv-content {
+        font-size: var(--text-lg);
+        line-height: 1.8;
+        color: var(--text-primary);
+      }
+
+      .objectives-section {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-4xl);
+        border-radius: var(--radius-xl);
+        margin-bottom: var(--spacing-3xl);
+      }
+
+      .objective-list {
+        display: grid;
+        gap: var(--spacing-lg);
+        margin-top: var(--spacing-xl);
+      }
+
+      .objective-item {
+        display: flex;
+        align-items: start;
+        gap: var(--spacing-md);
+        background: var(--blanco-puro);
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .objective-number {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(
+          135deg,
+          var(--verde-natural),
+          var(--verde-claro)
+        );
+        color: var(--blanco-puro);
+        border-radius: var(--radius-full);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: var(--font-bold);
+        font-size: var(--text-xl);
+      }
+
+      @media (max-width: 768px) {
+        .mission-vision-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Misión y Visión</h1>
+        <p class="page-subtitle">Nuestro propósito y rumbo estratégico</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="mission-vision-grid">
+        <div class="mv-card">
+          <div class="mv-icon">🎯</div>
+          <h2 class="mv-title">Misión</h2>
+          <div class="mv-content">
+            <p>
+              Prestar el servicio público de aseo con los más altos estándares
+              de calidad, continuidad y eficiencia, cumpliendo con la
+              normatividad establecida en la
+              <strong>Ley 142 de 1994</strong> y demás disposiciones vigentes.
+              Garantizar la recolección, transporte, aprovechamiento y
+              disposición final adecuada de residuos sólidos, contribuyendo al
+              mejoramiento de la calidad de vida de nuestros usuarios y a la
+              protección del medio ambiente.
+            </p>
+            <p style="margin-top: var(--spacing-md)">
+              Nos comprometemos a facilitar el acceso al servicio a usuarios de
+              menores ingresos mediante esquemas de subsidios, promover la
+              participación ciudadana en la gestión del servicio, y mantener una
+              operación responsable que respete el equilibrio ecológico y
+              fomente la economía circular.
+            </p>
+          </div>
+        </div>
+
+        <div class="mv-card">
+          <div class="mv-icon">🌟</div>
+          <h2 class="mv-title">Visión</h2>
+          <div class="mv-content">
+            <p>
+              Ser la empresa de servicios públicos de aseo líder en la región
+              para el año 2030, reconocida por su excelencia operacional,
+              compromiso ambiental y satisfacción del usuario. Nos proyectamos
+              como referente nacional en la gestión integral de residuos
+              sólidos, con altos estándares de aprovechamiento y minimización de
+              impactos ambientales.
+            </p>
+            <p style="margin-top: var(--spacing-md)">
+              Aspiramos a alcanzar una cobertura del 100% en nuestra área de
+              influencia, implementar tecnologías limpias en toda nuestra
+              operación, y consolidar programas de educación ambiental que
+              transformen la cultura ciudadana frente a los residuos sólidos.
+              Buscamos ser un modelo de empresa sostenible que genera valor
+              compartido para todos sus grupos de interés.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="objectives-section">
+        <h2>Objetivos Estratégicos</h2>
+        <p>
+          De acuerdo con los principios establecidos en el
+          <strong>artículo 2 de la Ley 142 de 1994</strong>
+          sobre intervención del Estado en los servicios públicos, hemos
+          definido los siguientes objetivos:
+        </p>
+
+        <div class="objective-list">
+          <div class="objective-item">
+            <div class="objective-number">1</div>
+            <div>
+              <h4>Calidad y Mejoramiento Continuo</h4>
+              <p>
+                Garantizar la calidad del servicio público de aseo y su
+                disposición final para asegurar el mejoramiento de la calidad de
+                vida de los usuarios, cumpliendo con las normas técnicas y
+                ambientales vigentes.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">2</div>
+            <div>
+              <h4>Ampliación de Cobertura</h4>
+              <p>
+                Lograr la ampliación permanente de la cobertura mediante
+                sistemas que compensen la insuficiencia de la capacidad de pago
+                de los usuarios, priorizando la atención de necesidades básicas
+                insatisfechas.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">3</div>
+            <div>
+              <h4>Prestación Continua</h4>
+              <p>
+                Asegurar la prestación continua e ininterrumpida del servicio,
+                sin excepción alguna, salvo cuando existan razones de fuerza
+                mayor, caso fortuito o de orden técnico o económico debidamente
+                justificadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">4</div>
+            <div>
+              <h4>Eficiencia Operacional</h4>
+              <p>
+                Optimizar la prestación eficiente del servicio mediante la
+                gestión adecuada de recursos, implementación de tecnologías
+                apropiadas y mejores prácticas operativas.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">5</div>
+            <div>
+              <h4>Participación Ciudadana</h4>
+              <p>
+                Establecer mecanismos que garanticen a los usuarios el acceso a
+                los servicios y su participación en la gestión y fiscalización
+                de la prestación, promoviendo la conformación y funcionamiento
+                de Comités de Desarrollo y Control Social.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">6</div>
+            <div>
+              <h4>Equidad y Solidaridad</h4>
+              <p>
+                Mantener un régimen tarifario proporcional para los sectores de
+                bajos ingresos de acuerdo con los preceptos de equidad y
+                solidaridad establecidos en la ley.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">7</div>
+            <div>
+              <h4>Protección de Recursos Naturales</h4>
+              <p>
+                Velar por la protección, conservación y cuando sea necesario, la
+                recuperación de los recursos naturales y ambientales que sean
+                utilizados o afectados en la prestación del servicio.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">8</div>
+            <div>
+              <h4>Sostenibilidad Financiera</h4>
+              <p>
+                Asegurar la sostenibilidad financiera de la empresa mediante la
+                gestión eficiente de recursos, recuperación de costos y gastos
+                de operación, y la obtención de economías de escala
+                comprobables.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">9</div>
+            <div>
+              <h4>Aprovechamiento de Residuos</h4>
+              <p>
+                Desarrollar e implementar programas de aprovechamiento de
+                residuos sólidos reciclables y economía circular, contribuyendo
+                a la reducción del impacto ambiental y generando beneficios
+                sociales y económicos.
+              </p>
+            </div>
+          </div>
+
+          <div class="objective-item">
+            <div class="objective-number">10</div>
+            <div>
+              <h4>Educación Ambiental</h4>
+              <p>
+                Promover la educación ambiental y la cultura ciudadana en
+                materia de gestión integral de residuos sólidos, separación en
+                la fuente y reducción en la generación de residuos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+              <li><a href="mision-vision.html">Misión y Visión</a></li>
+              <li><a href="ccu.html">CCU</a></li>
+              <li>
+                <a href="../transparencia/indicadores.html">Transparencia</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="../usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="politicas.html">Marco Legal</a>
+            <a href="ccu.html">Condiciones Uniformes</a>
+            <a href="habeas-data.html">Habeas Data</a>
+            <a href="politicas.html#privacidad">Política de Privacidad</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--spacing-2xl);
+        margin-bottom: var(--spacing-3xl);
+      }
+      .contact-card {
+        background: var(--blanco-puro);
+        padding: var(--spacing-2xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        text-align: center;
+      }
+      .contact-icon {
+        font-size: 3rem;
+        margin-bottom: var(--spacing-lg);
+      }
+      .map-container {
+        background: var(--blanco-puro);
+        padding: var(--spacing-2xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-3xl);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Contacto</h1>
+        <p class="page-subtitle">Estamos para atenderle</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Dirección</h3>
+          <p>[Dirección completa de la empresa]</p>
+          <p>[Ciudad, Departamento]</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Teléfonos</h3>
+          <p><strong>Principal:</strong> [Teléfono]</p>
+          <p><strong>Línea PQR:</strong> [Teléfono PQR]</p>
+          <p><strong>WhatsApp:</strong> [WhatsApp]</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Correos Electrónicos</h3>
+          <p><strong>General:</strong> info@bgreenconsulting.com</p>
+          <p><strong>PQR:</strong> pqr@bgreenconsulting.com</p>
+          <p><strong>Facturación:</strong> facturacion@bgreenconsulting.com</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">🕐</div>
+          <h3>Horario de Atención</h3>
+          <p>
+            <strong>Lunes a Viernes:</strong><br />8:00 AM - 12:00 PM<br />2:00
+            PM - 6:00 PM
+          </p>
+          <p><strong>Sábados:</strong><br />8:00 AM - 12:00 PM</p>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <h2>Ubicación</h2>
+        <p style="margin-bottom: var(--spacing-lg)">
+          Encuéntrenos en nuestra oficina principal
+        </p>
+        <div
+          style="
+            background: var(--bg-tertiary);
+            height: 400px;
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <p style="color: var(--text-secondary)">
+            [Mapa interactivo - Integrar Google Maps o similar]
+          </p>
+        </div>
+      </div>
+
+      <section
+        style="
+          background: var(--blanco-puro);
+          padding: var(--spacing-3xl);
+          border-radius: var(--radius-xl);
+          box-shadow: var(--shadow-md);
+        "
+      >
+        <h2>Líneas de Emergencia</h2>
+        <p>
+          <strong>Reporte de irregularidades en el servicio:</strong> [Número
+          emergencia]
+        </p>
+        <p><strong>Disponible:</strong> 24/7</p>
+      </section>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/ccu.html">CCU</a></li>
+              <li>
+                <a href="../transparencia/indicadores.html">Transparencia</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="pqr.html">PQR</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="../corporativo/politicas.html">Marco Legal</a>
+            <a href="../corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="../corporativo/habeas-data.html">Habeas Data</a>
+            <a href="../corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

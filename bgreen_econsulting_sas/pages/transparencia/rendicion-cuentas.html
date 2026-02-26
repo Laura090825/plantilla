@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendición de Cuentas - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+      .accountability-section {
+        background: var(--blanco-puro);
+        padding: var(--spacing-3xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-2xl);
+      }
+      .event-card {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-lg);
+        border-left: 4px solid var(--color-primary);
+      }
+      .info-box {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-xl);
+        border-left: 4px solid var(--color-primary);
+      }
+      .btn-register {
+        background: var(--color-primary);
+        color: var(--blanco-puro);
+        padding: var(--spacing-md) var(--spacing-xl);
+        border: none;
+        border-radius: var(--radius-lg);
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Rendición de Cuentas</h1>
+        <p class="page-subtitle">Participación ciudadana y control social</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="info-box">
+        <h3>🎯 ¿Qué es la Rendición de Cuentas?</h3>
+        <p>
+          Es el proceso mediante el cual
+          <strong>B-GREEN ECONSULTING S.A.S</strong> informa a la ciudadanía, de
+          manera transparente, sobre su gestión operativa, financiera y
+          ambiental, dando cumplimiento a la <strong>Ley 142 de 1994</strong> y
+          la <strong>Ley 1757 de 2015</strong> de participación ciudadana.
+        </p>
+      </div>
+
+      <section class="accountability-section">
+        <h2>📅 Audiencias Públicas 2024</h2>
+
+        <div class="event-card">
+          <h3>🗓️ Próxima Audiencia Pública</h3>
+          <p><strong>Fecha:</strong> 15 de Junio de 2024</p>
+          <p><strong>Hora:</strong> 3:00 PM</p>
+          <p><strong>Lugar:</strong> Salón de Eventos Municipal</p>
+          <p><strong>Tema:</strong> Informe de Gestión Primer Semestre 2024</p>
+          <a href="#" class="btn-register">📝 Inscribirse</a>
+        </div>
+
+        <h3>Audiencias Realizadas</h3>
+
+        <div class="event-card">
+          <h3>Audiencia Pública Anual 2023</h3>
+          <p><strong>Fecha:</strong> 15 de Diciembre de 2023</p>
+          <p><strong>Asistentes:</strong> 185 ciudadanos</p>
+          <p>
+            <strong>Temas tratados:</strong> Resultados operativos, inversiones,
+            proyectos 2024
+          </p>
+          <a href="#" style="color: var(--color-primary); text-decoration: none"
+            >📄 Ver acta completa</a
+          >
+        </div>
+
+        <div class="event-card">
+          <h3>Audiencia Seguimiento - Junio 2023</h3>
+          <p><strong>Fecha:</strong> 20 de Junio de 2023</p>
+          <p><strong>Asistentes:</strong> 142 ciudadanos</p>
+          <p>
+            <strong>Temas tratados:</strong> Avance Plan de Gestión, indicadores
+            ambientales
+          </p>
+          <a href="#" style="color: var(--color-primary); text-decoration: none"
+            >📄 Ver acta completa</a
+          >
+        </div>
+      </section>
+
+      <section class="accountability-section">
+        <h2>📊 Resultados de Gestión 2023</h2>
+
+        <h3>Logros Principales</h3>
+        <ul style="line-height: 2">
+          <li>✅ Cobertura del servicio: <strong>98.5%</strong></li>
+          <li>✅ Cumplimiento de rutas: <strong>99.2%</strong></li>
+          <li>✅ Aprovechamiento de residuos: <strong>12.3%</strong></li>
+          <li>✅ Resolución de PQR: <strong>95.8%</strong> en tiempo legal</li>
+          <li>✅ Índice de recaudo: <strong>92.5%</strong></li>
+          <li>
+            ✅ Inversión en infraestructura: <strong>$450 millones</strong>
+          </li>
+        </ul>
+
+        <h3>Retos Identificados</h3>
+        <ul style="line-height: 2">
+          <li>Aumentar cobertura en zonas rurales dispersas</li>
+          <li>Incrementar porcentaje de aprovechamiento al 15%</li>
+          <li>Reducir cartera vencida al 8%</li>
+          <li>Mejorar frecuencia de recolección en sectores específicos</li>
+        </ul>
+      </section>
+
+      <section class="accountability-section">
+        <h2>💰 Ejecución Presupuestal 2023</h2>
+
+        <h3>Ingresos</h3>
+        <ul>
+          <li>Facturación servicio de aseo: $2,850 millones</li>
+          <li>Servicios adicionales: $320 millones</li>
+          <li>Aprovechamiento: $85 millones</li>
+          <li><strong>Total ingresos: $3,255 millones</strong></li>
+        </ul>
+
+        <h3>Inversiones</h3>
+        <ul>
+          <li>Adquisición de vehículos recolectores: $280 millones</li>
+          <li>Infraestructura y equipos: $170 millones</li>
+          <li>Programas ambientales: $95 millones</li>
+          <li>Tecnología y sistemas: $65 millones</li>
+        </ul>
+      </section>
+
+      <section class="accountability-section">
+        <h2>👥 Participación Ciudadana</h2>
+
+        <h3>Canales de Participación</h3>
+        <ul style="line-height: 2">
+          <li>
+            <strong>Comité de Desarrollo y Control Social:</strong> Reuniones
+            trimestrales
+          </li>
+          <li>
+            <strong>Veedurías Ciudadanas:</strong> Acompañamiento permanente
+          </li>
+          <li>
+            <strong>Consultas públicas:</strong> Para decisiones de inversión
+          </li>
+          <li><strong>Encuestas de satisfacción:</strong> Semestrales</li>
+        </ul>
+
+        <h3>¿Cómo Participar?</h3>
+        <p>
+          La ciudadanía puede participar en la rendición de cuentas a través de:
+        </p>
+        <ul>
+          <li>Asistencia a audiencias públicas</li>
+          <li>Envío de preguntas previas al evento</li>
+          <li>Conformación de veedurías ciudadanas</li>
+          <li>Presentación de propuestas de mejora</li>
+        </ul>
+      </section>
+
+      <section class="accountability-section">
+        <h2>📹 Material Multimedia</h2>
+        <ul>
+          <li>🎥 Video Audiencia Pública 2023</li>
+          <li>🎥 Presentación Informe de Gestión 2023 (PPT)</li>
+          <li>📄 Cartilla Rendición de Cuentas 2023 (PDF)</li>
+          <li>📊 Infografías de Resultados</li>
+        </ul>
+      </section>
+
+      <div class="info-box">
+        <h3>📞 Contacto Rendición de Cuentas</h3>
+        <p>Para más información sobre el proceso de rendición de cuentas:</p>
+        <ul>
+          <li>
+            <strong>Correo:</strong> rendicioncuentas@bgreenconsulting.com
+          </li>
+          <li><strong>Teléfono:</strong> [Número telefónico]</li>
+          <li>
+            <strong>Oficina de Participación Ciudadana:</strong> [Dirección]
+          </li>
+        </ul>
+      </div>
+
+      <section class="accountability-section">
+        <h2>⚖️ Marco Normativo</h2>
+        <ul>
+          <li>
+            <strong>Ley 142 de 1994:</strong> Régimen de servicios públicos
+            domiciliarios
+          </li>
+          <li>
+            <strong>Ley 1757 de 2015:</strong> Promoción y protección del
+            derecho a la participación
+          </li>
+          <li>
+            <strong>Ley 1712 de 2014:</strong> Transparencia y acceso a
+            información pública
+          </li>
+          <li>
+            <strong>Directiva Presidencial 10 de 2002:</strong> Programa de
+            rendición de cuentas
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/ccu.html">CCU</a></li>
+              <li><a href="indicadores.html">Transparencia</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="../usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="../corporativo/politicas.html">Marco Legal</a>
+            <a href="../corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="../corporativo/habeas-data.html">Habeas Data</a>
+            <a href="../corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

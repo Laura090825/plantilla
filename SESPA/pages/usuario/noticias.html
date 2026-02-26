@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Tu Empresa</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Componentes Web SESPA -->
+    <site-topbar></site-topbar>
+    <site-header></site-header>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-house-user"></i> Inicio</a>
+          <span class="separator">/</span>
+          <span class="current">Noticias</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="page-content">
+      <div class="container">
+        <div class="content-grid">
+          <main class="main-content">
+            <div class="content-header">
+              <h1><i class="fas fa-rss-square"></i> Noticias y Novedades</h1>
+              <p class="subtitle">
+                Mantente informado sobre nuestras actividades y noticias del
+                sector
+              </p>
+            </div>
+
+            <!-- Filtros de Noticias -->
+            <div class="news-filters">
+              <div class="filter-group">
+                <label for="category-filter"
+                  ><i class="fas fa-funnel-dollar"></i> Categoría:</label
+                >
+                <select id="category-filter">
+                  <option value="all">Todas las categorías</option>
+                  <option value="categoria1">Categoría 1</option>
+                  <option value="categoria2">Categoría 2</option>
+                  <option value="categoria3">Categoría 3</option>
+                  <option value="categoria4">Categoría 4</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="year-filter"
+                  ><i class="fas fa-calendar-day"></i> Año:</label
+                >
+                <select id="year-filter">
+                  <option value="all">Todos</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Noticia Destacada -->
+            <article class="featured-news">
+              <div class="news-image">
+                <img
+                  src="https://via.placeholder.com/800x400"
+                  alt="Noticia destacada"
+                />
+                <span class="news-badge badge-new">Destacado</span>
+              </div>
+              <div class="news-content">
+                <div class="news-meta">
+                  <span class="category">Categoría 1</span>
+                  <span class="date"
+                    ><i class="fas fa-calendar-day"></i> 2 Enero 2026</span
+                  >
+                </div>
+                <h2>Noticia Destacada</h2>
+                <p>Descripción breve de la noticia destacada de la empresa.</p>
+                <a href="#" class="btn btn-primary"
+                  >Leer más <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- Grid de Noticias -->
+            <div class="news-grid">
+              <article
+                class="news-card"
+                data-category="categoria1"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge categoria1"
+                    >Categoría 1</span
+                  >
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 28 Diciembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 1</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria2"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge categoria2"
+                    >Categoría 2</span
+                  >
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 20 Diciembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 2</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria3"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge categoria3"
+                    >Categoría 3</span
+                  >
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 15 Diciembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 3</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria4"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge institucional"
+                    >Categoría 4</span
+                  >
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 10 Diciembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 4</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria1"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge ambiental">Categoría 1</span>
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 1 Diciembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 5</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria2"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge servicios">Categoría 2</span>
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 25 Noviembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 6</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria3"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge comunidad">Categoría 3</span>
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 18 Noviembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 7</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria4"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge institucional"
+                    >Categoría 4</span
+                  >
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 10 Noviembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 8</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="news-card"
+                data-category="categoria1"
+                data-year="2025"
+              >
+                <div class="news-card-image">
+                  <img
+                    src="https://via.placeholder.com/400x250"
+                    alt="Noticia"
+                  />
+                  <span class="news-category-badge ambiental">Categoría 1</span>
+                </div>
+                <div class="news-card-content">
+                  <div class="news-card-meta">
+                    <span
+                      ><i class="fas fa-calendar-day"></i> 5 Noviembre 2025</span
+                    >
+                  </div>
+                  <h3>Noticia 9</h3>
+                  <p>Descripción breve de la noticia de la empresa...</p>
+                  <a href="#" class="news-link">
+                    Leer más <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <!-- Paginación -->
+            <div class="paginacion">
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <button class="page-btn">4</button>
+              <button class="page-btn">
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>Categorías</h3>
+              <ul class="category-list">
+                <li>
+                  <a href="#" data-category="all">
+                    <span>Todas</span>
+                    <span class="count">9</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria1">
+                    <span>Categoría 1</span>
+                    <span class="count">3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria2">
+                    <span>Categoría 2</span>
+                    <span class="count">2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria3">
+                    <span>Categoría 3</span>
+                    <span class="count">2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-category="categoria4">
+                    <span>Categoría 4</span>
+                    <span class="count">2</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Noticias Recientes</h3>
+              <div class="recent-news-list">
+                <article class="recent-news-item">
+                  <div class="recent-news-date">
+                    <span class="day">XX</span>
+                    <span class="month">MES</span>
+                  </div>
+                  <div class="recent-news-content">
+                    <h4>Noticia 1</h4>
+                    <a href="#" class="small-link">Leer más</a>
+                  </div>
+                </article>
+
+                <article class="recent-news-item">
+                  <div class="recent-news-date">
+                    <span class="day">XX</span>
+                    <span class="month">MES</span>
+                  </div>
+                  <div class="recent-news-content">
+                    <h4>Noticia 2</h4>
+                    <a href="#" class="small-link">Leer más</a>
+                  </div>
+                </article>
+
+                <article class="recent-news-item">
+                  <div class="recent-news-date">
+                    <span class="day">XX</span>
+                    <span class="month">MES</span>
+                  </div>
+                  <div class="recent-news-content">
+                    <h4>Noticia 3</h4>
+                    <a href="#" class="small-link">Leer más</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Suscríbete</h3>
+              <p>Recibe las últimas noticias en tu correo</p>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="Tu correo electrónico"
+                  required
+                />
+                <button type="submit" class="btn btn-secondary btn-block">
+                  <i class="fas fa-location-arrow"></i> Suscribirse
+                </button>
+              </form>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>Sala de Prensa</h3>
+              <p>¿Eres periodista? Accede a nuestro kit de prensa</p>
+              <a href="#" class="btn btn-outline btn-block">
+                <i class="fas fa-cloud-download-alt"></i> Descargar Kit
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer y Componentes -->
+    <site-footer></site-footer>
+    <site-backtotop></site-backtotop>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
+

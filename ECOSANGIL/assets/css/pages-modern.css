@@ -1,0 +1,1328 @@
+/* ==========================================
+   ECOSANGIL - Estilos para Páginas Internas
+   ========================================== */
+
+/* ==========================================
+   HERO DE PÁGINAS INTERNAS
+   ========================================== */
+.page-hero-modern {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #1e293b;
+  background-image:
+    linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.6)),
+    url("../img/empresa.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 100px 20px 60px;
+}
+
+.page-hero-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none !important;
+  display: none; /* Ocultar orbs para ver mejor la imagen */
+}
+
+.page-hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.breadcrumb-modern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.breadcrumb-modern a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition-fast);
+}
+
+.breadcrumb-modern a:hover {
+  color: var(--white);
+}
+
+.breadcrumb-modern .current {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.page-title-modern {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.page-subtitle-modern {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   ABOUT SECTION
+   ========================================== */
+.about-modern {
+  padding: 60px 0;
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.quote-modern {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-left: 4px solid var(--primary-purple);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  margin-top: 40px;
+  position: relative;
+}
+
+.quote-modern i {
+  font-size: 2rem;
+  color: var(--primary-purple);
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+
+.quote-modern p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--dark-bg);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.quote-author {
+  display: block;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.about-visual {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-feature-card {
+  position: absolute;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 28px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  min-width: 260px;
+  max-width: 280px;
+  border: 2px solid rgba(255, 153, 51, 0.3);
+  transition: var(--transition-normal);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay oscuro para mejor contraste del texto */
+.about-feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  z-index: 1;
+}
+
+.about-feature-card * {
+  position: relative;
+  z-index: 2;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 153, 51, 0.3);
+  border-color: rgba(255, 153, 51, 0.6);
+}
+
+.about-feature-card:hover::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+.about-feature-card .feature-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  color: var(--white);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.about-feature-card h4 {
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 10px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.about-feature-card p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.about-feature-card.card-1 {
+  top: 30px;
+  left: 10px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.about-feature-card.card-2 {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  animation: float 6s ease-in-out infinite 2s;
+}
+
+.about-feature-card.card-3 {
+  bottom: 30px;
+  left: 10px;
+  animation: float 6s ease-in-out infinite 4s;
+}
+
+/* ==========================================
+   TIMELINE MODERNA
+   ========================================== */
+.timeline-modern {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.timeline-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--gradient-1));
+}
+
+.timeline-item-modern {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.timeline-marker {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.timeline-dot {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 0 8px rgba(102, 126, 234, 0.1);
+}
+
+.timeline-line {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  width: 2px;
+  height: 100%;
+  background: transparent;
+}
+
+.timeline-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  flex: 1;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline-year {
+  display: inline-block;
+  background: var(--gradient-1);
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.timeline-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 12px;
+}
+
+.timeline-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   VALORES MODERNOS
+   ========================================== */
+.values-modern-section {
+  padding: 60px 0;
+  background: var(--white);
+}
+
+.values-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.value-card-modern {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+  transition: var(--transition-normal);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.value-card-modern:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.value-card-modern .value-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 2rem;
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.value-icon-modern {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 2rem;
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.value-card-modern h3 {
+  font-size: 1.4rem;
+  color: var(--primary-orange);
+  margin-bottom: 16px;
+}
+
+.value-card-modern p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   ESTADÍSTICAS DE IMPACTO
+   ========================================== */
+.impact-stats-section {
+  padding: 50px 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.impact-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.impact-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition-normal);
+}
+
+.impact-stat-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+.impact-stat-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--gradient-1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.impact-stat-content {
+  flex: 1;
+}
+
+.impact-stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+/* Fallback para navegadores que no soportan background-clip */
+@supports not (background-clip: text) {
+  .impact-stat-number {
+    color: #ff8c42;
+    background: none;
+    -webkit-text-fill-color: currentColor;
+  }
+}
+
+.impact-stat-minus {
+  display: inline;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.impact-stat-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   CTA SECTION
+   ========================================== */
+.cta-modern-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-modern-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+  opacity: 0.5;
+}
+
+.cta-content {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.cta-content h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-glass-dark {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--white);
+}
+
+.btn-glass-dark:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   SERVICE PAGES
+   ========================================== */
+.service-content-modern {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.service-icon-large {
+  width: 120px;
+  height: 120px;
+  background: var(--gradient-1);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: var(--white);
+  flex-shrink: 0;
+  box-shadow: var(--shadow-lg);
+}
+
+.service-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.service-features {
+  margin-bottom: 60px;
+}
+
+.service-features h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.features-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.feature-card-modern {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  transition: var(--transition-normal);
+}
+
+.feature-card-modern:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-2);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.feature-card-modern h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.feature-card-modern p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-benefits {
+  margin-bottom: 60px;
+}
+
+.service-benefits h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--primary-purple);
+}
+
+.benefits-list li i {
+  font-size: 1.3rem;
+  color: var(--primary-purple);
+  flex-shrink: 0;
+}
+
+.service-cta {
+  background: var(--gradient-1);
+  border-radius: var(--radius-lg);
+  padding: 50px;
+  text-align: center;
+}
+
+.service-cta h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.service-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+/* ==========================================   MISION Y VISION MODERN
+   ========================================== */
+.mision-vision-modern-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.mv-card-modern {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.mv-card-modern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-1);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.mv-card-modern:hover::before {
+  transform: scaleX(1);
+}
+
+.mv-card-modern:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mv-icon-modern {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.vision-modern .mv-icon-modern {
+  background: var(--gradient-2);
+}
+
+.mv-card-modern h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 20px;
+}
+
+.mv-text-modern {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.values-section-modern {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.values-section-modern .section-badge {
+  margin-bottom: 16px;
+}
+
+.values-section-modern .section-title-modern {
+  color: var(--dark-bg) !important;
+  margin-bottom: 32px;
+}
+
+/* Fallback para el degradado cuando no se soporte */
+@supports not (background-clip: text) {
+  .values-section-modern .text-gradient {
+    color: #ff8c42 !important;
+    background: none;
+    -webkit-text-fill-color: currentColor !important;
+  }
+}
+
+.values-section-modern .text-gradient {
+  background: linear-gradient(135deg, #ff8c42 0%, #ff7f2a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==========================================
+   CONTACT PAGE MODERN
+   ========================================== */
+.contact-modern-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-info-modern {
+  position: sticky;
+  top: 120px;
+}
+
+.contact-description {
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 20px 0 40px 0;
+}
+
+.contact-items-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.contact-item-modern {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: var(--transition-normal);
+}
+
+.contact-item-modern:hover {
+  background: rgba(0, 0, 0, 0.04);
+  transform: translateX(8px);
+}
+
+.contact-item-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.contact-item-modern h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.contact-item-modern p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.social-modern h4 {
+  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.social-links-modern {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-link-modern {
+  width: 45px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  font-size: 1.2rem;
+  transition: var(--transition-normal);
+}
+
+.social-link-modern:hover {
+  background: var(--gradient-1);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form-modern {
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+
+.form-glassmorphism h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.form-glassmorphism > p {
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.form-row-modern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group-modern {
+  margin-bottom: 24px;
+}
+
+.form-group-modern label {
+  display: block;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group-modern input,
+.form-group-modern select,
+.form-group-modern textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-md);
+  color: #1e293b;
+  font-size: 1rem;
+  transition: var(--transition-normal);
+}
+
+.form-group-modern input::placeholder,
+.form-group-modern textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.form-group-modern input:focus,
+.form-group-modern select:focus,
+.form-group-modern textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.form-group-modern textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ==========================================
+   FIX: Corrección de contraste para .about-modern
+   Texto visible sobre fondo blanco
+   ========================================== */
+/* Cuando service-features está dentro de about-modern (fondo blanco) */
+.about-modern .service-features h3 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .feature-card-modern {
+  background: rgba(0, 0, 0, 0.02) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.about-modern .feature-card-modern h4 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .feature-card-modern p {
+  color: #64748b !important;
+}
+
+.about-modern .feature-icon {
+  background: var(--gradient-1) !important;
+  color: var(--white) !important;
+}
+
+/* Fix para service-benefits dentro de about-modern */
+.about-modern .service-benefits h3 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .benefits-list li {
+  color: #1e293b !important;
+  background: #f8fafc !important;
+  border-left-color: var(--primary-orange) !important;
+}
+
+.about-modern .benefits-list li i {
+  color: var(--primary-orange) !important;
+}
+
+/* Fix para service-description */
+.about-modern .service-description {
+  color: #475569 !important;
+}
+
+/* Fix para section-title-modern */
+.about-modern .section-title-modern {
+  color: var(--primary-orange) !important;
+}
+
+/* Asegurar que service-cta mantenga sus colores */
+.about-modern .service-cta {
+  /* Mantener el gradiente y colores blancos */
+  background: var(--gradient-1) !important;
+}
+
+.about-modern .service-cta h3,
+.about-modern .service-cta p {
+  color: var(--white) !important;
+}
+
+/* ==========================================
+   FIX: Excepciones para Organigrama
+   Fondo blanco con letras negras y títulos naranjas
+   ========================================== */
+/* Mantener fondo blanco para organigrama */
+.about-modern:has(.org-section-modern) {
+  background: var(--white) !important;
+  padding: 60px 0;
+}
+
+/* Títulos principales en naranja */
+.about-modern .section-intro-modern h2 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .section-intro-modern p {
+  color: #475569 !important;
+}
+
+/* Títulos del organigrama en naranja */
+.about-modern .org-section-modern h2 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .org-section-modern h3,
+.about-modern .org-section-modern h4 {
+  color: var(--primary-orange) !important;
+}
+
+/* Texto negro en organigrama */
+.about-modern .org-section-modern p {
+  color: #475569 !important;
+}
+
+/* Tarjetas del organigrama con fondo blanco */
+.about-modern .org-card-modern {
+  background: var(--white) !important;
+  border: 2px solid rgba(255, 153, 51, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.about-modern .org-card-modern h3,
+.about-modern .org-card-modern h4 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .org-card-modern p {
+  color: #475569 !important;
+}
+
+.about-modern .org-list li {
+  color: #1e293b !important;
+  background: transparent !important;
+}
+
+/* Sección de directivos */
+.about-modern .directivos-section-modern h2 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .directivo-card-modern {
+  background: var(--white) !important;
+  border: 2px solid rgba(255, 153, 51, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.about-modern .directivo-card-modern h3 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .directivo-card-modern h4 {
+  color: #ff8c42 !important;
+}
+
+.about-modern .directivo-card-modern p {
+  color: #475569 !important;
+}
+
+/* Sección de comités */
+.about-modern .comites-section-modern h2 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .comite-card-modern {
+  background: var(--white) !important;
+  border: 2px solid rgba(255, 153, 51, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.about-modern .comite-card-modern h3,
+.about-modern .comite-card-modern h4 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .comite-card-modern p,
+.about-modern .comite-card-modern li {
+  color: #475569 !important;
+  background: transparent !important;
+}
+
+/* CTA card en organigrama */
+.about-modern .cta-card-modern {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%) !important;
+  border: 2px solid rgba(255, 153, 51, 0.3) !important;
+}
+
+.about-modern .cta-card-modern h3 {
+  color: var(--primary-orange) !important;
+}
+
+.about-modern .cta-card-modern p {
+  color: #475569 !important;
+}
+
+/* ==========================================
+   FIX GLOBAL: Todos los títulos naranjas en páginas internas
+   ========================================== */
+.about-modern h1,
+.about-modern h2,
+.about-modern h3,
+.about-modern h4,
+.about-modern h5,
+.about-modern h6 {
+  color: var(--primary-orange) !important;
+}
+
+/* Texto regular en negro/gris oscuro */
+.about-modern p,
+.about-modern li {
+  color: #475569 !important;
+}
+
+/* Excepciones: mantener blanco donde tiene gradiente de fondo */
+.about-modern .service-cta h3,
+.about-modern .service-cta p,
+.service-cta h3,
+.service-cta p {
+  color: var(--white) !important;
+}
+
+/* ==========================================   RESPONSIVE
+   ========================================== */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    height: 500px;
+    margin-top: 40px;
+  }
+  
+  .about-feature-card {
+    min-width: 220px;
+    max-width: 240px;
+    height: 160px;
+  }
+  
+  .about-feature-card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .about-feature-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero-modern {
+    min-height: 45vh;
+    padding: 100px 20px 50px;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .about-visual {
+    height: 450px;
+    margin: 40px 0;
+  }
+  
+  .about-feature-card {
+    min-width: 180px;
+    max-width: 200px;
+    height: 140px;
+    padding: 28px 20px;
+  }
+  
+  .about-feature-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .about-feature-card p {
+    font-size: 0.85rem;
+  }
+  
+  .about-feature-card.card-1 {
+    top: 20px;
+    left: 5px;
+  }
+  
+  .about-feature-card.card-2 {
+    right: 5px;
+  }
+  
+  .about-feature-card.card-3 {
+    bottom: 20px;
+    left: 5px;
+  }
+
+  .mision-vision-modern-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mv-card-modern {
+    padding: 36px 24px;
+  }
+
+  .service-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-icon-large {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+
+  .features-grid-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cta {
+    padding: 40px 24px;
+  }
+
+  .timeline-wrapper::before {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-item-modern {
+    gap: 24px;
+  }
+
+  .values-grid-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-modern {
+    width: 100%;
+  }
+
+  .contact-modern-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-info-modern {
+    position: static;
+  }
+
+  .contact-form-modern {
+    padding: 28px 20px;
+  }
+
+  .form-row-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-visual {
+    height: 350px;
+  }
+
+  .about-feature-card {
+    min-width: 140px;
+    padding: 16px;
+  }
+
+  .timeline-card {
+    padding: 24px;
+  }
+}

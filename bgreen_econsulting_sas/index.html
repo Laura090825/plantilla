@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B-GREEN ECONSULTING S.A.S - Servicios Públicos de Aseo</title>
+
+    <link rel="stylesheet" href="assets/css/template.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <style>
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-5xl) 0 var(--spacing-4xl);
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: var(--text-5xl);
+        margin-bottom: var(--spacing-lg);
+        color: var(--blanco-puro);
+      }
+
+      .hero-tagline {
+        font-size: var(--text-2xl);
+        margin-bottom: var(--spacing-3xl);
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: var(--spacing-xl);
+        margin-top: var(--spacing-3xl);
+      }
+
+      .stat-item {
+        background: rgba(255, 255, 255, 0.15);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+      }
+
+      .stat-number {
+        font-size: var(--text-4xl);
+        font-weight: var(--font-bold);
+        margin-bottom: var(--spacing-xs);
+        color: #ffffff;
+      }
+
+      .section {
+        padding: var(--spacing-5xl) 0;
+      }
+
+      .bg-light {
+        background: var(--bg-tertiary);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: var(--spacing-4xl);
+      }
+
+      .section-title h2 {
+        font-size: var(--text-4xl);
+        color: var(--color-primary);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-xl);
+      }
+
+      .card {
+        background: var(--blanco-puro);
+        border-radius: var(--radius-xl);
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-md);
+        transition: all var(--transition-base);
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-xl);
+      }
+
+      .service-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto var(--spacing-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          var(--verde-claro),
+          var(--verde-natural)
+        );
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(92, 184, 92, 0.3);
+      }
+
+      .service-icon svg {
+        width: 40px;
+        height: 40px;
+        fill: white;
+      }
+
+      .card h3 {
+        font-size: var(--text-xl);
+        color: var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header completo -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a
+                href="pages/corporativo/quienes-somos.html"
+                class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a
+                href="pages/corporativo/mision-vision.html"
+                class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="pages/corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="pages/corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="pages/corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="#barrido" class="dropdown-item">Barrido y Limpieza</a>
+              <a href="#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="#disposicion" class="dropdown-item">Disposición Final</a>
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="pages/usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="pages/usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="pages/usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="pages/usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="pages/facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="pages/facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="pages/facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a
+                href="pages/transparencia/indicadores.html"
+                class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="pages/transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="pages/transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a
+                href="pages/transparencia/contratacion.html"
+                class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="pages/municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="pages/municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="pages/municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="pages/municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Servicios Públicos de Aseo con Calidad</h1>
+        <p class="hero-tagline">
+          Compromiso ambiental y responsabilidad social desde 2010
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Usuarios atendidos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Satisfacción</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Atención continua</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section bg-light" id="servicios">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nuestros Servicios</h2>
+          <p>Soluciones integrales de aseo y gestión de residuos</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="card" id="recoleccion">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M3 4h18v2H3zm0 14h18v2H3zm2-7h14l-2 5H7z" />
+                <circle cx="7" cy="19" r="1.5" />
+                <circle cx="17" cy="19" r="1.5" />
+              </svg>
+            </div>
+            <h3>Recolección de Residuos</h3>
+            <p>
+              Servicio de recolección domiciliaria y comercial con frecuencias
+              establecidas. Cobertura total en áreas urbanas y rurales.
+            </p>
+          </div>
+
+          <div class="card" id="barrido">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <h3>Barrido y Limpieza</h3>
+            <p>
+              Limpieza de vías y áreas públicas para mantener espacios limpios.
+              Equipos especializados y personal capacitado.
+            </p>
+          </div>
+
+          <div class="card" id="aprovechamiento">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66 1.43-4C9.5 20.5 12 22 15 22c4.97 0 9-4.03 9-9 0-4.97-4.03-9-9-9-2.39 0-4.57.93-6.21 2.46l1.43 1.43C11.22 6.67 13 6 15 6c3.86 0 7 3.14 7 7s-3.14 7-7 7c-2.38 0-4.47-1.19-5.73-3h3.23l-3-5-3 5h2.24c1.37 2.88 4.36 5 7.76 5z"
+                />
+              </svg>
+            </div>
+            <h3>Aprovechamiento</h3>
+            <p>
+              Gestión de residuos reciclables y programas de economía circular.
+              Separación en la fuente y valorización de materiales.
+            </p>
+          </div>
+
+          <div class="card" id="disposicion">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                />
+              </svg>
+            </div>
+            <h3>Disposición Final</h3>
+            <p>
+              Tratamiento y disposición final de residuos en rellenos
+              sanitarios. Cumplimiento estricto de normativas ambientales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Noticias y Actualizaciones</h2>
+        </div>
+
+        <div class="news-grid">
+          <div class="card">
+            <img
+              src="assets/img/news-1.jpg"
+              alt="Noticia 1"
+              class="card-image"
+            />
+            <div class="card-content">
+              <span class="card-date">15 Febrero 2026</span>
+              <h3>Nueva flota de vehículos</h3>
+              <p>Ampliamos nuestra flota con vehículos eco-amigables.</p>
+              <a href="pages/usuario/noticias.html" class="btn btn-outline"
+                >Leer más</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/news-2.jpg"
+              alt="Noticia 2"
+              class="card-image"
+            />
+            <div class="card-content">
+              <span class="card-date">10 Febrero 2026</span>
+              <h3>Programa de reciclaje</h3>
+              <p>Nuevas rutas de recolección selectiva en la ciudad.</p>
+              <a href="pages/usuario/noticias.html" class="btn btn-outline"
+                >Leer más</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/img/news-3.jpg"
+              alt="Noticia 3"
+              class="card-image"
+            />
+            <div class="card-content">
+              <span class="card-date">5 Febrero 2026</span>
+              <h3>Certificación ISO</h3>
+              <p>Obtenemos certificación internacional de calidad.</p>
+              <a href="pages/usuario/noticias.html" class="btn btn-outline"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE COMPROMISO AMBIENTAL -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nuestro Compromiso Ambiental</h2>
+          <p>Trabajamos por un futuro más limpio y sostenible</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🌱</div>
+            <h3 class="value-title">Sostenibilidad</h3>
+            <p>
+              Implementamos prácticas sostenibles en todos nuestros procesos
+              operativos.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">♻️</div>
+            <h3 class="value-title">Economía Circular</h3>
+            <p>
+              Promovemos el aprovechamiento y reciclaje de residuos para reducir
+              el impacto ambiental.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">Responsabilidad Social</h3>
+            <p>Contribuimos al bienestar de las comunidades donde operamos.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">💡</div>
+            <h3 class="value-title">Innovación</h3>
+            <p>
+              Adoptamos tecnologías limpias para mejorar la eficiencia de
+              nuestros servicios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADO A LA ACCIÓN -->
+    <section class="section">
+      <div class="container text-center">
+        <h2
+          style="color: var(--verde-natural); margin-bottom: var(--spacing-lg)"
+        >
+          ¿Necesitas nuestros servicios?
+        </h2>
+        <p
+          style="
+            font-size: var(--text-lg);
+            margin-bottom: var(--spacing-2xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Estamos aquí para atender todas tus necesidades de aseo y gestión de
+          residuos.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="pages/usuario/contacto.html"
+            class="btn btn-primary btn-large"
+          >
+            Contáctanos
+          </a>
+          <a href="pages/usuario/pqr.html" class="btn btn-outline btn-large">
+            Enviar PQR
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li><a href="#recoleccion">Recolección de Residuos</a></li>
+              <li><a href="#barrido">Barrido y Limpieza</a></li>
+              <li><a href="#aprovechamiento">Aprovechamiento</a></li>
+              <li><a href="#disposicion">Disposición Final</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="pages/corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="pages/corporativo/mision-vision.html"
+                  >Misión y Visión</a
+                >
+              </li>
+              <li><a href="pages/corporativo/ccu.html">CCU</a></li>
+              <li>
+                <a href="pages/transparencia/indicadores.html">Transparencia</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="pages/usuario/pqr.html">PQR</a></li>
+              <li><a href="pages/usuario/contacto.html">Contacto</a></li>
+              <li><a href="pages/facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="pages/usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="pages/corporativo/politicas.html">Marco Legal</a>
+            <a href="pages/corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="pages/corporativo/habeas-data.html">Habeas Data</a>
+            <a href="pages/corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

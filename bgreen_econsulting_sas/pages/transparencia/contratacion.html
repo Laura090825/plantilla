@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contratación - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+      .contracting-section {
+        background: var(--blanco-puro);
+        padding: var(--spacing-3xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-2xl);
+      }
+      .contract-card {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-lg);
+        border-left: 4px solid var(--color-primary);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: var(--spacing-lg);
+      }
+      table th,
+      table td {
+        padding: var(--spacing-md);
+        border: 1px solid var(--border-light);
+        text-align: left;
+      }
+      table th {
+        background: var(--color-primary);
+        color: var(--blanco-puro);
+        font-weight: 600;
+      }
+      .info-box {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-xl);
+        border-left: 4px solid var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Contratación y Procesos de Selección</h1>
+        <p class="page-subtitle">Transparencia en la gestión contractual</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="info-box">
+        <h3>📋 Principios de Contratación</h3>
+        <p>
+          <strong>B-GREEN ECONSULTING S.A.S</strong>, como empresa de servicios
+          públicos, aplica el régimen privado en sus contrataciones, respetando
+          los principios de transparencia, economía, responsabilidad y selección
+          objetiva.
+        </p>
+      </div>
+
+      <section class="contracting-section">
+        <h2>📢 Convocatorias Abiertas</h2>
+
+        <div class="contract-card">
+          <h3>🟢 ACTIVA - Suministro de Repuestos Vehiculares</h3>
+          <p>
+            <strong>Objeto:</strong> Suministro de repuestos para flota de
+            vehículos recolectores
+          </p>
+          <p><strong>Valor estimado:</strong> $85,000,000</p>
+          <p><strong>Fecha de cierre:</strong> 30 de Mayo de 2024</p>
+          <p><strong>Modalidad:</strong> Cotización directa</p>
+          <a
+            href="#"
+            style="
+              color: var(--color-primary);
+              text-decoration: none;
+              font-weight: 600;
+            "
+            >📄 Ver términos de referencia</a
+          >
+        </div>
+
+        <div class="contract-card">
+          <h3>🟢 ACTIVA - Mantenimiento de Equipos</h3>
+          <p>
+            <strong>Objeto:</strong> Servicio de mantenimiento preventivo y
+            correctivo
+          </p>
+          <p><strong>Valor estimado:</strong> $120,000,000</p>
+          <p><strong>Fecha de cierre:</strong> 15 de Junio de 2024</p>
+          <p><strong>Modalidad:</strong> Selección abreviada</p>
+          <a
+            href="#"
+            style="
+              color: var(--color-primary);
+              text-decoration: none;
+              font-weight: 600;
+            "
+            >📄 Ver términos de referencia</a
+          >
+        </div>
+      </section>
+
+      <section class="contracting-section">
+        <h2>📊 Contratos Vigentes 2024</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Contrato</th>
+              <th>Objeto</th>
+              <th>Contratista</th>
+              <th>Valor</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001-2024</td>
+              <td>Suministro de combustible</td>
+              <td>Terpel S.A.</td>
+              <td>$250,000,000</td>
+              <td>✅ Vigente</td>
+            </tr>
+            <tr>
+              <td>002-2024</td>
+              <td>Servicios de vigilancia</td>
+              <td>Seguridad Total</td>
+              <td>$95,000,000</td>
+              <td>✅ Vigente</td>
+            </tr>
+            <tr>
+              <td>003-2024</td>
+              <td>Mantenimiento software</td>
+              <td>TechSol Ltda.</td>
+              <td>$45,000,000</td>
+              <td>✅ Vigente</td>
+            </tr>
+            <tr>
+              <td>004-2024</td>
+              <td>Arrendamiento maquinaria</td>
+              <td>Equipos SAS</td>
+              <td>$180,000,000</td>
+              <td>🔄 En ejecución</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="contracting-section">
+        <h2>📂 Archivo Histórico de Contratos</h2>
+
+        <h3>Contratos 2023</h3>
+        <ul>
+          <li>📄 Informe Consolidado Contratación 2023 (PDF)</li>
+          <li>📄 Listado Completo Contratos 2023 (Excel)</li>
+          <li>📄 Evaluación de Proveedores 2023 (PDF)</li>
+        </ul>
+
+        <h3>Contratos 2022</h3>
+        <ul>
+          <li>📄 Informe Consolidado Contratación 2022 (PDF)</li>
+          <li>📄 Listado Completo Contratos 2022 (Excel)</li>
+        </ul>
+      </section>
+
+      <section class="contracting-section">
+        <h2>📝 Manual de Contratación</h2>
+        <p>
+          Nuestro manual de contratación establece los procedimientos,
+          requisitos y criterios para la selección de contratistas y
+          proveedores.
+        </p>
+
+        <h3>Modalidades de Selección</h3>
+        <ul style="line-height: 2">
+          <li>
+            <strong>Licitación:</strong> Para contratos de mayor cuantía (+$200
+            millones)
+          </li>
+          <li>
+            <strong>Selección Abreviada:</strong> Contratos de mediana cuantía
+            ($50-200 millones)
+          </li>
+          <li>
+            <strong>Contratación Directa:</strong> Menores de $50 millones o
+            exclusividad
+          </li>
+          <li><strong>Mínima Cuantía:</strong> Inferiores a 10 SMMLV</li>
+        </ul>
+
+        <a
+          href="#"
+          style="
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+          "
+          >📥 Descargar Manual de Contratación (PDF - 2.5 MB)</a
+        >
+      </section>
+
+      <section class="contracting-section">
+        <h2>🏢 Registro de Proveedores</h2>
+        <p>
+          Personas naturales o jurídicas interesadas en participar en procesos
+          de contratación pueden inscribirse en nuestro registro de proveedores.
+        </p>
+
+        <h3>Requisitos de Inscripción</h3>
+        <ul>
+          <li>
+            Certificado de existencia y representación legal (personas
+            jurídicas)
+          </li>
+          <li>Cédula de ciudadanía (personas naturales)</li>
+          <li>RUT actualizado</li>
+          <li>Certificaciones de experiencia</li>
+          <li>Estados financieros últimos 2 años</li>
+          <li>Certificado de antecedentes fiscales y judiciales</li>
+        </ul>
+
+        <p style="margin-top: var(--spacing-lg)">
+          <strong>📧 Correo:</strong> proveedores@bgreenconsulting.com
+        </p>
+      </section>
+
+      <section class="contracting-section">
+        <h2>⚖️ Supervisión e Interventoría</h2>
+        <p>
+          Todos los contratos cuentan con supervisión técnica, administrativa y
+          financiera para garantizar el cumplimiento de obligaciones.
+        </p>
+
+        <h3>Informes de Supervisión</h3>
+        <ul>
+          <li>📄 Informe de Supervisión Trimestre I - 2024</li>
+          <li>📄 Evaluación de Cumplimiento Contratos 2023</li>
+        </ul>
+      </section>
+
+      <div class="info-box">
+        <h3>📊 Estadísticas de Contratación 2023</h3>
+        <ul>
+          <li>Total contratos celebrados: <strong>45</strong></li>
+          <li>Valor total contratado: <strong>$2,850 millones</strong></li>
+          <li>Proveedores locales: <strong>68%</strong></li>
+          <li>Cumplimiento de contratos: <strong>96%</strong></li>
+        </ul>
+      </div>
+
+      <section class="contracting-section">
+        <h2>📞 Información de Contacto</h2>
+        <ul>
+          <li><strong>Oficina de Contratación:</strong> [Dirección]</li>
+          <li>
+            <strong>Correo electrónico:</strong>
+            contratacion@bgreenconsulting.com
+          </li>
+          <li><strong>Teléfono:</strong> [Número telefónico]</li>
+          <li>
+            <strong>Horario de atención:</strong> Lunes a Viernes 8:00 AM - 5:00
+            PM
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/ccu.html">CCU</a></li>
+              <li><a href="indicadores.html">Transparencia</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="../usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="../corporativo/politicas.html">Marco Legal</a>
+            <a href="../corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="../corporativo/habeas-data.html">Habeas Data</a>
+            <a href="../corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

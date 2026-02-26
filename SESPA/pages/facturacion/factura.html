@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Factura | Tu Empresa</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Componentes Web SESPA -->
+    <site-topbar></site-topbar>
+    <site-header></site-header>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-house-user"></i> Inicio</a>
+          <span class="separator">/</span>
+          <span class="current">Consultar Factura</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="page-content">
+      <div class="container">
+        <div class="content-grid">
+          <main class="main-content">
+            <div class="content-header">
+              <h1><i class="fas fa-receipt"></i> Consulta tu Factura</h1>
+              <p class="subtitle">
+                Consulta el estado de tu cuenta y descarga tu factura en línea
+              </p>
+            </div>
+
+            <!-- Formulario de Consulta -->
+            <div class="invoice-search-section">
+              <h2><i class="fas fa-search-plus"></i> Buscar Factura</h2>
+              <p>
+                Ingresa tu número de cuenta o documento de identidad para
+                consultar tu factura
+              </p>
+
+              <form class="invoice-search-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="tipo-busqueda">Buscar por</label>
+                    <select id="tipo-busqueda" required>
+                      <option value="cuenta">Número de Cuenta</option>
+                      <option value="documento">Documento de Identidad</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="numero-busqueda">Número</label>
+                    <input
+                      type="text"
+                      id="numero-busqueda"
+                      placeholder="Ingresa el número"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-search-plus"></i> Consultar
+                </button>
+              </form>
+            </div>
+
+            <!-- Resultado de la Consulta (Ejemplo) -->
+            <div
+              class="invoice-result"
+              id="resultado-factura"
+              style="display: none"
+            >
+              <h2>
+                <i class="fas fa-receipt-dollar"></i> Información de tu
+                Factura
+              </h2>
+
+              <div class="invoice-card">
+                <div class="invoice-header">
+                  <div class="invoice-info">
+                    <h3>Factura N° 2026-001234</h3>
+                    <p>Período: Diciembre 2025</p>
+                  </div>
+                  <div class="invoice-status pending">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Pendiente de Pago</span>
+                  </div>
+                </div>
+
+                <div class="invoice-body">
+                  <div class="invoice-details">
+                    <div class="detail-row">
+                      <span class="label">Cuenta:</span>
+                      <span class="value">123456789</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Usuario:</span>
+                      <span class="value">JUAN PÉREZ GÓMEZ</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Dirección:</span>
+                      <span class="value">Calle 123 #45-67, Apt 301</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Estrato:</span>
+                      <span class="value">3</span>
+                    </div>
+                    <div class="detail-row">
+                      <span class="label">Fecha de Vencimiento:</span>
+                      <span class="value red">15 Enero 2026</span>
+                    </div>
+                  </div>
+
+                  <div class="invoice-amounts">
+                    <div class="amount-row">
+                      <span>Cargo Fijo</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 1</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 2</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 4</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row">
+                      <span>Servicio 3</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row subtotal">
+                      <span>Subtotal</span>
+                      <span>$XXX</span>
+                    </div>
+                    <div class="amount-row total">
+                      <span>Total a Pagar</span>
+                      <span>$XXX</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="invoice-actions">
+                  <a href="#" class="btn btn-outline" download>
+                    <i class="fas fa-cloud-download-alt"></i> Descargar PDF
+                  </a>
+                  <a href="../facturacion/pago.html" class="btn btn-primary">
+                    <i class="fas fa-money-check-alt"></i> Pagar Ahora
+                  </a>
+                </div>
+              </div>
+
+              <!-- Histórico de Facturas -->
+              <div class="invoice-history">
+                <h3><i class="fas fa-history"></i> Histórico de Facturas</h3>
+                <div class="history-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Factura</th>
+                        <th>Período</th>
+                        <th>Valor</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2026-001234</td>
+                        <td>Diciembre 2025</td>
+                        <td>$XXX</td>
+                        <td>
+                          <span class="status-badge pending">Pendiente</span>
+                        </td>
+                        <td>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-eye"></i
+                          ></a>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-cloud-download-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2025-012345</td>
+                        <td>Noviembre 2025</td>
+                        <td>$XXX</td>
+                        <td><span class="status-badge paid">Pagada</span></td>
+                        <td>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-eye"></i
+                          ></a>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-cloud-download-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2025-011234</td>
+                        <td>Octubre 2025</td>
+                        <td>$XXX</td>
+                        <td><span class="status-badge paid">Pagada</span></td>
+                        <td>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-eye"></i
+                          ></a>
+                          <a href="#" class="action-link"
+                            ><i class="fas fa-cloud-download-alt"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opciones de Pago -->
+            <div class="payment-options-section">
+              <h2><i class="fas fa-money-check-alt"></i> Opciones de Pago</h2>
+              <div class="payment-grid">
+                <div class="payment-card">
+                  <i class="fas fa-laptop"></i>
+                  <h3>Pago en Línea</h3>
+                  <p>Paga con tarjeta débito, crédito o PSE</p>
+                  <a href="../facturacion/pago.html" class="btn btn-outline"
+                    >Pagar Ahora</a
+                  >
+                </div>
+
+                <div class="payment-card">
+                  <i class="fas fa-landmark"></i>
+                  <h3>Bancos y Corresponsales</h3>
+                  <p>Efectivo en puntos autorizados</p>
+                  <a href="#" class="btn btn-outline">Ver Puntos</a>
+                </div>
+
+                <div class="payment-card">
+                  <i class="fas fa-money-check-alt"></i>
+                  <h3>Débito Automático</h3>
+                  <p>Inscribe tu cuenta bancaria</p>
+                  <a href="#" class="btn btn-outline">Inscribir</a>
+                </div>
+
+                <div class="payment-card">
+                  <i class="fas fa-city"></i>
+                  <h3>Oficinas</h3>
+                  <p>Paga en nuestras oficinas de atención</p>
+                  <a href="../usuario/contacto.html" class="btn btn-outline"
+                    >Ver Ubicaciones</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Información Adicional -->
+            <div class="info-box">
+              <i class="fas fa-info"></i>
+              <div>
+                <h3>¿Necesitas Ayuda?</h3>
+                <p>
+                  Si tienes problemas para consultar tu factura o encuentras
+                  algún error en la información, contáctanos:
+                </p>
+                <ul>
+                  <li><strong>Línea de atención:</strong> +57 XXX XXX XXXX</li>
+                  <li><strong>Correo:</strong> facturacion@ejemplo.com</li>
+                  <li><strong>WhatsApp:</strong> +57 XXX XXX XXXX</li>
+                </ul>
+              </div>
+            </div>
+          </main>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="sidebar-widget">
+              <h3>Servicios en Línea</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="../facturacion/factura.html"
+                    ><i class="fas fa-angle-right"></i> Ver mi Factura</a
+                  >
+                </li>
+                <li>
+                  <a href="../facturacion/pago.html"
+                    ><i class="fas fa-angle-right"></i> Pagar en Línea</a
+                  >
+                </li>
+                <li>
+                  <a href="../facturacion/tarifas.html"
+                    ><i class="fas fa-angle-right"></i> Consultar Tarifas</a
+                  >
+                </li>
+                <li>
+                  <a href="../usuario/pqr.html"
+                    ><i class="fas fa-angle-right"></i> Radicar PQR</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget">
+              <h3>Preguntas Frecuentes</h3>
+              <div class="faq-sidebar">
+                <div class="faq-sidebar-item">
+                  <h4>¿Cómo descargo mi factura?</h4>
+                  <p>Consulta tu factura y haz clic en "Descargar PDF"</p>
+                </div>
+                <div class="faq-sidebar-item">
+                  <h4>¿Hasta cuándo puedo pagar?</h4>
+                  <p>Verifica la fecha de vencimiento en tu factura</p>
+                </div>
+              </div>
+              <a
+                href="../usuario/preguntas.html"
+                class="btn btn-outline btn-block btn-sm"
+              >
+                Ver Todas las Preguntas
+              </a>
+            </div>
+
+            <div class="sidebar-widget cta-widget">
+              <h3>Facilita tus Pagos</h3>
+              <p>
+                Activa el débito automático y olvídate de las fechas de pago
+              </p>
+              <a href="#" class="btn btn-secondary btn-block">
+                Activar Débito
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer y Componentes -->
+    <site-footer></site-footer>
+    <site-backtotop></site-backtotop>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
+

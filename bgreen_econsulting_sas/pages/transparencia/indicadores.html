@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indicadores de Gestión - B-GREEN ECONSULTING S.A.S</title>
+    <link rel="stylesheet" href="../../assets/css/template.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+    <style>
+      .page-header {
+        background: linear-gradient(
+          135deg,
+          var(--verde-bosque) 0%,
+          var(--verde-natural) 100%
+        );
+        color: var(--blanco-puro);
+        padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+        margin-bottom: var(--spacing-4xl);
+      }
+      .indicators-section {
+        background: var(--blanco-puro);
+        padding: var(--spacing-3xl);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-2xl);
+      }
+      .indicator-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-xl);
+        margin-top: var(--spacing-lg);
+      }
+      .indicator-card {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        text-align: center;
+        border-top: 4px solid var(--color-primary);
+      }
+      .indicator-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--color-primary);
+        margin: var(--spacing-md) 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: var(--spacing-lg);
+      }
+      table th,
+      table td {
+        padding: var(--spacing-md);
+        border: 1px solid var(--border-light);
+        text-align: left;
+      }
+      table th {
+        background: var(--color-primary);
+        color: var(--blanco-puro);
+        font-weight: 600;
+      }
+      .info-box {
+        background: var(--bg-tertiary);
+        padding: var(--spacing-xl);
+        border-radius: var(--radius-lg);
+        margin-bottom: var(--spacing-xl);
+        border-left: 4px solid var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header con navegación completa -->
+    <nav class="header-component">
+      <div class="container">
+        <div class="header-brand">
+          <img
+            src="../../assets/img/image.png"
+            alt="B-GREEN ECONSULTING S.A.S"
+            class="header-logo"
+          />
+          <div class="header-company">
+            <h1 class="company-name">B-GREEN ECONSULTING S.A.S</h1>
+            <p class="company-slogan">Compromiso ambiental y sostenibilidad</p>
+          </div>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+          <span class="menu-icon"></span>
+        </button>
+
+        <div class="header-nav">
+          <a href="../../index.html" class="nav-link">Inicio</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Corporativo
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../corporativo/quienes-somos.html" class="dropdown-item"
+                >Quiénes Somos</a
+              >
+              <a href="../corporativo/mision-vision.html" class="dropdown-item"
+                >Misión y Visión</a
+              >
+              <a href="../corporativo/estructura.html" class="dropdown-item"
+                >Estructura Organizacional</a
+              >
+              <a href="../corporativo/ccu.html" class="dropdown-item"
+                >Contrato de Condiciones Uniformes</a
+              >
+              <a href="../corporativo/politicas.html" class="dropdown-item"
+                >Políticas y Normatividad</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Servicios
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../../index.html#recoleccion" class="dropdown-item"
+                >Recolección de Residuos</a
+              >
+              <a href="../../index.html#barrido" class="dropdown-item"
+                >Barrido y Limpieza</a
+              >
+              <a href="../../index.html#aprovechamiento" class="dropdown-item"
+                >Aprovechamiento</a
+              >
+              <a href="../../index.html#disposicion" class="dropdown-item"
+                >Disposición Final</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Usuario
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../usuario/pqr.html" class="dropdown-item">PQR</a>
+              <a href="../usuario/contacto.html" class="dropdown-item"
+                >Contacto</a
+              >
+              <a
+                href="../usuario/educacion-ambiental.html"
+                class="dropdown-item"
+                >Educación Ambiental</a
+              >
+              <a href="../usuario/horarios.html" class="dropdown-item"
+                >Horarios de Recolección</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Facturación
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../facturacion/tarifas.html" class="dropdown-item"
+                >Tarifas</a
+              >
+              <a href="../facturacion/pago-linea.html" class="dropdown-item"
+                >Pago en Línea</a
+              >
+              <a href="../facturacion/subsidios.html" class="dropdown-item"
+                >Subsidios</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Transparencia
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../transparencia/indicadores.html" class="dropdown-item"
+                >Indicadores de Gestión</a
+              >
+              <a href="../transparencia/informes.html" class="dropdown-item"
+                >Informes Financieros</a
+              >
+              <a
+                href="../transparencia/rendicion-cuentas.html"
+                class="dropdown-item"
+                >Rendición de Cuentas</a
+              >
+              <a href="../transparencia/contratacion.html" class="dropdown-item"
+                >Contratación</a
+              >
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Dónde Operamos
+              <svg
+                class="dropdown-icon"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M6 8L2 4h8l-4 4z" />
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="../municipios/municipio-1.html" class="dropdown-item"
+                >Municipio 1</a
+              >
+              <a href="../municipios/municipio-2.html" class="dropdown-item"
+                >Municipio 2</a
+              >
+              <a href="../municipios/municipio-3.html" class="dropdown-item"
+                >Municipio 3</a
+              >
+              <a href="../municipios/municipio-4.html" class="dropdown-item"
+                >Municipio 4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Indicadores de Gestión</h1>
+        <p class="page-subtitle">
+          Transparencia y rendición de cuentas - Ley 142 de 1994
+        </p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="info-box">
+        <h3>📊 Compromiso con la Transparencia</h3>
+        <p>
+          En cumplimiento del
+          <strong>artículo 79 de la Ley 142 de 1994</strong>, publicamos
+          nuestros indicadores de gestión para garantizar transparencia ante la
+          comunidad y las entidades de control.
+        </p>
+      </div>
+
+      <section class="indicators-section">
+        <h2>📈 Indicadores Operativos - Año 2024</h2>
+
+        <div class="indicator-grid">
+          <div class="indicator-card">
+            <h3>Cobertura</h3>
+            <div class="indicator-value">98.5%</div>
+            <p>del área urbana atendida</p>
+          </div>
+
+          <div class="indicator-card">
+            <h3>Continuidad</h3>
+            <div class="indicator-value">99.2%</div>
+            <p>cumplimiento de rutas</p>
+          </div>
+
+          <div class="indicator-card">
+            <h3>PQR Resueltas</h3>
+            <div class="indicator-value">95.8%</div>
+            <p>dentro del plazo legal</p>
+          </div>
+
+          <div class="indicator-card">
+            <h3>Aprovechamiento</h3>
+            <div class="indicator-value">12.3%</div>
+            <p>de residuos reciclados</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="indicators-section">
+        <h2>💰 Indicadores Financieros</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Indicador</th>
+              <th>Meta</th>
+              <th>Resultado</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Índice de Recaudo</td>
+              <td>90%</td>
+              <td>92.5%</td>
+              <td>✅ Cumplido</td>
+            </tr>
+            <tr>
+              <td>Cartera Vencida</td>
+              <td>&lt; 15%</td>
+              <td>11.2%</td>
+              <td>✅ Cumplido</td>
+            </tr>
+            <tr>
+              <td>Eficiencia Operativa</td>
+              <td>&gt; 85%</td>
+              <td>88.7%</td>
+              <td>✅ Cumplido</td>
+            </tr>
+            <tr>
+              <td>Costo por Ton Recolectada</td>
+              <td>$85,000</td>
+              <td>$82,300</td>
+              <td>✅ Cumplido</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="indicators-section">
+        <h2>🌍 Indicadores Ambientales</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Indicador</th>
+              <th>2024</th>
+              <th>2023</th>
+              <th>Variación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toneladas Recolectadas/mes</td>
+              <td>1,850</td>
+              <td>1,720</td>
+              <td>+7.6%</td>
+            </tr>
+            <tr>
+              <td>Material Reciclado (Ton/mes)</td>
+              <td>228</td>
+              <td>186</td>
+              <td>+22.6%</td>
+            </tr>
+            <tr>
+              <td>Reducción Emisiones CO₂ (Ton)</td>
+              <td>145</td>
+              <td>120</td>
+              <td>+20.8%</td>
+            </tr>
+            <tr>
+              <td>Usuarios Programa Reciclaje</td>
+              <td>3,420</td>
+              <td>2,850</td>
+              <td>+20%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="indicators-section">
+        <h2>👥 Indicadores de Atención al Usuario</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo de Solicitud</th>
+              <th>Recibidas</th>
+              <th>Resueltas</th>
+              <th>% Efectividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Peticiones</td>
+              <td>245</td>
+              <td>238</td>
+              <td>97.1%</td>
+            </tr>
+            <tr>
+              <td>Quejas</td>
+              <td>128</td>
+              <td>122</td>
+              <td>95.3%</td>
+            </tr>
+            <tr>
+              <td>Reclamos</td>
+              <td>89</td>
+              <td>85</td>
+              <td>95.5%</td>
+            </tr>
+            <tr>
+              <td>Sugerencias</td>
+              <td>56</td>
+              <td>56</td>
+              <td>100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="indicators-section">
+        <h2>📅 Histórico de Indicadores</h2>
+        <p>Consulte los informes de indicadores de años anteriores:</p>
+        <ul>
+          <li>📄 Informe de Indicadores 2023 (PDF)</li>
+          <li>📄 Informe de Indicadores 2022 (PDF)</li>
+          <li>📄 Informe de Indicadores 2021 (PDF)</li>
+        </ul>
+      </section>
+
+      <div class="info-box">
+        <h3>📊 Metodología</h3>
+        <p>
+          Los indicadores se calculan según las metodologías establecidas por la
+          Superintendencia de Servicios Públicos Domiciliarios y son auditados
+          trimestralmente por la revisoría fiscal.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer completo -->
+    <footer class="footer-component">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="../../assets/img/image.png"
+                alt="B-GREEN ECONSULTING S.A.S"
+                class="footer-logo"
+              />
+              <h3>B-GREEN ECONSULTING S.A.S</h3>
+            </div>
+            <p class="footer-desc">
+              Empresa comprometida con la prestación de servicios públicos de
+              aseo con calidad, continuidad y responsabilidad ambiental.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html#recoleccion"
+                  >Recolección de Residuos</a
+                >
+              </li>
+              <li><a href="../../index.html#barrido">Barrido y Limpieza</a></li>
+              <li>
+                <a href="../../index.html#aprovechamiento">Aprovechamiento</a>
+              </li>
+              <li>
+                <a href="../../index.html#disposicion">Disposición Final</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="../corporativo/quienes-somos.html">Quiénes Somos</a>
+              </li>
+              <li>
+                <a href="../corporativo/mision-vision.html">Misión y Visión</a>
+              </li>
+              <li><a href="../corporativo/ccu.html">CCU</a></li>
+              <li><a href="indicadores.html">Transparencia</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atención al Usuario</h4>
+            <ul class="footer-links">
+              <li><a href="../usuario/pqr.html">PQR</a></li>
+              <li><a href="../usuario/contacto.html">Contacto</a></li>
+              <li><a href="../facturacion/tarifas.html">Tarifas</a></li>
+              <li><a href="../usuario/horarios.html">Horarios</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-legal">
+          <div class="legal-info">
+            <p><strong>B-GREEN ECONSULTING S.A.S</strong> | NIT: 900765521-3</p>
+            <p>Dirección: Calle Principal #123, Ciudad, Colombia</p>
+            <p>Teléfono: +57 300 1234567 | Email: info@bgreenconsulting.com</p>
+          </div>
+
+          <div class="legal-links">
+            <a href="../corporativo/politicas.html">Marco Legal</a>
+            <a href="../corporativo/ccu.html">Condiciones Uniformes</a>
+            <a href="../corporativo/habeas-data.html">Habeas Data</a>
+            <a href="../corporativo/politicas.html#privacidad"
+              >Política de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span class="current-year">2026</span> B-GREEN ECONSULTING
+            S.A.S. Todos los derechos reservados.
+          </p>
+          <p class="footer-compliance">
+            Empresa de Servicios Públicos sujeta a la
+            <strong>Ley 142 de 1994</strong> | Resolución CRA 720 de 2015 |
+            Decreto 1077 de 2015
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
