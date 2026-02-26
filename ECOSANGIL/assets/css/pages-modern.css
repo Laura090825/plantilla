@@ -1174,17 +1174,17 @@
     height: 500px;
     margin-top: 40px;
   }
-  
+
   .about-feature-card {
     min-width: 220px;
     max-width: 240px;
     height: 160px;
   }
-  
+
   .about-feature-card h4 {
     font-size: 1.2rem;
   }
-  
+
   .about-feature-card p {
     font-size: 0.9rem;
   }
@@ -1197,36 +1197,36 @@
     background-size: cover;
     background-position: center center;
   }
-  
+
   .about-visual {
     height: 450px;
     margin: 40px 0;
   }
-  
+
   .about-feature-card {
     min-width: 180px;
     max-width: 200px;
     height: 140px;
     padding: 28px 20px;
   }
-  
+
   .about-feature-card h4 {
     font-size: 1.1rem;
   }
-  
+
   .about-feature-card p {
     font-size: 0.85rem;
   }
-  
+
   .about-feature-card.card-1 {
     top: 20px;
     left: 5px;
   }
-  
+
   .about-feature-card.card-2 {
     right: 5px;
   }
-  
+
   .about-feature-card.card-3 {
     bottom: 20px;
     left: 5px;

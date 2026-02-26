@@ -456,13 +456,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const timelineItems = document.querySelectorAll(".timeline-item");
   const searchInput = document.getElementById("search-news");
 
-  console.log(`📰 Sistema de filtros cargado: ${newsCards.length} tarjetas, ${timelineItems.length} items de timeline`);
+  console.log(
+    `📰 Sistema de filtros cargado: ${newsCards.length} tarjetas, ${timelineItems.length} items de timeline`,
+  );
 
   // Función de filtrado por categoría
   function filterByCategory(category) {
     newsCards.forEach((card) => {
       const cardCategory = card.getAttribute("data-category");
-      
+
       if (category === "all" || cardCategory === category) {
         card.style.display = "block";
         // Animación de entrada
@@ -483,14 +485,18 @@ document.addEventListener("DOMContentLoaded", function () {
     timelineItems.forEach((item) => {
       const itemCategory = item.querySelector(".timeline-badge");
       let itemCategoryClass = "";
-      
+
       if (itemCategory) {
-        if (itemCategory.classList.contains("ambiental")) itemCategoryClass = "categoria1";
-        else if (itemCategory.classList.contains("servicios")) itemCategoryClass = "categoria2";
-        else if (itemCategory.classList.contains("comunidad")) itemCategoryClass = "categoria3";
-        else if (itemCategory.classList.contains("institucional")) itemCategoryClass = "categoria4";
+        if (itemCategory.classList.contains("ambiental"))
+          itemCategoryClass = "categoria1";
+        else if (itemCategory.classList.contains("servicios"))
+          itemCategoryClass = "categoria2";
+        else if (itemCategory.classList.contains("comunidad"))
+          itemCategoryClass = "categoria3";
+        else if (itemCategory.classList.contains("institucional"))
+          itemCategoryClass = "categoria4";
       }
-      
+
       if (category === "all" || itemCategoryClass === category) {
         item.style.display = "flex";
         setTimeout(() => {
@@ -512,10 +518,10 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       // Remover clase activa de todos los botones
       filterButtons.forEach((btn) => btn.classList.remove("active"));
-      
+
       // Añadir clase activa al botón clickeado
       this.classList.add("active");
-      
+
       // Obtener la categoría y filtrar
       const category = this.getAttribute("data-category");
       filterByCategory(category);
@@ -526,11 +532,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (searchInput) {
     searchInput.addEventListener("input", function (e) {
       const searchTerm = e.target.value.toLowerCase();
-      
+
       newsCards.forEach((card) => {
         const title = card.querySelector("h3").textContent.toLowerCase();
         const description = card.querySelector("p").textContent.toLowerCase();
-        
+
         if (title.includes(searchTerm) || description.includes(searchTerm)) {
           card.style.display = "block";
           card.style.opacity = "1";
@@ -546,9 +552,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Búsqueda en timeline items
       timelineItems.forEach((item) => {
-        const title = item.querySelector("h3") ? item.querySelector("h3").textContent.toLowerCase() : "";
-        const description = item.querySelector("p") ? item.querySelector("p").textContent.toLowerCase() : "";
-        
+        const title = item.querySelector("h3")
+          ? item.querySelector("h3").textContent.toLowerCase()
+          : "";
+        const description = item.querySelector("p")
+          ? item.querySelector("p").textContent.toLowerCase()
+          : "";
+
         if (title.includes(searchTerm) || description.includes(searchTerm)) {
           item.style.display = "flex";
           item.style.opacity = "1";
