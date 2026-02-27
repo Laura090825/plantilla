@@ -136,6 +136,8 @@
   will-change: transform;
   animation: drive var(--drive-time) linear infinite;
   z-index: 2;
+  perspective: 800px;
+  transform-style: preserve-3d;
 }
 
 .truck{
@@ -146,6 +148,9 @@
   user-select:none;
   pointer-events:none;
   animation: bounce .55s ease-in-out infinite; /* rebote ligero */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transform-origin: center center;
 }
 
 /* sombra en el piso */
@@ -191,8 +196,8 @@
 
 /* rebote */
 @keyframes bounce{
-  0%,100%{ transform: translateY(0) rotate(2deg) skewX(-3deg); }
-  50%    { transform: translateY(-3px) rotate(2deg) skewX(-3deg); }
+  0%,100%{ transform: scale(1) rotate(6deg) skewX(-3deg) rotateY(-35deg); }
+  50%    { transform: scale(1.01) rotate(6deg) skewX(-3deg) rotateY(-35deg); }
 }
 
 /* ============================================
