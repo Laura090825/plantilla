@@ -2,13 +2,13 @@
    SPLASH SCREEN - CAMIÓN ANIMADO
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-:root{
+:root {
   --scene-h: 100vh;
   --road-h: 220px;
   --truck-h: 450px;
-  --drive-time: 7s;  /* menor = más rápido */
+  --drive-time: 7s; /* menor = más rápido */
 }
 
 .splash-screen {
@@ -18,7 +18,9 @@
   width: 100%;
   height: 100vh;
   z-index: 9999;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
   overflow: hidden;
 }
 
@@ -27,30 +29,50 @@
   visibility: hidden;
 }
 
-.scene{
-  width:100vw;
-  height:var(--scene-h);
-  position:relative;
-  overflow:hidden;
+.scene {
+  width: 100vw;
+  height: var(--scene-h);
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(#87d6ff 0%, #dff6ff 55%, #c6f0ff 100%);
 }
 
 /* Nubes (simple) */
-.clouds{
-  position:absolute; 
-  inset:0;
+.clouds {
+  position: absolute;
+  inset: 0;
   background:
-    radial-gradient(circle at 12% 20%, rgba(255,255,255,.85) 0 35px, transparent 36px),
-    radial-gradient(circle at 18% 22%, rgba(255,255,255,.85) 0 45px, transparent 46px),
-    radial-gradient(circle at 78% 16%, rgba(255,255,255,.75) 0 38px, transparent 39px),
-    radial-gradient(circle at 84% 18%, rgba(255,255,255,.75) 0 52px, transparent 53px);
-  opacity:.9;
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(255, 255, 255, 0.85) 0 35px,
+      transparent 36px
+    ),
+    radial-gradient(
+      circle at 18% 22%,
+      rgba(255, 255, 255, 0.85) 0 45px,
+      transparent 46px
+    ),
+    radial-gradient(
+      circle at 78% 16%,
+      rgba(255, 255, 255, 0.75) 0 38px,
+      transparent 39px
+    ),
+    radial-gradient(
+      circle at 84% 18%,
+      rgba(255, 255, 255, 0.75) 0 52px,
+      transparent 53px
+    );
+  opacity: 0.9;
   animation: cloudsMove 22s linear infinite;
 }
 
-@keyframes cloudsMove{
-  from{ transform: translateX(0); }
-  to{ transform: translateX(-140px); }
+@keyframes cloudsMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-140px);
+  }
 }
 
 /* Título ECOSANGIL */
@@ -59,80 +81,93 @@
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 180px;
   font-weight: 900;
   color: #ff8800;
   text-transform: uppercase;
   letter-spacing: 12px;
-  text-shadow: 
-    4px 4px 0px rgba(255,255,255,0.9),
-    8px 8px 0px rgba(0,0,0,0.3);
+  text-shadow:
+    4px 4px 0px rgba(255, 255, 255, 0.9),
+    8px 8px 0px rgba(0, 0, 0, 0.3);
   z-index: 10;
   margin: 0;
   animation: titleFloat 3s ease-in-out infinite;
 }
 
 @keyframes titleFloat {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-10px); }
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
 }
 
 /* Carretera */
-.road{
-  position:absolute;
-  left:0; 
-  right:0; 
-  bottom:0;
-  height:var(--road-h);
+.road {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--road-h);
   background: linear-gradient(#3b3b3b, #242424);
   z-index: 1;
 }
 
 /* Línea discontinua animada */
-.road::before{
-  content:"";
-  position:absolute;
-  left:-30px; 
-  right:-30px;
-  top:50%;
-  height:10px;
+.road::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  top: 50%;
+  height: 10px;
   transform: translateY(-50%);
   background: repeating-linear-gradient(
     90deg,
-    rgba(255,255,255,.9) 0 70px,
+    rgba(255, 255, 255, 0.9) 0 70px,
     transparent 70px 140px
   );
-  filter: drop-shadow(0 2px 0 rgba(0,0,0,.35));
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35));
   animation: laneSync var(--drive-time) linear infinite;
 }
 
-@keyframes laneSync{
-  0%   { background-position: 0 0; }
-  40%  { background-position: -560px 0; }
-  60%  { background-position: -560px 0; }
-  100% { background-position: -1120px 0; }
+@keyframes laneSync {
+  0% {
+    background-position: 0 0;
+  }
+  40% {
+    background-position: -560px 0;
+  }
+  60% {
+    background-position: -560px 0;
+  }
+  100% {
+    background-position: -1120px 0;
+  }
 }
 
 /* Borde superior */
-.road::after{
-  content:"";
-  position:absolute;
-  left:0; 
-  right:0; 
-  top:0;
-  height:6px;
-  background: rgba(255,255,255,.18);
+.road::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 /* Camión moviéndose a la derecha */
-.truckWrap{
-  position:absolute;
+.truckWrap {
+  position: absolute;
   bottom: calc(var(--road-h) - 130px);
-  left:0;
-  height:var(--truck-h);
-  display:flex;
-  align-items:flex-end;
+  left: 0;
+  height: var(--truck-h);
+  display: flex;
+  align-items: flex-end;
   will-change: transform;
   animation: drive var(--drive-time) linear infinite;
   z-index: 2;
@@ -140,64 +175,85 @@
   transform-style: preserve-3d;
 }
 
-.truck{
-  height:var(--truck-h);
-  width:auto;
-  display:block;
-  filter: drop-shadow(0 14px 10px rgba(0,0,0,.35));
-  user-select:none;
-  pointer-events:none;
-  animation: bounce .55s ease-in-out infinite; /* rebote ligero */
+.truck {
+  height: var(--truck-h);
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 14px 10px rgba(0, 0, 0, 0.35));
+  user-select: none;
+  pointer-events: none;
+  animation: bounce 0.55s ease-in-out infinite; /* rebote ligero */
   transform-style: preserve-3d;
   perspective: 1000px;
   transform-origin: center center;
 }
 
 /* sombra en el piso */
-.shadow{
-  position:absolute;
-  left:18%;
-  bottom:-10px;
-  width:60%;
-  height:18px;
-  background: rgba(0,0,0,.25);
+.shadow {
+  position: absolute;
+  left: 18%;
+  bottom: -10px;
+  width: 60%;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.25);
   filter: blur(10px);
   border-radius: 999px;
 }
 
 /* humo simple */
-.truckWrap::after{
-  content:"";
-  position:absolute;
-  left:-25px;
-  bottom:55px;
-  width:12px; 
-  height:12px;
-  border-radius:999px;
-  background: rgba(255,255,255,.65);
+.truckWrap::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 55px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
   filter: blur(1px);
-  opacity:0;
-  animation: smoke .9s ease-out infinite;
+  opacity: 0;
+  animation: smoke 0.9s ease-out infinite;
 }
 
-@keyframes smoke{
-  0%   { transform: translate(0,0) scale(.7); opacity:0; }
-  15%  { opacity:.5; }
-  100% { transform: translate(-55px,-18px) scale(1.6); opacity:0; }
+@keyframes smoke {
+  0% {
+    transform: translate(0, 0) scale(0.7);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-55px, -18px) scale(1.6);
+    opacity: 0;
+  }
 }
 
 /* Movimiento horizontal */
-@keyframes drive{
-  0%   { transform: translateX(-100%); }
-  40%  { transform: translateX(calc(50vw - 500px)); }
-  60%  { transform: translateX(calc(50vw - 500px)); }
-  100% { transform: translateX(100vw); }
+@keyframes drive {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(calc(50vw - 500px));
+  }
+  60% {
+    transform: translateX(calc(50vw - 500px));
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
 
 /* rebote */
-@keyframes bounce{
-  0%,100%{ transform: scale(1) rotate(6deg) skewX(-3deg) rotateY(-35deg); }
-  50%    { transform: scale(1.01) rotate(6deg) skewX(-3deg) rotateY(-35deg); }
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1) rotate(6deg) skewX(-3deg) rotateY(-35deg);
+  }
+  50% {
+    transform: scale(1.01) rotate(6deg) skewX(-3deg) rotateY(-35deg);
+  }
 }
 
 /* ============================================
@@ -207,7 +263,9 @@
 .main-content-wrapper {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
   color: var(--text-dark, #1e293b);
   background-color: var(--white, #ffffff);
 }
@@ -222,7 +280,7 @@
    ============================================ */
 
 @media (max-width: 768px) {
-  :root{
+  :root {
     --truck-h: 320px;
     --road-h: 160px;
   }
@@ -233,13 +291,13 @@
     top: 12%;
   }
 
-  .truckWrap{
+  .truckWrap {
     bottom: calc(var(--road-h) - 90px);
   }
 }
 
 @media (max-width: 480px) {
-  :root{
+  :root {
     --truck-h: 240px;
     --road-h: 120px;
   }
@@ -250,14 +308,17 @@
     top: 10%;
   }
 
-  .truckWrap{
+  .truckWrap {
     bottom: calc(var(--road-h) - 60px);
   }
 }
 
 /* accesibilidad */
-@media (prefers-reduced-motion: reduce){
-  .truckWrap, .truck, .road::before, .clouds{ 
-    animation: none !important; 
+@media (prefers-reduced-motion: reduce) {
+  .truckWrap,
+  .truck,
+  .road::before,
+  .clouds {
+    animation: none !important;
   }
 }
