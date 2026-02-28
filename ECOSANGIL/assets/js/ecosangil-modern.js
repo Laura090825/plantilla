@@ -8,46 +8,79 @@
 // ==========================================
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
-  const sections = document.querySelectorAll("section[id]");
 
-  // Actualizar link activo al hacer scroll
+  // ---- Detectar página actual por URL ----
+  function setActiveByURL() {
+    // Limpiar todos los activos primero
+    navLinks.forEach((link) => link.classList.remove("active"));
+
+    const currentPath = window.location.pathname.replace(/\\/g, "/");
+    const currentFile = currentPath.split("/").pop() || "index.html";
+
+    // Mapeo de archivos a índice del nav-link principal
+    // Orden: 0-Principal, 1-La Empresa, 2-Cobertura, 3-Nuestros Servicios,
+    //        4-Planes y Costos, 5-Servicio al Cliente, 6-Información Pública, 7-Actualidad
+    const pageToNavMap = {
+      "index.html": 0,
+      // La Empresa (índice 1)
+      "quienes-somos.html": 1,
+      "quienes-somos-modern.html": 1,
+      "mision-vision.html": 1,
+      "estructura.html": 1,
+      "informes.html": 1,
+      // Cobertura (índice 2)
+      "cobertura.html": 2,
+      "socorro.html": 2,
+      "palmas-del-socorro.html": 2,
+      "moniquira.html": 2,
+      "barrancas.html": 2,
+      // Nuestros Servicios (índice 3)
+      "barrido-limpieza.html": 3,
+      "jornadas.html": 3,
+      "recoleccion-transporte.html": 3,
+      // Planes y Costos (índice 4)
+      "tarifas.html": 4,
+      "factura.html": 4,
+      "pago.html": 4,
+      // Servicio al Cliente (índice 5)
+      "pqr.html": 5,
+      "preguntas.html": 5,
+      "contacto.html": 5,
+      "certificados.html": 5,
+      // Información Pública (índice 6)
+      "transparencia.html": 6,
+      // Actualidad (índice 7)
+      "noticias.html": 7,
+    };
+
+    const navIndex = pageToNavMap[currentFile];
+    if (navIndex !== undefined) {
+      const targetLink = navLinks[navIndex];
+      if (targetLink) targetLink.classList.add("active");
+    }
+  }
+
+  setActiveByURL();
+
+  // ---- Scroll: solo actualizar botón volver arriba ----
   window.addEventListener("scroll", function () {
-    let current = "";
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.pageYOffset >= sectionTop - 200) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-
-    // Mostrar botón volver arriba
     const backToTop = document.getElementById("backToTop");
-    if (window.pageYOffset > 500) {
-      backToTop.classList.add("show");
-    } else {
-      backToTop.classList.remove("show");
+    if (backToTop) {
+      if (window.pageYOffset > 500) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
     }
   });
 
-  // Scroll suave
+  // ---- Scroll suave para anclas ----
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
-
-      // Solo aplicar scroll suave si es un ancla en la misma página (empieza con #)
       if (href && href.startsWith("#")) {
         const targetId = href.substring(1);
         const targetSection = document.getElementById(targetId);
-
         if (targetSection) {
           e.preventDefault();
           window.scrollTo({
@@ -56,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
       }
-      // Si no es un ancla (#), dejar que el link funcione normalmente
     });
   });
 });

@@ -1,14 +1,802 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transparencia | Tu Empresa</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/sespa-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      /* Estilos Modernos para Transparencia */
+      .page-content {
+        background: #f8f9fa;
+        padding: 60px 0;
+      }
+
+      .content-header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 50px 20px;
+        background: linear-gradient(135deg, #27ae60 0%, #16a085 100%);
+        color: white;
+        border-radius: 25px;
+        box-shadow: 0 20px 60px rgba(39, 174, 96, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .content-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="white" opacity="0.05"/></svg>');
+        opacity: 0.3;
+      }
+
+      .content-header h1 {
+        color: white;
+        font-size: 3.2rem;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 1;
+      }
+
+      .content-header .subtitle {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.3rem;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+      }
+
+      .transparency-intro {
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        margin-bottom: 50px;
+        border: 2px solid #f0f0f0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .transparency-intro::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(180deg, #27ae60 0%, #16a085 100%);
+      }
+
+      .transparency-intro p {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: #555;
+        margin-left: 15px;
+      }
+
+      .transparency-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        gap: 35px;
+        margin-bottom: 40px;
+      }
+
+      .transparency-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px 30px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 2px solid #f0f0f0;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .transparency-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(39, 174, 96, 0.05),
+          rgba(26, 188, 156, 0.05)
+        );
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      .transparency-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: transparent;
+      }
+
+      .transparency-card:hover::before {
+        opacity: 1;
+      }
+
+      .card-icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        flex-shrink: 0;
+        position: relative;
+        line-height: 0;
+      }
+
+      /* Colores específicos para cada categoría */
+      #normatividad .card-icon {
+        background: linear-gradient(135deg, #a8e6cf 0%, #56d9a0 100%);
+      }
+
+      #contratación .card-icon {
+        background: linear-gradient(135deg, #7bed9f 0%, #2ed573 100%);
+      }
+
+      #presupuesto .card-icon {
+        background: linear-gradient(135deg, #80deea 0%, #4db6ac 100%);
+      }
+
+      #planeación .card-icon {
+        background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
+      }
+
+      #control .card-icon {
+        background: linear-gradient(135deg, #9ccc65 0%, #7cb342 100%);
+      }
+
+      #datos-abiertos .card-icon {
+        background: linear-gradient(135deg, #4dd0e1 0%, #26c6da 100%);
+      }
+
+      .transparency-card:hover .card-icon {
+        transform: scale(1.15) rotate(360deg);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      }
+
+      .card-icon i {
+        font-size: 2.5rem;
+        color: white;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+      }
+
+      .transparency-card h3 {
+        font-size: 1.6rem;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .transparency-card > p {
+        color: #666;
+        font-size: 1rem;
+        margin-bottom: 25px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .doc-list {
+        list-style: none;
+        padding: 0;
+        margin: 25px 0;
+      }
+
+      .doc-list li {
+        margin-bottom: 12px;
+      }
+
+      .doc-list a {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+        text-align: left;
+      }
+
+      .doc-list a:hover {
+        background: #e8f5e9;
+        border-left-color: var(--sespa-green);
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(39, 174, 96, 0.15);
+      }
+
+      .doc-list a i {
+        color: var(--sespa-green);
+        margin-right: 12px;
+        font-size: 1.2rem;
+      }
+
+      .btn-outline {
+        display: inline-block;
+        padding: 12px 30px;
+        border: 2px solid var(--sespa-green);
+        color: var(--sespa-green);
+        border-radius: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        background: transparent;
+      }
+
+      .btn-outline:hover {
+        background: var(--sespa-green);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(39, 174, 96, 0.3);
+      }
+
+      /* Participación Ciudadana */
+      .participacion-section {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      .participacion-section h2 {
+        font-size: 2.2rem;
+        color: var(--sespa-dark);
+        margin-bottom: 35px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .participacion-section h2 i {
+        color: var(--sespa-green);
+        margin-right: 15px;
+      }
+
+      .participacion-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .participacion-card {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 2px solid #f0f0f0;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .participacion-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(
+          135deg,
+          var(--sespa-green),
+          var(--sespa-teal)
+        );
+      }
+
+      .participacion-card:hover {
+        transform: translateY(-10px);
+        border-color: transparent;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      .participacion-card > i {
+        font-size: 3rem;
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(135deg, #27ae60 0%, #16a085 100%);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 0 auto 25px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
+      }
+
+      .participacion-card:hover > i {
+        transform: scale(1.15) rotate(360deg);
+        box-shadow: 0 15px 40px rgba(39, 174, 96, 0.4);
+      }
+
+      .participacion-card h3 {
+        font-size: 1.5rem;
+        color: var(--sespa-dark);
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .participacion-card p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .participacion-card .badge {
+        display: inline-block;
+        padding: 8px 20px;
+        background: linear-gradient(
+          135deg,
+          var(--sespa-green),
+          var(--sespa-teal)
+        );
+        color: white;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .participacion-card .badge-active {
+        background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+        }
+        50% {
+          box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+        }
+      }
+
+      .participacion-card .link-more {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--sespa-green);
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+      }
+
+      .participacion-card .link-more:hover {
+        gap: 12px;
+        color: var(--sespa-teal);
+      }
+
+      .participacion-card .link-more i {
+        transition: transform 0.3s ease;
+      }
+
+      .participacion-card .link-more:hover i {
+        transform: translateX(5px);
+      }
+
+      /* Solicitudes de Información */
+      .info-requests-section {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      .info-requests-section h2 {
+        font-size: 2.2rem;
+        color: var(--sespa-dark);
+        margin-bottom: 35px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .info-requests-section h2 i {
+        color: var(--sespa-green);
+        margin-right: 15px;
+      }
+
+      .request-info-box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+
+      .request-content h3 {
+        font-size: 1.6rem;
+        color: var(--sespa-dark);
+        margin: 25px 0 15px 0;
+        font-weight: 700;
+      }
+
+      .request-content p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      .request-content ol {
+        color: #666;
+        line-height: 1.8;
+        margin: 20px 0;
+        padding-left: 25px;
+      }
+
+      .request-content ol li {
+        margin-bottom: 12px;
+        padding-left: 10px;
+      }
+
+      .request-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 30px;
+        background: linear-gradient(
+          135deg,
+          var(--sespa-green),
+          var(--sespa-teal)
+        );
+        color: white;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(39, 174, 96, 0.4);
+      }
+
+      .request-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .stat-box {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        border: 2px solid #f0f0f0;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .stat-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        border-color: var(--sespa-green);
+      }
+
+      .stat-box i {
+        font-size: 2rem;
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #81c784 0%, #4caf50 100%);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 0 auto 15px;
+        box-shadow: 0 8px 20px rgba(129, 199, 132, 0.3);
+      }
+
+      .stat-box h4 {
+        font-size: 2.5rem;
+        color: var(--sespa-dark);
+        margin-bottom: 10px;
+        font-weight: 800;
+      }
+
+      .stat-box p {
+        color: #666;
+        font-size: 0.95rem;
+        margin: 0;
+      }
+
+      /* Instrumentos de Gestión */
+      .management-tools {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      .management-tools h2 {
+        font-size: 2.2rem;
+        color: var(--sespa-dark);
+        margin-bottom: 35px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .management-tools h2 i {
+        color: var(--sespa-green);
+        margin-right: 15px;
+      }
+
+      .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .tool-card {
+        background: white;
+        padding: 35px 30px;
+        border-radius: 20px;
+        border: 2px solid #f0f0f0;
+        transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .tool-card:hover {
+        border-color: transparent;
+        transform: translateY(-8px);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+      }
+
+      .tool-card i {
+        font-size: 2rem;
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #a5d6a7 0%, #66bb6a 100%);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 0 auto 20px;
+        box-shadow: 0 8px 20px rgba(165, 214, 167, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .tool-card:hover i {
+        transform: scale(1.1) rotate(360deg);
+        box-shadow: 0 12px 30px rgba(165, 214, 167, 0.4);
+      }
+
+      .tool-card h3 {
+        font-size: 1.3rem;
+        color: var(--sespa-dark);
+        margin-bottom: 12px;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .tool-card p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      .tool-card .btn {
+        background: linear-gradient(
+          135deg,
+          var(--sespa-green),
+          var(--sespa-teal)
+        );
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        border: none;
+        font-size: 0.95rem;
+      }
+
+      .tool-card .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(39, 174, 96, 0.3);
+        background: linear-gradient(135deg, #2ecc71, #16a085);
+      }
+
+      .tool-card .btn i {
+        width: auto;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      .tool-card .btn:hover i {
+        transform: none;
+      }
+
+      .tool-card a {
+        color: var(--sespa-green);
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .tool-card a:hover {
+        color: var(--sespa-teal);
+        gap: 12px;
+      }
+
+      /* Enlaces Externos */
+      .external-links {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      .external-links h2 {
+        font-size: 2.2rem;
+        color: var(--sespa-dark);
+        margin-bottom: 35px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .external-links h2 i {
+        color: var(--sespa-green);
+        margin-right: 15px;
+      }
+
+      .links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+      }
+
+      .external-link-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 25px;
+        background: white;
+        border-radius: 20px;
+        text-decoration: none;
+        color: var(--sespa-dark);
+        transition: all 0.4s ease;
+        border: 2px solid #f0f0f0;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .external-link-card:hover {
+        border-color: transparent;
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      .external-link-card i {
+        font-size: 2.2rem;
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #4db6ac 0%, #26a69a 100%);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-bottom: 20px;
+        transition: all 0.4s ease;
+        box-shadow: 0 8px 20px rgba(77, 182, 172, 0.3);
+      }
+
+      .external-link-card:hover i {
+        transform: scale(1.15) rotate(360deg);
+        box-shadow: 0 12px 30px rgba(77, 182, 172, 0.4);
+      }
+
+      .external-link-card h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .transparency-categories {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .content-header h1 {
+          font-size: 2.2rem;
+        }
+
+        .content-header .subtitle {
+          font-size: 1.1rem;
+        }
+
+        .card-icon {
+          width: 80px;
+          height: 80px;
+        }
+
+        .card-icon i {
+          font-size: 2rem;
+        }
+
+        .participacion-card > i {
+          width: 80px;
+          height: 80px;
+          font-size: 2.5rem;
+        }
+
+        .stat-box i,
+        .tool-card i {
+          width: 65px;
+          height: 65px;
+          font-size: 1.8rem;
+        }
+
+        .external-link-card i {
+          width: 70px;
+          height: 70px;
+          font-size: 2rem;
+        }
+
+        .participacion-grid,
+        .tools-grid,
+        .links-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .request-info-box {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <!-- Componentes Web SESPA -->
     <site-topbar></site-topbar>
     <site-header></site-header>
@@ -16,9 +804,11 @@
     <section class="breadcrumb-section">
       <div class="container">
         <nav class="breadcrumb">
-          <a href="../../index.html"><i class="fas fa-house-user"></i> Inicio</a>
+          <a href="../../index.html"
+            ><i class="fas fa-house-user"></i> Portal</a
+          >
           <span class="separator">/</span>
-          <span class="current">Transparencia</span>
+          <span class="current">Rendición de Cuentas</span>
         </nav>
       </div>
     </section>
@@ -26,498 +816,417 @@
     <!-- Contenido Principal -->
     <section class="page-content">
       <div class="container">
-        <div class="content-grid">
-          <main class="main-content">
-            <div class="content-header">
-              <h1>
-                <i class="fas fa-balance-scale"></i> Transparencia y Acceso a la
-                Información
-              </h1>
-              <p class="subtitle">
-                Comprometidos con la transparencia y el acceso a la información
-                pública
-              </p>
-            </div>
+        <main class="main-content">
+          <div class="content-header">
+            <h1>
+              <i class="fas fa-balance-scale"></i> Transparencia y Acceso a la
+              Información
+            </h1>
+            <p class="subtitle">
+              Comprometidos con la transparencia y el acceso a la información
+              pública
+            </p>
+          </div>
 
-            <!-- Sección de Información Pública -->
-            <div class="transparency-intro">
+          <!-- Sección de Información Pública -->
+          <div class="transparency-intro">
+            <p>
+              En cumplimiento de la Ley 1712 de 2014 (Ley de Transparencia y del
+              Derecho de Acceso a la Información Pública Nacional) y demás
+              normatividad vigente, ponemos a disposición de la ciudadanía la
+              siguiente información de manera proactiva y accesible.
+            </p>
+          </div>
+
+          <!-- Grid de Categorías de Transparencia -->
+          <div class="transparency-categories">
+            <div class="transparency-card" id="normatividad">
+              <div class="card-icon">
+                <i class="fas fa-gavel"></i>
+              </div>
+              <h3>Normatividad</h3>
               <p>
-                En cumplimiento de la Ley 1712 de 2014 (Ley de Transparencia y
-                del Derecho de Acceso a la Información Pública Nacional) y demás
-                normatividad vigente, ponemos a disposición de la ciudadanía la
-                siguiente información de manera proactiva y accesible.
+                Leyes, decretos y resoluciones que regulan nuestra actividad
               </p>
+              <ul class="doc-list">
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span
+                      >Ley 142 de 1994 - Servicios Públicos Domiciliarios</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Ley 1712 de 2014 - Transparencia</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Decreto 1077 de 2015 - Gestión de materiales</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Resoluciones CRA vigentes</span>
+                  </a>
+                </li>
+              </ul>
             </div>
 
-            <!-- Grid de Categorías de Transparencia -->
-            <div class="transparency-categories">
-              <div class="transparency-card" id="normatividad">
-                <div class="card-icon">
-                  <i class="fas fa-balance-scale"></i>
-                </div>
-                <h3>Normatividad</h3>
+            <div class="transparency-card" id="contratación">
+              <div class="card-icon">
+                <i class="fas fa-file-contract"></i>
+              </div>
+              <h3>Contratación</h3>
+              <p>Información sobre procesos contractuales y proveedores</p>
+              <ul class="doc-list">
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Plan Anual de Adquisiciones 2026</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Manual de Contratación</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Listado de Contratistas 2025</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Registro de Proveedores</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="transparency-card" id="presupuesto">
+              <div class="card-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Presupuesto</h3>
+              <p>Información presupuestal y ejecución financiera</p>
+              <ul class="doc-list">
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Presupuesto General 2026</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Ejecución Presupuestal 2025</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Estados Financieros</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Informe de Auditoría Externa</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="transparency-card" id="planeación">
+              <div class="card-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3>Planeación</h3>
+              <p>Planes, programas y proyectos institucionales</p>
+              <ul class="doc-list">
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Plan Estratégico 2024-2028</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Plan de Acción Anual 2026</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Plan de Gestión Integral de materiales</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Proyectos de Inversión</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="transparency-card" id="control">
+              <div class="card-icon">
+                <i class="fas fa-shield"></i>
+              </div>
+              <h3>Control</h3>
+              <p>Informes de control interno y auditoría</p>
+              <ul class="doc-list">
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Informe de Control Interno 2025</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Plan de Mejoramiento</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Informe de Gestión y Resultados</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" download>
+                    <i class="fas fa-file-download"></i>
+                    <span>Seguimiento a Planes de Mejora</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="transparency-card" id="datos-abiertos">
+              <div class="card-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Datos Abiertos</h3>
+              <p>Información estadística y conjuntos de datos</p>
+              <ul class="doc-list">
+                <li>
+                  <a href="informes.html#indicadores">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Indicadores de Gestión</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="informes.html#sostenibilidad">
+                    <i class="fas fa-spa"></i>
+                    <span>Informes de Sostenibilidad</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-server"></i>
+                    <span>Tarifas Históricas</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-percent"></i>
+                    <span>Estadísticas de Servicio</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Solicitudes de Información -->
+          <div class="info-requests-section">
+            <h2>
+              <i class="fas fa-location-arrow-open-text"></i> Solicitudes de
+              Información Pública
+            </h2>
+            <div class="request-info-box">
+              <div class="request-content">
                 <p>
-                  Leyes, decretos y resoluciones que regulan nuestra actividad
+                  En cumplimiento de la Ley 1712 de 2014, cualquier ciudadano
+                  puede solicitar acceso a información pública que no esté
+                  disponible en nuestros canales.
                 </p>
-                <ul class="doc-list">
+                <h3>¿Cómo solicitar información?</h3>
+                <ol>
                   <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span
-                        >Ley 142 de 1994 - Servicios Públicos
-                        Domiciliarios</span
-                      >
-                    </a>
+                    Radica tu solicitud a través de nuestro sistema de PQR
+                  </li>
+                  <li>Especifica claramente la información que requieres</li>
+                  <li>
+                    Recibirás respuesta dentro de los 10 días hábiles siguientes
                   </li>
                   <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Ley 1712 de 2014 - Transparencia</span>
-                    </a>
+                    Si la información requiere búsqueda exhaustiva, se podrá
+                    extender hasta 20 días hábiles
                   </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Decreto 1077 de 2015 - Gestión de materiales</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Resoluciones CRA vigentes</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-outline">Ver Más</a>
-              </div>
-
-              <div class="transparency-card" id="contratación">
-                <div class="card-icon">
-                  <i class="fas fa-hands-helping"></i>
-                </div>
-                <h3>Contratación</h3>
-                <p>Información sobre procesos contractuales y proveedores</p>
-                <ul class="doc-list">
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Plan Anual de Adquisiciones 2026</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Manual de Contratación</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Listado de Contratistas 2025</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Registro de Proveedores</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-outline">Ver Más</a>
-              </div>
-
-              <div class="transparency-card" id="presupuesto">
-                <div class="card-icon">
-                  <i class="fas fa-piggy-bank"></i>
-                </div>
-                <h3>Presupuesto</h3>
-                <p>Información presupuestal y ejecución financiera</p>
-                <ul class="doc-list">
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Presupuesto General 2026</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Ejecución Presupuestal 2025</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Estados Financieros</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Informe de Auditoría Externa</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-outline">Ver Más</a>
-              </div>
-
-              <div class="transparency-card" id="planeación">
-                <div class="card-icon">
-                  <i class="fas fa-project-diagram"></i>
-                </div>
-                <h3>Planeación</h3>
-                <p>Planes, programas y proyectos institucionales</p>
-                <ul class="doc-list">
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Plan Estratégico 2024-2028</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Plan de Acción Anual 2026</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Plan de Gestión Integral de materiales</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Proyectos de Inversión</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-outline">Ver Más</a>
-              </div>
-
-              <div class="transparency-card" id="control">
-                <div class="card-icon">
-                  <i class="fas fa-clipboard-list-check"></i>
-                </div>
-                <h3>Control</h3>
-                <p>Informes de control interno y auditoría</p>
-                <ul class="doc-list">
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Informe de Control Interno 2025</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Plan de Mejoramiento</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Informe de Gestión y Resultados</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" download>
-                      <i class="fas fa-file-download"></i>
-                      <span>Seguimiento a Planes de Mejora</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-outline">Ver Más</a>
-              </div>
-
-              <div class="transparency-card" id="datos-abiertos">
-                <div class="card-icon">
-                  <i class="fas fa-chart-area"></i>
-                </div>
-                <h3>Datos Abiertos</h3>
-                <p>Información estadística y conjuntos de datos</p>
-                <ul class="doc-list">
-                  <li>
-                    <a href="informes.html#indicadores">
-                      <i class="fas fa-chart-bar"></i>
-                      <span>Indicadores de Gestión</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="informes.html#sostenibilidad">
-                      <i class="fas fa-spa"></i>
-                      <span>Informes de Sostenibilidad</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-server"></i>
-                      <span>Tarifas Históricas</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fas fa-percent"></i>
-                      <span>Estadísticas de Servicio</span>
-                    </a>
-                  </li>
-                </ul>
-                <a href="#" class="btn btn-outline">Ver Más</a>
-              </div>
-            </div>
-
-            <!-- Solicitudes de Información -->
-            <div class="info-requests-section">
-              <h2>
-                <i class="fas fa-location-arrow-open-text"></i> Solicitudes de
-                Información Pública
-              </h2>
-              <div class="request-info-box">
-                <div class="request-content">
-                  <p>
-                    En cumplimiento de la Ley 1712 de 2014, cualquier ciudadano
-                    puede solicitar acceso a información pública que no esté
-                    disponible en nuestros canales.
-                  </p>
-                  <h3>¿Cómo solicitar información?</h3>
-                  <ol>
-                    <li>
-                      Radica tu solicitud a través de nuestro sistema de PQR
-                    </li>
-                    <li>Especifica claramente la información que requieres</li>
-                    <li>
-                      Recibirás respuesta dentro de los 10 días hábiles
-                      siguientes
-                    </li>
-                    <li>
-                      Si la información requiere búsqueda exhaustiva, se podrá
-                      extender hasta 20 días hábiles
-                    </li>
-                  </ol>
-                  <div class="request-buttons">
-                    <a href="../usuario/pqr.html" class="btn btn-primary">
-                      <i class="fas fa-file-signature"></i> Solicitar Información
-                    </a>
-                    <a href="#" class="btn btn-outline" download>
-                      <i class="fas fa-cloud-download-alt"></i> Formato de Solicitud
-                    </a>
-                  </div>
-                </div>
-                <div class="request-stats">
-                  <div class="stat-box">
-                    <i class="fas fa-folder-open"></i>
-                    <h4>156</h4>
-                    <p>Solicitudes Recibidas 2025</p>
-                  </div>
-                  <div class="stat-box">
-                    <i class="fas fa-check-square-circle"></i>
-                    <h4>98%</h4>
-                    <p>Tasa de Respuesta</p>
-                  </div>
-                  <div class="stat-box">
-                    <i class="fas fa-hourglass-half"></i>
-                    <h4>7 días</h4>
-                    <p>Tiempo Promedio</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Instrumentos de Gestión -->
-            <div class="management-tools">
-              <h2>
-                <i class="fas fa-wrench"></i> Instrumentos de Gestión de la
-                Información
-              </h2>
-              <div class="tools-grid">
-                <div class="tool-card">
-                  <i class="fas fa-th-list"></i>
-                  <h3>Índice de Información Clasificada y Reservada</h3>
-                  <p>
-                    Listado de información con acceso restringido según la ley
-                  </p>
-                  <a href="#" download class="btn btn-sm">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                </ol>
+                <div class="request-buttons">
+                  <a href="../usuario/pqr.html" class="btn btn-primary">
+                    <i class="fas fa-file-signature"></i> Solicitar Información
                   </a>
-                </div>
-                <div class="tool-card">
-                  <i class="fas fa-project-diagram"></i>
-                  <h3>Esquema de Publicación</h3>
-                  <p>Organización de la información disponible al público</p>
-                  <a href="#" download class="btn btn-sm">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                </div>
-                <div class="tool-card">
-                  <i class="fas fa-calendar-day-week"></i>
-                  <h3>Programa de Gestión Documental</h3>
-                  <p>Lineamientos para la gestión de documentos</p>
-                  <a href="#" download class="btn btn-sm">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
-                  </a>
-                </div>
-                <div class="tool-card">
-                  <i class="fas fa-box"></i>
-                  <h3>Tablas de Retención Documental</h3>
-                  <p>Sistema de clasificación y conservación de archivos</p>
-                  <a href="#" download class="btn btn-sm">
-                    <i class="fas fa-cloud-download-alt"></i> Descargar
+                  <a href="#" class="btn btn-outline" download>
+                    <i class="fas fa-cloud-download-alt"></i> Formato de
+                    Solicitud
                   </a>
                 </div>
               </div>
-            </div>
-
-            <!-- Participación Ciudadana -->
-            <div class="participacion-section">
-              <h2><i class="fas fa-user-circles"></i> Participación Ciudadana</h2>
-              <div class="participacion-grid">
-                <div class="participacion-card">
-                  <i class="fas fa-comment-dots"></i>
-                  <h3>Audiencias Públicas</h3>
-                  <p>Espacios de diálogo entre la empresa y la comunidad</p>
-                  <span class="badge">Próxima: 15 Feb 2026</span>
-                  <a href="#" class="link-more"
-                    >Ver cronograma <i class="fas fa-arrow-circle-right"></i
-                  ></a>
+              <div class="request-stats">
+                <div class="stat-box">
+                  <i class="fas fa-folder-open"></i>
+                  <h4>156</h4>
+                  <p>Solicitudes Recibidas 2025</p>
                 </div>
-                <div class="participacion-card">
-                  <i class="fas fa-thumbs-up"></i>
-                  <h3>Consultas Públicas</h3>
-                  <p>Participa en procesos de toma de decisiones importantes</p>
-                  <span class="badge badge-active">2 Activas</span>
-                  <a href="#" class="link-more"
-                    >Participar ahora <i class="fas fa-arrow-circle-right"></i
-                  ></a>
+                <div class="stat-box">
+                  <i class="fas fa-check-square-circle"></i>
+                  <h4>98%</h4>
+                  <p>Tasa de Respuesta</p>
                 </div>
-                <div class="participacion-card">
-                  <i class="fas fa-user-circle-check"></i>
-                  <h3>Veedurías Ciudadanas</h3>
-                  <p>Control social para el seguimiento a la gestión pública</p>
-                  <span class="badge">3 Registradas</span>
-                  <a href="#" class="link-more"
-                    >Más información <i class="fas fa-arrow-circle-right"></i
-                  ></a>
+                <div class="stat-box">
+                  <i class="fas fa-hourglass-half"></i>
+                  <h4>7 días</h4>
+                  <p>Tiempo Promedio</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Enlaces Externos -->
-            <div class="external-links">
-              <h2>
-                <i class="fas fa-external-link-square-alt"></i> Enlaces de Interés
-              </h2>
-              <div class="links-grid">
-                <a
-                  href="https://www.procuraduria.gov.co"
-                  target="_blank"
-                  class="external-link-card"
-                >
-                  <i class="fas fa-landmark"></i>
-                  <span>Procuraduría General de la Nación</span>
+          <!-- Instrumentos de Gestión -->
+          <div class="management-tools">
+            <h2>
+              <i class="fas fa-wrench"></i> Instrumentos de Gestión de la
+              Información
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card">
+                <i class="fas fa-th-list"></i>
+                <h3>Índice de Información Clasificada y Reservada</h3>
+                <p>
+                  Listado de información con acceso restringido según la ley
+                </p>
+                <a href="#" download class="btn btn-sm">
+                  <i class="fas fa-cloud-download-alt"></i> Descargar
                 </a>
-                <a
-                  href="https://www.contraloria.gov.co"
-                  target="_blank"
-                  class="external-link-card"
-                >
-                  <i class="fas fa-balance-scale"></i>
-                  <span>Contraloría General de la República</span>
+              </div>
+              <div class="tool-card">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Esquema de Publicación</h3>
+                <p>Organización de la información disponible al público</p>
+                <a href="#" download class="btn btn-sm">
+                  <i class="fas fa-cloud-download-alt"></i> Descargar
                 </a>
-                <a
-                  href="https://www.superservicios.gov.co"
-                  target="_blank"
-                  class="external-link-card"
-                >
-                  <i class="fas fa-city"></i>
-                  <span>Superintendencia de Servicios Públicos</span>
+              </div>
+              <div class="tool-card">
+                <i class="fas fa-calendar-day-week"></i>
+                <h3>Programa de Gestión Documental</h3>
+                <p>Lineamientos para la gestión de documentos</p>
+                <a href="#" download class="btn btn-sm">
+                  <i class="fas fa-cloud-download-alt"></i> Descargar
                 </a>
-                <a
-                  href="https://www.datos.gov.co"
-                  target="_blank"
-                  class="external-link-card"
-                >
-                  <i class="fas fa-server"></i>
-                  <span>Portal de Datos Abiertos de Colombia</span>
+              </div>
+              <div class="tool-card">
+                <i class="fas fa-box"></i>
+                <h3>Tablas de Retención Documental</h3>
+                <p>Sistema de clasificación y conservación de archivos</p>
+                <a href="#" download class="btn btn-sm">
+                  <i class="fas fa-cloud-download-alt"></i> Descargar
                 </a>
               </div>
             </div>
-          </main>
+          </div>
 
-          <!-- Sidebar -->
-          <aside class="sidebar">
-            <div class="sidebar-widget">
-              <h3>Acceso Rápido</h3>
-              <ul class="sidebar-links">
-                <li>
-                  <a href="#normatividad"
-                    ><i class="fas fa-angle-right"></i> Normatividad</a
-                  >
-                </li>
-                <li>
-                  <a href="#contratación"
-                    ><i class="fas fa-angle-right"></i> Contratación</a
-                  >
-                </li>
-                <li>
-                  <a href="#presupuesto"
-                    ><i class="fas fa-angle-right"></i> Presupuesto</a
-                  >
-                </li>
-                <li>
-                  <a href="#planeación"
-                    ><i class="fas fa-angle-right"></i> Planeación</a
-                  >
-                </li>
-                <li>
-                  <a href="#control"
-                    ><i class="fas fa-angle-right"></i> Control</a
-                  >
-                </li>
-                <li>
-                  <a href="#datos-abiertos"
-                    ><i class="fas fa-angle-right"></i> Datos Abiertos</a
-                  >
-                </li>
-              </ul>
+          <!-- Participación Ciudadana -->
+          <div class="participacion-section">
+            <h2><i class="fas fa-user-circles"></i> Participación Ciudadana</h2>
+            <div class="participacion-grid">
+              <div class="participacion-card">
+                <i class="fas fa-users"></i>
+                <h3>Audiencias Públicas</h3>
+                <p>Espacios de diálogo entre la empresa y la comunidad</p>
+                <span class="badge">Próxima: 15 Feb 2026</span>
+                <a href="../usuario/contacto.html" class="link-more"
+                  >Ver cronograma <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <div class="participacion-card">
+                <i class="fas fa-vote-yea"></i>
+                <h3>Consultas Públicas</h3>
+                <p>Participa en procesos de toma de decisiones importantes</p>
+                <span class="badge badge-active">2 Activas</span>
+                <a href="../usuario/pqr.html" class="link-more"
+                  >Participar ahora <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+              <div class="participacion-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Veedurías Ciudadanas</h3>
+                <p>Control social para el seguimiento a la gestión pública</p>
+                <span class="badge">3 Registradas</span>
+                <a href="../usuario/contacto.html" class="link-more"
+                  >Más información <i class="fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
             </div>
+          </div>
 
-            <div class="sidebar-widget">
-              <h3>Enlaces Relacionados</h3>
-              <ul class="sidebar-links">
-                <li>
-                  <a href="../corporativo/informes.html"
-                    ><i class="fas fa-angle-right"></i> Informes de Gestión</a
-                  >
-                </li>
-                <li>
-                  <a href="../corporativo/estructura.html"
-                    ><i class="fas fa-angle-right"></i> Estructura
-                    Organizacional</a
-                  >
-                </li>
-                <li>
-                  <a href="../usuario/pqr.html"
-                    ><i class="fas fa-angle-right"></i> PQR</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div class="sidebar-widget cta-widget">
-              <h3>¿Necesitas Información?</h3>
-              <p>
-                Solicita acceso a información pública de manera fácil y rápida
-              </p>
-              <a href="../usuario/pqr.html" class="btn btn-secondary btn-block">
-                Solicitar Información
+          <!-- Enlaces Externos -->
+          <div class="external-links">
+            <h2>
+              <i class="fas fa-external-link-square-alt"></i> Enlaces de Interés
+            </h2>
+            <div class="links-grid">
+              <a
+                href="https://www.procuraduria.gov.co"
+                target="_blank"
+                class="external-link-card"
+              >
+                <i class="fas fa-landmark"></i>
+                <span>Procuraduría General de la Nación</span>
+              </a>
+              <a
+                href="https://www.contraloria.gov.co"
+                target="_blank"
+                class="external-link-card"
+              >
+                <i class="fas fa-balance-scale"></i>
+                <span>Contraloría General de la República</span>
+              </a>
+              <a
+                href="https://www.superservicios.gov.co"
+                target="_blank"
+                class="external-link-card"
+              >
+                <i class="fas fa-city"></i>
+                <span>Superintendencia de Servicios Públicos</span>
+              </a>
+              <a
+                href="https://www.datos.gov.co"
+                target="_blank"
+                class="external-link-card"
+              >
+                <i class="fas fa-server"></i>
+                <span>Portal de Datos Abiertos de Colombia</span>
               </a>
             </div>
-          </aside>
-        </div>
+          </div>
+        </main>
       </div>
     </section>
-
 
     <!-- Footer y Componentes -->
     <site-footer></site-footer>
@@ -527,6 +1236,5 @@
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/config-sespa.js"></script>
     <script src="../../assets/js/script.js"></script>
-</body>
+  </body>
 </html>
-

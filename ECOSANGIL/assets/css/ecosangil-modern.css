@@ -722,10 +722,10 @@
    FOOTER
    ========================================== */
 .footer-modern {
-  background: linear-gradient(135deg, #ff7f2a 0%, #ff8c42 50%, #ffa94d 100%);
+  background: linear-gradient(135deg, #ffb366 0%, #ffc285 50%, #ffd4a3 100%);
   color: var(--white);
   padding: 80px 0 30px;
-  border-top: 5px solid #ffb84d;
+  border-top: 5px solid #ffe0b3;
 }
 
 .footer-grid {
@@ -742,21 +742,21 @@
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 16px;
-  color: #ffb84d;
-  text-shadow: 0 2px 10px rgba(255, 193, 7, 0.4);
+  color: #cc5500;
+  text-shadow: 0 2px 10px rgba(204, 85, 0, 0.3);
 }
 
 .footer-description {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.75);
   line-height: 1.7;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 .footer-col h4 {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: #333333;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 .footer-links {
@@ -767,30 +767,30 @@
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.7);
   transition: var(--transition-fast);
   font-size: 0.95rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 .footer-links a:hover {
-  color: #ffb84d;
+  color: #cc5500;
   padding-left: 8px;
-  text-shadow: 0 2px 10px rgba(255, 193, 7, 0.5);
+  text-shadow: 0 2px 8px rgba(204, 85, 0, 0.4);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 0.9rem;
   background: linear-gradient(
     135deg,
-    rgba(255, 153, 51, 0.3) 0%,
-    rgba(255, 140, 66, 0.2) 100%
+    rgba(255, 179, 102, 0.3) 0%,
+    rgba(255, 194, 133, 0.2) 100%
   );
   padding: 30px;
   border-radius: 20px 20px 0 0;
@@ -803,13 +803,13 @@
 }
 
 .footer-bottom-links a {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.7);
   transition: var(--transition-fast);
 }
 
 .footer-bottom-links a:hover {
-  color: #ffb84d;
-  text-shadow: 0 2px 10px rgba(255, 193, 7, 0.5);
+  color: #cc5500;
+  text-shadow: 0 2px 8px rgba(204, 85, 0, 0.4);
 }
 
 /* ==========================================

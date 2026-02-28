@@ -967,10 +967,13 @@ b {
   border-left-color: var(--verde-claro);
 }
 
+/* Iconos eliminados */
+/*
 .value-icon {
   font-size: 3rem;
   margin-bottom: var(--spacing-md);
 }
+*/
 
 .value-title {
   font-size: var(--text-xl);

@@ -1,14 +1,17 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pago en Línea | Tu Empresa</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/sespa-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Componentes Web SESPA -->
     <site-topbar></site-topbar>
     <site-header></site-header>
@@ -16,7 +19,9 @@
     <section class="breadcrumb-section">
       <div class="container">
         <nav class="breadcrumb">
-          <a href="../../index.html"><i class="fas fa-house-user"></i> Inicio</a>
+          <a href="../../index.html"
+            ><i class="fas fa-house-user"></i> Inicio</a
+          >
           <span class="separator">/</span>
           <span class="current">Pago en Línea</span>
         </nav>
@@ -62,7 +67,9 @@
 
             <!-- Paso 1: Datos del Usuario -->
             <div class="payment-section" id="paso-1">
-              <h2><i class="fas fa-user-circle"></i> Información del Usuario</h2>
+              <h2>
+                <i class="fas fa-user-circle"></i> Información del Usuario
+              </h2>
               <form class="payment-form">
                 <div class="form-row">
                   <div class="form-group">
@@ -342,7 +349,9 @@
 
             <!-- Paso 3: Confirmación -->
             <div class="payment-section" id="paso-3" style="display: none">
-              <h2><i class="fas fa-check-square-circle"></i> Confirma tu Pago</h2>
+              <h2>
+                <i class="fas fa-check-square-circle"></i> Confirma tu Pago
+              </h2>
 
               <div class="payment-summary">
                 <h3>Resumen del Pago</h3>
@@ -370,8 +379,11 @@
                 <label class="checkbox-label">
                   <input type="checkbox" id="acepto-terminos" required />
                   <span
-                    >Acepto los <a href="#">términos y condiciones</a> y
-                    autorizo el cargo a mi cuenta</span
+                    >Acepto los
+                    <a href="../usuario/terminos.html" target="_blank"
+                      >términos y condiciones</a
+                    >
+                    y autorizo el cargo a mi cuenta</span
                   >
                 </label>
               </div>
@@ -442,7 +454,9 @@
             <div class="sidebar-widget info-widget">
               <h3><i class="fas fa-shield"></i> Pago Seguro</h3>
               <ul class="security-features">
-                <li><i class="fas fa-check-square"></i> Encriptación SSL 256-bit</li>
+                <li>
+                  <i class="fas fa-check-square"></i> Encriptación SSL 256-bit
+                </li>
                 <li><i class="fas fa-check-square"></i> Certificado PCI-DSS</li>
                 <li><i class="fas fa-check-square"></i> Pasarela verificada</li>
                 <li><i class="fas fa-check-square"></i> Datos protegidos</li>
@@ -512,7 +526,6 @@
       </div>
     </section>
 
-
     <!-- Footer y Componentes -->
     <site-footer></site-footer>
     <site-backtotop></site-backtotop>
@@ -521,6 +534,5 @@
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/config-sespa.js"></script>
     <script src="../../assets/js/script.js"></script>
-</body>
+  </body>
 </html>
-

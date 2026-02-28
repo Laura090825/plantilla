@@ -170,13 +170,13 @@ ul {
 }
 
 .logo img {
-  height: 56px;
+  height: 75px;
   width: auto;
 }
 
 .logo-placeholder {
-  height: 56px;
-  width: 56px;
+  height: 75px;
+  width: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4993,6 +4993,7 @@ section h2 {
   gap: 20px;
 }
 
+/* COMMENTED OUT - Conflicting with SESPA specific styles
 .download-card {
   display: flex;
   align-items: center;
@@ -5030,6 +5031,7 @@ section h2 {
   font-size: 0.85rem;
   margin-bottom: 5px;
 }
+*/
 
 .file-size {
   display: inline-block;

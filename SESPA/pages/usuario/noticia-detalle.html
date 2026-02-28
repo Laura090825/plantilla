@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de Noticia - SESPA</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .article-detail {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-header {
+        margin-bottom: 2rem;
+      }
+
+      .article-meta {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        color: #666;
+        font-size: 0.9rem;
+      }
+
+      .article-meta i {
+        color: var(--sespa-green);
+        margin-right: 0.5rem;
+      }
+
+      .article-title {
+        font-size: 2.5rem;
+        color: var(--sespa-green);
+        margin-bottom: 0.5rem;
+      }
+
+      .article-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+      }
+
+      .article-content {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+      }
+
+      .article-content h2 {
+        color: var(--sespa-green);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-content p {
+        margin-bottom: 1.5rem;
+      }
+
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--sespa-green);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.3s;
+        margin-bottom: 2rem;
+      }
+
+      .back-button:hover {
+        background: #16a085;
+      }
+
+      .share-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+      }
+
+      .share-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+        transition: opacity 0.3s;
+      }
+
+      .share-btn:hover {
+        opacity: 0.8;
+      }
+
+      .share-btn.facebook {
+        background: #3b5998;
+      }
+
+      .share-btn.twitter {
+        background: #1da1f2;
+      }
+
+      .share-btn.whatsapp {
+        background: #25d366;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main class="content">
+      <div class="article-detail">
+        <a href="noticias.html" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+          Volver a Noticias
+        </a>
+
+        <article>
+          <div class="article-header">
+            <div class="article-meta">
+              <span><i class="fas fa-calendar"></i> 15 de Enero, 2026</span>
+              <span><i class="fas fa-user"></i> SESPA Comunicaciones</span>
+              <span><i class="fas fa-tag"></i> Categoría 1</span>
+            </div>
+            <h1 class="article-title">Título de la Noticia</h1>
+          </div>
+
+          <img
+            src="https://via.placeholder.com/900x400"
+            alt="Imagen de la noticia"
+            class="article-image"
+          />
+
+          <div class="article-content">
+            <p>
+              <strong>SESPA Universal S.A E.S.P</strong> se complace en
+              compartir con la comunidad esta importante noticia sobre nuestros
+              servicios y compromiso con el medio ambiente.
+            </p>
+
+            <p>
+              En SESPA continuamos trabajando día a día para brindar los mejores
+              servicios de aseo y recolección a nuestros usuarios en Santander,
+              Boyacá y La Guajira. Nuestra empresa se caracteriza por su
+              compromiso con la sostenibilidad y el cuidado del medio ambiente.
+            </p>
+
+            <h2>Puntos Destacados</h2>
+
+            <p>
+              Esta noticia representa un paso importante en nuestro compromiso
+              continuo con la comunidad y el medio ambiente. Seguimos trabajando
+              para mejorar nuestros servicios cada día.
+            </p>
+
+            <p>
+              Para más información sobre nuestros servicios, puede contactarnos
+              a través de nuestros canales oficiales o visitarnos en nuestras
+              oficinas.
+            </p>
+
+            <h2>Compromiso con la Comunidad</h2>
+
+            <p>
+              SESPA Universal mantiene su compromiso de brindar servicios de
+              calidad, contribuyendo al desarrollo sostenible de las regiones
+              donde operamos. Agradecemos la confianza de nuestros usuarios y
+              continuaremos trabajando para superar sus expectativas.
+            </p>
+          </div>
+
+          <div class="share-buttons">
+            <span style="color: #666; margin-right: 1rem">Compartir:</span>
+            <a href="#" class="share-btn facebook" target="_blank">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="#" class="share-btn whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

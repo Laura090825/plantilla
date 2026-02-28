@@ -176,6 +176,27 @@ class SiteHeader extends HTMLElement {
                   if (sub.isHeader) {
                     // Renderizar como header de sección con clase CSS
                     return `<li class="submenu-header">${sub.label}</li>`;
+                  } else if (sub.submenu) {
+                    // Renderizar submenu anidado (tercer nivel)
+                    return `
+                      <li class="dropdown-nested">
+                        <a href="${this.adjustUrl(sub.url) || "#"}">
+                          ${sub.icon ? `<i class="${sub.icon}"></i>` : ""}${sub.label}
+                          <i class="fas fa-angle-right"></i>
+                        </a>
+                        <ul class="submenu-nested">
+                          ${sub.submenu
+                            .map((nested) => {
+                              if (nested.isHeader) {
+                                return `<li class="submenu-header">${nested.label}</li>`;
+                              } else {
+                                return `<li><a href="${this.adjustUrl(nested.url)}">${nested.icon ? `<i class="${nested.icon}"></i>` : ""}${nested.label}</a></li>`;
+                              }
+                            })
+                            .join("")}
+                        </ul>
+                      </li>
+                    `;
                   } else {
                     // Renderizar como link normal
                     return `<li><a href="${this.adjustUrl(sub.url)}">${sub.icon ? `<i class="${sub.icon}"></i>` : ""}${sub.label}</a></li>`;
@@ -233,6 +254,10 @@ class SiteFooter extends HTMLElement {
   }
 
   connectedCallback() {
+    this.render();
+  }
+
+  render() {
     // Ajustar logo si es imagen
     const logoSrc =
       companyConfig.logoType === "image"
@@ -255,19 +280,20 @@ class SiteFooter extends HTMLElement {
                 </div>
                 <p>${companyConfig.footerSlogan || companyConfig.slogan}</p>
                 <div class="footer-social">
-                  <a href="${companyConfig.social?.facebook || "#"}" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                  <a href="${companyConfig.social?.twitter || "#"}" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                  <a href="${companyConfig.social?.instagram || "#"}" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  <a href="${companyConfig.social?.youtube || "#"}" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                  ${companyConfig.social?.facebook ? `<a href="${companyConfig.social.facebook}" aria-label="Facebook"><i class="fab fa-facebook"></i></a>` : ""}
+                  ${companyConfig.social?.twitter ? `<a href="${companyConfig.social.twitter}" aria-label="Twitter"><i class="fab fa-twitter"></i></a>` : ""}
+                  ${companyConfig.social?.instagram ? `<a href="${companyConfig.social.instagram}" aria-label="Instagram"><i class="fab fa-instagram"></i></a>` : ""}
+                  ${companyConfig.social?.linkedin ? `<a href="${companyConfig.social.linkedin}" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>` : ""}
+                  ${companyConfig.social?.youtube ? `<a href="${companyConfig.social.youtube}" aria-label="YouTube"><i class="fab fa-youtube"></i></a>` : ""}
                 </div>
               </div>
 
               <div class="footer-column">
                 <h4>Enlaces Rápidos</h4>
                 <ul class="footer-links">
-                  <li><a href="${this.adjustUrl("index.html")}">Inicio</a></li>
-                  <li><a href="${this.adjustUrl("pages/corporativo/quienes-somos.html")}">Quiénes Somos</a></li>
-                  <li><a href="${this.adjustUrl("pages/usuario/noticias.html")}">Noticias</a></li>
+                  <li><a href="${this.adjustUrl("index.html")}">Portal</a></li>
+                  <li><a href="${this.adjustUrl("pages/corporativo/quienes-somos.html")}">Sobre SESPA</a></li>
+                  <li><a href="${this.adjustUrl("pages/usuario/noticias.html")}">Novedades</a></li>
                   <li><a href="${this.adjustUrl("pages/usuario/contacto.html")}">Contacto</a></li>
                 </ul>
               </div>
@@ -295,8 +321,8 @@ class SiteFooter extends HTMLElement {
             <div class="footer-bottom-content">
               <p>&copy; ${new Date().getFullYear()} ${companyConfig.name}. Todos los derechos reservados.</p>
               <div class="footer-legal-links">
-                <a href="#">Políticas de Privacidad</a>
-                <a href="#">Términos y Condiciones</a>
+                <a href="${this.adjustUrl("pages/usuario/privacidad.html")}">Políticas de Privacidad</a>
+                <a href="${this.adjustUrl("pages/usuario/terminos.html")}">Términos y Condiciones</a>
               </div>
             </div>
           </div>

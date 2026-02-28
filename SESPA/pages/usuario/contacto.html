@@ -1,1 +1,303 @@
-﻿
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contáctenos - SESPA Universal - Comunícate con nosotros"
+    />
+    <title>Contáctenos - SESPA</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <site-topbar></site-topbar>
+    <site-header></site-header>
+
+    <site-breadcrumb>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <a href="../../index.html"
+            ><i class="fas fa-house-user"></i> Portal</a
+          >
+          <span>/</span>
+          <a href="#usuario">Centro de Ayuda</a>
+          <span>/</span>
+          <span>Contáctenos</span>
+        </ol>
+      </nav>
+    </site-breadcrumb>
+
+    <section class="section-sespa">
+      <div class="container">
+        <div class="content-page">
+          <div class="page-header">
+            <div class="icon-header">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h1>Contáctenos</h1>
+              <p class="lead">
+                Estamos aquí para ayudarte. Comunícate con nosotros por
+                cualquiera de nuestros canales de atención
+              </p>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <div class="contact-grid">
+              <div class="contact-info">
+                <h2>Información de Contacto</h2>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>Dirección Principal</h3>
+                    <p>Cra. 14 #11-30<br />Socorro, Santander</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>WhatsApp</h3>
+                    <p>315 6953179</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>Correo Electrónico</h3>
+                    <p>contacto@sespa.com.co</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h3>Horario de Atención</h3>
+                    <p>
+                      Lunes a Viernes: 7:00 AM - 6:00 PM<br />
+                      Sábados: 8:00 AM - 1:00 PM
+                    </p>
+                  </div>
+                </div>
+
+                <div class="social-media-section">
+                  <h3>Síguenos en Redes Sociales</h3>
+                  <div class="social-links">
+                    <a
+                      href="https://www.facebook.com/sespauniversal"
+                      class="social-link facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/sespauniversalsa/"
+                      class="social-link instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@sespauniversalsaesp2188"
+                      class="social-link youtube"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form-container">
+                <h2>Envíanos un Mensaje</h2>
+                <p>
+                  Completa el formulario y nos pondremos en contacto contigo lo
+                  antes posible
+                </p>
+
+                <form class="contact-form" id="contactForm">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="nombre">Nombre Completo *</label>
+                      <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                        placeholder="Tu nombre"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Correo Electrónico *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="tucorreo@ejemplo.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="telefono">Teléfono *</label>
+                      <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        required
+                        placeholder="300 123 4567"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="asunto">Asunto *</label>
+                      <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="pqr">PQR</option>
+                        <option value="cotizacion">Solicitar Cotización</option>
+                        <option value="informacion">Información General</option>
+                        <option value="facturacion">Facturación</option>
+                        <option value="otro">Otro</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea
+                      id="mensaje"
+                      name="mensaje"
+                      rows="6"
+                      required
+                      placeholder="Escribe tu mensaje aquí..."
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="acepto" required />
+                      <span>
+                        Acepto la
+                        <a href="../corporativo/politicas.html"
+                          >Política de Tratamiento de Datos</a
+                        >
+                      </span>
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn-sespa btn-primary-sespa">
+                    <i class="fas fa-paper-plane"></i>
+                    Enviar Mensaje
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <h2>Nuestras Oficinas</h2>
+            <div class="offices-grid">
+              <div class="office-card">
+                <div class="office-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3>Socorro - Santander</h3>
+                <p>
+                  <strong>Dirección:</strong> Calle Principal #10-20<br />
+                  <strong>Teléfono:</strong> (607) 123-4567
+                </p>
+              </div>
+
+              <div class="office-card">
+                <div class="office-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3>Moniquirá - Boyacá</h3>
+                <p>
+                  <strong>Dirección:</strong> Carrera 5 #8-15<br />
+                  <strong>Teléfono:</strong> (608) 234-5678
+                </p>
+              </div>
+
+              <div class="office-card">
+                <div class="office-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3>Barrancas - La Guajira</h3>
+                <p>
+                  <strong>Dirección:</strong> Calle 7 #12-30<br />
+                  <strong>Teléfono:</strong> (605) 345-6789
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert-info">
+            <i class="fas fa-info-circle"></i>
+            <p>
+              <strong>Nota:</strong> Los tiempos de respuesta pueden variar
+              según el volumen de solicitudes. Nos comprometemos a responder
+              todos los mensajes en un máximo de 48 horas hábiles.
+            </p>
+          </div>
+
+          <div class="cta-section">
+            <h2>¿Necesitas ayuda inmediata?</h2>
+            <p>Consulta nuestras preguntas frecuentes o presenta una PQR</p>
+            <div class="cta-buttons">
+              <a href="preguntas.html" class="btn-sespa btn-primary-sespa">
+                <i class="fas fa-question-circle"></i> Preguntas Frecuentes
+              </a>
+              <a href="pqr.html" class="btn-sespa btn-secondary-sespa">
+                <i class="fas fa-file-alt"></i> Presentar PQR
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <site-footer></site-footer>
+    <site-backtotop></site-backtotop>
+
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <script>
+      // Manejo del formulario de contacto
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Gracias por contactarnos. Tu mensaje ha sido enviado exitosamente. Pronto te responderemos.",
+          );
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

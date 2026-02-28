@@ -1,1 +1,713 @@
-﻿
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifas | SESPA UNIVERSAL S.A. E.S.P.</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Componentes Web SESPA -->
+    <site-topbar></site-topbar>
+    <site-header></site-header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="../../index.html"><i class="fas fa-house-user"></i> Portal</a>
+          <span class="separator">/</span>
+          <span class="current">Costos</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="page-content">
+      <div class="container">
+        <section class="content-section">
+          <div class="page-header">
+            <h1><i class="fas fa-file-invoice-dollar"></i> Tarifas del Servicio</h1>
+            <p class="subtitle">
+              Información sobre las tarifas vigentes para el servicio de aseo
+            </p>
+          </div>
+
+          <!-- Información General -->
+          <div class="tariffs-intro">
+            <div class="info-alert">
+              <i class="fas fa-info-circle"></i>
+              <div>
+                <h3>Información Importante</h3>
+                <p>
+                  Las tarifas del servicio público de aseo están reguladas por la
+                  Comisión de Regulación de Agua Potable y Saneamiento Básico (CRA)
+                  y se actualizan periódicamente según la normativa vigente. Los valores
+                  presentados corresponden a las tarifas vigentes aplicables en cada municipio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estructura Tarifaria -->
+          <h2><i class="fas fa-list-alt"></i> Estructura Tarifaria</h2>
+          <p>
+            El servicio de aseo se factura considerando los siguientes componentes:
+          </p>
+
+          <div class="tariff-components-grid">
+            <div class="tariff-component-card">
+              <div class="component-icon">
+                <i class="fas fa-broom"></i>
+              </div>
+              <h3>Barrido y Limpieza</h3>
+              <p>
+                Actividades de barrido manual o mecánico de áreas públicas,
+                plazas, parques y vías del municipio.
+              </p>
+            </div>
+
+            <div class="tariff-component-card">
+              <div class="component-icon">
+                <i class="fas fa-truck"></i>
+              </div>
+              <h3>Recolección y Transporte</h3>
+              <p>
+                Recolección domiciliaria de residuos sólidos y transporte
+                hasta el sitio de disposición final.
+              </p>
+            </div>
+
+            <div class="tariff-component-card">
+              <div class="component-icon">
+                <i class="fas fa-recycle"></i>
+              </div>
+              <h3>Aprovechamiento</h3>
+              <p>
+                Recolección selectiva y transporte de residuos aprovechables
+                al centro de acopio o estación de clasificación.
+              </p>
+            </div>
+
+            <div class="tariff-component-card">
+              <div class="component-icon">
+                <i class="fas fa-dumpster"></i>
+              </div>
+              <h3>Disposición Final</h3>
+              <p>
+                Costos asociados a la disposición final en relleno sanitario
+                debidamente autorizado.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tarifas por Municipio -->
+          <h2><i class="fas fa-map-marked-alt"></i> Tarifas por Municipio</h2>
+          <p class="section-description">
+            Selecciona el municipio para consultar las tarifas vigentes aplicables a cada estrato socioeconómico:
+          </p>
+
+          <div class="municipality-tabs">
+            <button class="municipality-tab active" data-municipality="socorro">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Socorro</span>
+            </button>
+            <button class="municipality-tab" data-municipality="moniquira">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Moniquirá</span>
+            </button>
+            <button class="municipality-tab" data-municipality="barrancas">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Barrancas</span>
+            </button>
+            <button class="municipality-tab" data-municipality="palmas">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Palmas del Socorro</span>
+            </button>
+          </div>
+
+          <!-- Tablas de Tarifas -->
+          <div class="tariff-tables">
+                <!-- Socorro -->
+                <div class="tariff-table-container active" data-municipality="socorro">
+                  <div class="municipality-header">
+                    <h3><i class="fas fa-city"></i> Socorro, Santander</h3>
+                    <span class="update-badge"><i class="fas fa-calendar-check"></i> Actualizado: Enero 2026</span>
+                  </div>
+
+                  <!-- Tarifas Residenciales -->
+                  <div class="tariff-category-section">
+                    <h4 class="category-title"><i class="fas fa-home"></i> Tarifas Residenciales</h4>
+                    <div class="tariff-cards-grid">
+                      <div class="tariff-card estrato-1">
+                        <div class="tariff-card-header">
+                          <span class="estratoَ-badge">Estrato 1</span>
+                          <span class="subsidio-badge"><i class="fas fa-tag"></i> Con subsidio</span>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$15,200<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$850<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$3,500<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tariff-card estrato-2">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Estrato 2</span>
+                          <span class="subsidio-badge"><i class="fas fa-tag"></i> Con subsidio</span>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$18,900<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$1,020<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$4,200<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tariff-card estrato-3">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Estrato 3</span>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$25,400<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$1,350<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$5,800<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tariff-card estrato-4">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Estrato 4</span>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$32,100<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$1,680<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$7,200<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tariff-card estrato-5">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Estrato 5</span>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$38,500<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$2,050<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$8,900<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tariff-card estrato-6">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Estrato 6</span>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$45,800<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$2,420<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$10,500<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tarifas No Residenciales -->
+                  <div class="tariff-category-section">
+                    <h4 class="category-title"><i class="fas fa-building"></i> Tarifas No Residenciales</h4>
+                    <div class="tariff-cards-grid non-residential">
+                      <div class="tariff-card comercial">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Comercial</span>
+                          <i class="fas fa-store"></i>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$52,300<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$2,750<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$15,600<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tariff-card industrial">
+                        <div class="tariff-card-header">
+                          <span class="estrato-badge">Industrial</span>
+                          <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="tariff-card-body">
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Fijo</span>
+                            <span class="tariff-value">$125,000<span class="unit">/mes</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Cargo Variable</span>
+                            <span class="tariff-value">$3,850<span class="unit">/m³</span></span>
+                          </div>
+                          <div class="tariff-item">
+                            <span class="tariff-label">Barrido y Limpieza</span>
+                            <span class="tariff-value">$28,500<span class="unit">/mes</span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Moniquirá -->
+                <div class="tariff-table-container" data-municipality="moniquira">
+                  <h3>Tarifas Vigentes - Moniquirá, Boyacá</h3>
+                  <div class="table-responsive">
+                    <table class="tariff-table">
+                      <thead>
+                        <tr>
+                          <th>Estrato / Categoría</th>
+                          <th>Cargo Fijo ($/mes)</th>
+                          <th>Cargo Variable ($/m³)</th>
+                          <th>Barrido y Limpieza ($/mes)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Estrato 1</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 2</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 3</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 4</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 5</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 6</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr class="comercial-row">
+                          <td><strong>Comercial</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$XX,XXX</td>
+                        </tr>
+                        <tr class="industrial-row">
+                          <td><strong>Industrial</strong></td>
+                          <td>$XXX,XXX</td>
+                          <td>$X,XXX</td>
+                          <td>$XX,XXX</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="tariff-note">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>Última actualización:</strong> Enero 2026
+                  </p>
+                </div>
+
+                <!-- Barrancas -->
+                <div class="tariff-table-container" data-municipality="barrancas">
+                  <h3>Tarifas Vigentes - Barrancas, La Guajira</h3>
+                  <div class="table-responsive">
+                    <table class="tariff-table">
+                      <thead>
+                        <tr>
+                          <th>Estrato / Categoría</th>
+                          <th>Cargo Fijo ($/mes)</th>
+                          <th>Cargo Variable ($/m³)</th>
+                          <th>Barrido y Limpieza ($/mes)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Estrato 1</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 2</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 3</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 4</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 5</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 6</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr class="comercial-row">
+                          <td><strong>Comercial</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$XX,XXX</td>
+                        </tr>
+                        <tr class="industrial-row">
+                          <td><strong>Industrial</strong></td>
+                          <td>$XXX,XXX</td>
+                          <td>$X,XXX</td>
+                          <td>$XX,XXX</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="tariff-note">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>Última actualización:</strong> Enero 2026
+                  </p>
+                </div>
+
+                <!-- Palmas del Socorro -->
+                <div class="tariff-table-container" data-municipality="palmas">
+                  <h3>Tarifas Vigentes - Palmas del Socorro, Santander</h3>
+                  <div class="table-responsive">
+                    <table class="tariff-table">
+                      <thead>
+                        <tr>
+                          <th>Estrato / Categoría</th>
+                          <th>Cargo Fijo ($/mes)</th>
+                          <th>Cargo Variable ($/m³)</th>
+                          <th>Barrido y Limpieza ($/mes)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Estrato 1</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 2</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 3</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 4</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 5</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Estrato 6</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$X,XXX</td>
+                        </tr>
+                        <tr class="comercial-row">
+                          <td><strong>Comercial</strong></td>
+                          <td>$XX,XXX</td>
+                          <td>$XXX</td>
+                          <td>$XX,XXX</td>
+                        </tr>
+                        <tr class="industrial-row">
+                          <td><strong>Industrial</strong></td>
+                          <td>$XXX,XXX</td>
+                          <td>$X,XXX</td>
+                          <td>$XX,XXX</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="tariff-note">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>Última actualización:</strong> Enero 2026
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Subsidios y Contribuciones -->
+            <h2><i class="fas fa-hand-holding-usd"></i> Subsidios y Contribuciones</h2>
+            <p>
+              De acuerdo con la Ley 142 de 1994, los usuarios residenciales de
+              estratos 1, 2 y 3 tienen derecho a subsidios, mientras que los usuarios
+              de estratos 5 y 6, sectores comerciales e industriales, aportan contribuciones
+              para financiar dichos subsidios.
+            </p>
+
+            <div class="subsidies-grid">
+              <div class="subsidy-card subsidized">
+                <h3><i class="fas fa-arrow-down"></i> Estratos Subsidiados</h3>
+                <ul>
+                  <li><strong>Estrato 1:</strong> Subsidio del XX%</li>
+                  <li><strong>Estrato 2:</strong> Subsidio del XX%</li>
+                  <li><strong>Estrato 3:</strong> Subsidio del XX%</li>
+                </ul>
+              </div>
+
+              <div class="subsidy-card contributors">
+                <h3><i class="fas fa-arrow-up"></i> Sectores Contribuyentes</h3>
+                <ul>
+                  <li><strong>Estrato 5:</strong> Contribución del XX%</li>
+                  <li><strong>Estrato 6:</strong> Contribución del XX%</li>
+                  <li><strong>Comercial:</strong> Contribución del XX%</li>
+                  <li><strong>Industrial:</strong> Contribución del XX%</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Información Adicional -->
+            <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <i class="fas fa-chevron-down"></i>
+                    ¿Cómo se calcula mi factura de aseo?
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      La factura del servicio de aseo se calcula sumando el cargo fijo
+                      mensual, el cargo variable (que depende del consumo de agua o
+                      producción de residuos), y el cargo por barrido y limpieza. A este
+                      valor se le aplican subsidios o contribuciones según su estrato.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <i class="fas fa-chevron-down"></i>
+                    ¿Cada cuánto se actualizan las tarifas?
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Las tarifas del servicio público de aseo se actualizan anualmente
+                      siguiendo los lineamientos de la Comisión de Regulación de Agua
+                      Potable y Saneamiento Básico (CRA), generalmente al inicio de cada
+                      año calendario.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">
+                    <i class="fas fa-chevron-down"></i>
+                    ¿Dónde puedo consultar el detalle de mi factura?
+                  </button>
+                  <div class="faq-answer">
+                    <p>
+                      Puede consultar el detalle de su factura en nuestra página web en
+                      la sección de <a href="factura.html">Consultar Factura</a>, o
+                      comunicándose con nuestras oficinas de atención al usuario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Descargas -->
+            <h2 class="downloads-title"><i class="fas fa-download"></i> Documentos de Interés</h2>
+            <div id="tarifas-downloads-section" class="download-cards tariff-downloads">
+                <a href="#" class="tariff-download-card" download>
+                  <i class="fas fa-file-pdf"></i>
+                  <div class="download-info">
+                    <h3>Resolución Tarifaria Vigente</h3>
+                    <p>Documento oficial con las tarifas aprobadas</p>
+                    <span class="file-info">PDF • 2.5 MB</span>
+                  </div>
+                </a>
+
+                <a href="#" class="tariff-download-card" download>
+                  <i class="fas fa-file-pdf"></i>
+                  <div class="download-info">
+                    <h3>Marco Tarifario de la CRA</h3>
+                    <p>Lineamientos regulatorios del servicio de aseo</p>
+                    <span class="file-info">PDF • 1.8 MB</span>
+                  </div>
+                </a>
+
+                <a href="#" class="tariff-download-card" download>
+                  <i class="fas fa-file-excel"></i>
+                  <div class="download-info">
+                    <h3>Tabla de Tarifas en Excel</h3>
+                    <p>Tarifas de todos los municipios en formato editable</p>
+                    <span class="file-info">XLSX • 250 KB</span>
+                  </div>
+                </a>
+              </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+              <div class="cta-content">
+                <h2>¿Tienes dudas sobre tu factura?</h2>
+                <p>
+                  Nuestro equipo de atención al usuario está disponible para resolver
+                  todas tus consultas sobre tarifas y facturación
+                </p>
+                <div class="cta-buttons">
+                  <a href="../usuario/contacto.html" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Contactar
+                  </a>
+                  <a href="../usuario/pqr.html" class="btn btn-secondary">
+                    <i class="fas fa-edit"></i> Enviar PQR
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <site-backtotop></site-backtotop>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script>
+      // Tabs de Municipios
+      document.querySelectorAll('.municipality-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+          const municipality = this.dataset.municipality;
+          
+          // Actualizar tabs
+          document.querySelectorAll('.municipality-tab').forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Mostrar tabla correspondiente
+          document.querySelectorAll('.tariff-table-container').forEach(container => {
+            if (container.dataset.municipality === municipality) {
+              container.classList.add('active');
+            } else {
+              container.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // FAQ Accordion
+      document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', function() {
+          const item = this.parentElement;
+          const isActive = item.classList.contains('active');
+          
+          // Cerrar todos los items
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+          
+          // Abrir el clickeado si no estaba activo
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+    </script>
+</body>
+</html>

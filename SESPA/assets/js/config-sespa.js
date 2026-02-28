@@ -10,60 +10,64 @@ const sespaConfig = {
     "Somos una Empresa comprometida con la prestación integral del servicio público de aseo, apoyada en herramientas tecnológicas y personal capacitado.",
   logo: "assets/img/image.png", // Logo de SESPA
   logoType: "image", // Especifica que es una imagen, no un icono
-  phone: "(601) 456-7890",
-  whatsapp: "+57 300 456 7890",
+  phone: "315 6953179",
+  whatsapp: "315 6953179",
   email: "contacto@sespa.com.co",
-  address: "Carrera 15 #25-30, Bogotá D.C.",
+  address: "Cra. 14 #11-30, Socorro, Santander",
   schedule: "Lunes a Viernes: 7:00 AM - 6:00 PM | Sábados: 8:00 AM - 1:00 PM",
 
   // Navegación estándar (rutas internas de SESPA)
   navigation: [
     {
-      label: "Inicio",
+      label: "Portal",
       url: "index.html",
     },
     {
-      label: "Corporativo",
+      label: "Institucional",
       submenu: [
-        { label: "Quiénes Somos", url: "pages/corporativo/quienes-somos.html" },
+        { label: "Sobre SESPA", url: "pages/corporativo/quienes-somos.html" },
         {
           label: "Misión y Visión",
           url: "pages/corporativo/mision-vision.html",
         },
         {
-          label: "Estructura Organizacional",
+          label: "Organigrama Empresarial",
           url: "pages/corporativo/estructura.html",
         },
         {
           label: "Informes de Gestión",
           url: "pages/corporativo/informes.html",
         },
+        {
+          label: "Novedades",
+          url: "pages/usuario/noticias.html",
+        },
       ],
     },
     {
-      label: "Dónde Operamos",
-      url: "pages/corporativo/cobertura.html",
+      label: "Soluciones Ambientales",
       submenu: [
         {
-          label: "Ver Cobertura General",
+          label: "Zonas de Servicio",
           url: "pages/corporativo/cobertura.html",
-          icon: "fas fa-map-marked-alt",
+          submenu: [
+            {
+              label: "Ver Mapa Completo",
+              url: "pages/corporativo/cobertura.html",
+              icon: "fas fa-map-marked-alt",
+            },
+            { label: "Santander", isHeader: true },
+            { label: "Socorro", url: "pages/corporativo/socorro.html" },
+            {
+              label: "Palmas del Socorro",
+              url: "pages/corporativo/palmas-del-socorro.html",
+            },
+            { label: "Boyacá", isHeader: true },
+            { label: "Moniquirá", url: "pages/corporativo/moniquira.html" },
+            { label: "La Guajira", isHeader: true },
+            { label: "Barrancas", url: "pages/corporativo/barrancas.html" },
+          ],
         },
-        { label: "Santander", isHeader: true },
-        { label: "Socorro", url: "pages/corporativo/socorro.html" },
-        {
-          label: "Palmas del Socorro",
-          url: "pages/corporativo/palmas-del-socorro.html",
-        },
-        { label: "Boyacá", isHeader: true },
-        { label: "Moniquirá", url: "pages/corporativo/moniquira.html" },
-        { label: "La Guajira", isHeader: true },
-        { label: "Barrancas", url: "pages/corporativo/barrancas.html" },
-      ],
-    },
-    {
-      label: "Servicios",
-      submenu: [
         {
           label: "Barrido y Limpieza en Sitios Públicos",
           url: "pages/servicios/barrido-limpieza.html",
@@ -76,34 +80,34 @@ const sespaConfig = {
       ],
     },
     {
-      label: "Tarifas",
-      url: "pages/facturacion/tarifas.html",
+      label: "Alquiler de Vehículos Compactadores",
+      url: "pages/servicios/alquiler-vehiculos.html",
     },
     {
-      label: "Atención al Usuario",
+      label: "Transparencia y Gestión",
+      submenu: [
+        { label: "Costos y Tarifas", url: "pages/facturacion/tarifas.html" },
+        {
+          label: "Rendición de Cuentas",
+          url: "pages/transparencia/transparencia.html",
+        },
+      ],
+    },
+    {
+      label: "Centro de Ayuda",
       submenu: [
         { label: "PQR", url: "pages/usuario/pqr.html" },
         { label: "Preguntas Frecuentes", url: "pages/usuario/preguntas.html" },
         { label: "Contáctenos", url: "pages/usuario/contacto.html" },
       ],
     },
-    {
-      label: "Transparencia",
-      url: "pages/transparencia/transparencia.html",
-    },
-    {
-      label: "Noticias",
-      url: "pages/usuario/noticias.html",
-    },
   ],
 
   // Redes sociales
   social: {
-    facebook: "https://facebook.com/sespa",
-    twitter: "https://twitter.com/sespa",
-    instagram: "https://instagram.com/sespa",
-    linkedin: "https://linkedin.com/company/sespa",
-    youtube: "https://youtube.com/sespa",
+    facebook: "https://www.facebook.com/sespauniversal",
+    instagram: "https://www.instagram.com/sespauniversalsa/",
+    youtube: "https://www.youtube.com/@sespauniversalsaesp2188",
   },
 
   // Colores corporativos de SESPA (diferentes a la plantilla principal)
@@ -125,6 +129,7 @@ if (typeof loadCompanyConfig === "function") {
   setTimeout(() => {
     const headerElement = document.querySelector("site-header");
     const topbarElement = document.querySelector("site-topbar");
+    const footerElement = document.querySelector("site-footer");
 
     if (headerElement && headerElement.render) {
       headerElement.render();
@@ -132,6 +137,10 @@ if (typeof loadCompanyConfig === "function") {
 
     if (topbarElement && topbarElement.render) {
       topbarElement.render();
+    }
+
+    if (footerElement && footerElement.render) {
+      footerElement.render();
     }
   }, 0);
 }

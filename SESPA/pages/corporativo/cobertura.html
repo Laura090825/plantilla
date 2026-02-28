@@ -1,14 +1,17 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dónde Operamos | Tu Empresa</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/sespa-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Componentes Web SESPA -->
     <site-topbar></site-topbar>
     <site-header></site-header>
@@ -16,805 +19,545 @@
     <section class="breadcrumb-section">
       <div class="container">
         <nav class="breadcrumb">
-          <a href="../../index.html"><i class="fas fa-house-user"></i> Inicio</a>
+          <a href="../../index.html"
+            ><i class="fas fa-house-user"></i> Portal</a
+          >
           <span class="separator">/</span>
-          <a href="#">Corporativo</a>
-          <span class="separator">/</span>
-          <span class="current">Dónde Operamos</span>
+          <span class="current">Zonas de Servicio</span>
         </nav>
       </div>
     </section>
 
     <!-- Contenido Principal -->
-    <section class="page-content">
+    <main class="page-content">
       <div class="container">
-        <div class="content-grid">
-          <main class="main-content">
-            <!-- Page Header -->
-            <div class="content-header">
-              <h1><i class="fas fa-map-marked-alt"></i> Dónde Operamos</h1>
-              <p class="subtitle">
-                Conoce nuestra presencia en los municipios de la región
-              </p>
+        <section class="content-section">
+          <!-- Page Header -->
+          <div class="page-header">
+            <h1>
+              <i class="fas fa-map-marked-alt"></i> Nuestra Cobertura Regional
+            </h1>
+            <p class="subtitle">
+              Presencia estratégica en 4 municipios de Colombia con servicios
+              ambientales de calidad
+            </p>
+          </div>
+
+          <!-- Estadísticas de Cobertura -->
+          <div class="coverage-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">4</h3>
+                <p class="stat-label">Municipios</p>
+              </div>
             </div>
 
-            <!-- Municipios Atendidos -->
-            <div class="coverage-section" id="municipios">
-              <div style="text-align: center; margin-bottom: 50px">
-                <h2
-                  style="
-                    font-size: 2.2rem;
-                    color: #27753f;
-                    margin-bottom: 12px;
-                    font-weight: 800;
-                    letter-spacing: -0.5px;
-                  "
-                >
-                  Nuestras Zonas de Operación
-                  >Municipios donde Operamos</h2>
-                <p
-                  style="
-                    color: #64748b;
-                    font-size: 1.05rem;
-                    line-height: 1.6;
-                    max-width: 650px;
-                    margin: 0 auto;
-                  "
-                >
-                  SESPA tiene presencia en 4 municipios de los departamentos de Santander, Boyacá y La Guajira
-                </p>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">+85,000</h3>
+                <p class="stat-label">Habitantes Atendidos</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">3</h3>
+                <p class="stat-label">Departamentos</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-percentage"></i>
+              </div>
+              <div class="stat-content">
+                <h3 class="stat-number">98%</h3>
+                <p class="stat-label">Cobertura Urbana</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa Interactivo (Sección) -->
+          <div class="map-section">
+            <div class="map-header">
+              <h2>
+                <i class="fas fa-globe-americas"></i> Ubicación Geográfica
+              </h2>
+              <p>Operamos en tres departamentos estratégicos de Colombia</p>
+            </div>
+            <div class="regions-grid">
+              <div class="region-card santander">
+                <div class="region-icon">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <h3>Santander</h3>
+                <p class="region-municipalities">2 municipios</p>
+                <ul class="region-list">
+                  <li><i class="fas fa-check-circle"></i> Socorro</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Palmas del Socorro
+                  </li>
+                </ul>
               </div>
 
-              <div
-                class="municipality-grid"
-                style="
-                  display: grid;
-                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                  gap: 25px;
-                  margin-bottom: 40px;
-                "
-              >
-                <!-- Socorro -->
-                <div
-                  id="socorro"
-                  style="
-                    background: white;
-                    border: 1px solid #d1e7d4;
-                    border-radius: 10px;
-                    padding: 35px;
-                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
-                    transition: all 0.3s ease;
-                    position: relative;
-                  "
-                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
-                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
-                >
-                  <div
-                    style="
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      height: 4px;
-                      background: linear-gradient(90deg, #27753f, #5ec576);
-                      border-radius: 10px 10px 0 0;
-                    "
-                  ></div>
-                  <h3
-                    style="
-                      color: #27753f;
-                      margin: 15px 0 12px 0;
-                      font-size: 1.5rem;
-                      font-weight: 700;
-                      letter-spacing: -0.3px;
-                    "
-                  >
-                    Socorro, Santander
-                  </h3>
-                  <p
-                    style="
-                      color: #64748b;
-                      margin-bottom: 22px;
-                      line-height: 1.7;
-                      font-size: 0.95rem;
-                    "
-                  >
-                    Municipio del departamento de Santander con servicios ambientales integrales de SESPA.
-                  </p>
-                  <ul
-                    style="
-                      list-style: none;
-                      padding: 0;
-                      border-top: 1px solid #e8f5e9;
-                      padding-top: 20px;
-                    "
-                  >
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-phone"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="tel:+57 XXX XXX XXXX"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >+57 XXX XXX XXXX</a
-                      >
-                    </li>
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-location-arrow"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="mailto:zona@ejemplo.com"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >zona@ejemplo.com</a
-                      >
-                    </li>
-                    <li style="font-size: 0.95rem; color: #64748b">
-                      <i
-                        class="fas fa-hourglass-half"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      >Lun - Vie: 8:00 AM - 5:00 PM
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    style="
-                      display: inline-flex;
-                      align-items: center;
-                      margin-top: 25px;
-                      color: #27753f;
-                      text-decoration: none;
-                      font-weight: 600;
-                      font-size: 0.95rem;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
-                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
-                    >Ver Detalles
-                    <i
-                      class="fas fa-arrow-circle-right"
-                      style="margin-left: 8px; transition: transform 0.3s"
-                    ></i
-                  ></a>
+              <div class="region-card boyaca">
+                <div class="region-icon">
+                  <i class="fas fa-mountain-sun"></i>
                 </div>
+                <h3>Boyacá</h3>
+                <p class="region-municipalities">1 municipio</p>
+                <ul class="region-list">
+                  <li><i class="fas fa-check-circle"></i> Moniquirá</li>
+                </ul>
+              </div>
 
-                <!-- Palmas del Socorro -->
-                <div
-                  id="palmas"
-                  style="
-                    background: white;
-                    border: 1px solid #d1e7d4;
-                    border-radius: 10px;
-                    padding: 35px;
-                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
-                    transition: all 0.3s ease;
-                    position: relative;
-                  "
-                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
-                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
-                >
-                  <div
-                    style="
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      height: 4px;
-                      background: linear-gradient(90deg, #27753f, #5ec576);
-                      border-radius: 10px 10px 0 0;
-                    "
-                  ></div>
-                  <h3
-                    style="
-                      color: #27753f;
-                      margin: 15px 0 12px 0;
-                      font-size: 1.5rem;
-                      font-weight: 700;
-                      letter-spacing: -0.3px;
-                    "
-                  >
-                    Palmas del Socorro, Santander
-                  </h3>
-                  <p
-                    style="
-                      color: #64748b;
-                      margin-bottom: 22px;
-                      line-height: 1.7;
-                      font-size: 0.95rem;
-                    "
-                  >
-                    Municipio del departamento de Santander atendido por SESPA con servicios de protección ambiental.
-                  </p>
-                  <ul
-                    style="
-                      list-style: none;
-                      padding: 0;
-                      border-top: 1px solid #e8f5e9;
-                      padding-top: 20px;
-                    "
-                  >
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-phone"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="tel:+57 XXX XXX XXXX"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >+57 XXX XXX XXXX</a
-                      >
-                    </li>
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-location-arrow"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="mailto:zona@ejemplo.com"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >zona@ejemplo.com</a
-                      >
-                    </li>
-                    <li style="font-size: 0.95rem; color: #64748b">
-                      <i
-                        class="fas fa-hourglass-half"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      >Lun - Vie: 8:00 AM - 5:00 PM
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    style="
-                      display: inline-flex;
-                      align-items: center;
-                      margin-top: 25px;
-                      color: #27753f;
-                      text-decoration: none;
-                      font-weight: 600;
-                      font-size: 0.95rem;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
-                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
-                    >Ver Detalles
-                    <i
-                      class="fas fa-arrow-circle-right"
-                      style="margin-left: 8px; transition: transform 0.3s"
-                    ></i
-                  ></a>
+              <div class="region-card guajira">
+                <div class="region-icon">
+                  <i class="fas fa-sun"></i>
                 </div>
+                <h3>La Guajira</h3>
+                <p class="region-municipalities">1 municipio</p>
+                <ul class="region-list">
+                  <li><i class="fas fa-check-circle"></i> Barrancas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                <!-- Moniquirá -->
-                <div
-                  id="moniquira"
-                  style="
-                    background: white;
-                    border: 1px solid #d1e7d4;
-                    border-radius: 10px;
-                    padding: 35px;
-                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
-                    transition: all 0.3s ease;
-                    position: relative;
-                  "
-                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
-                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
-                >
-                  <div
-                    style="
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      height: 4px;
-                      background: linear-gradient(90deg, #27753f, #5ec576);
-                      border-radius: 10px 10px 0 0;
-                    "
-                  ></div>
-                  <h3
-                    style="
-                      color: #27753f;
-                      margin: 15px 0 12px 0;
-                      font-size: 1.5rem;
-                      font-weight: 700;
-                      letter-spacing: -0.3px;
-                    "
-                  >
-                    Moniquirá, Boyacá
-                  </h3>
-                  <p
-                    style="
-                      color: #64748b;
-                      margin-bottom: 22px;
-                      line-height: 1.7;
-                      font-size: 0.95rem;
-                    "
-                  >
-                    Municipio del departamento de Boyacá con cobertura de servicios ambientales de SESPA.
-                  </p>
-                  <ul
-                    style="
-                      list-style: none;
-                      padding: 0;
-                      border-top: 1px solid #e8f5e9;
-                      padding-top: 20px;
-                    "
-                  >
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-phone"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="tel:+57 XXX XXX XXXX"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >+57 XXX XXX XXXX</a
-                      >
-                    </li>
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-location-arrow"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="mailto:zona@ejemplo.com"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >zona@ejemplo.com</a
-                      >
-                    </li>
-                    <li style="font-size: 0.95rem; color: #64748b">
-                      <i
-                        class="fas fa-hourglass-half"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      >Lun - Vie: 8:00 AM - 5:00 PM
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    style="
-                      display: inline-flex;
-                      align-items: center;
-                      margin-top: 25px;
-                      color: #27753f;
-                      text-decoration: none;
-                      font-weight: 600;
-                      font-size: 0.95rem;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
-                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
-                    >Ver Detalles
-                    <i
-                      class="fas fa-arrow-circle-right"
-                      style="margin-left: 8px; transition: transform 0.3s"
-                    ></i
-                  ></a>
-                </div>
+          <!-- Municipios con Tabs -->
+          <div class="municipalities-section">
+            <h2><i class="fas fa-city"></i> Información por Municipio</h2>
+            <p class="section-intro">
+              Conoce los detalles de nuestra operación en cada localidad
+            </p>
 
-                <!-- Barrancas -->
-                <div
-                  id="barrancas"
-                  style="
-                    background: white;
-                    border: 1px solid #d1e7d4;
-                    border-radius: 10px;
-                    padding: 35px;
-                    box-shadow: 0 2px 12px rgba(39, 117, 63, 0.08);
-                    transition: all 0.3s ease;
-                    position: relative;
-                  "
-                  onmouseover="this.style.boxShadow='0 8px 24px rgba(39, 117, 63, 0.15)'; this.style.transform='translateY(-4px)';"
-                  onmouseout="this.style.boxShadow='0 2px 12px rgba(39, 117, 63, 0.08)'; this.style.transform='translateY(0)';"
-                >
-                  <div
-                    style="
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      height: 4px;
-                      background: linear-gradient(90deg, #27753f, #5ec576);
-                      border-radius: 10px 10px 0 0;
-                    "
-                  ></div>
-                  <h3
-                    style="
-                      color: #27753f;
-                      margin: 15px 0 12px 0;
-                      font-size: 1.5rem;
-                      font-weight: 700;
-                      letter-spacing: -0.3px;
-                    "
-                  >
-                    Barrancas, La Guajira
-                  </h3>
-                  <p
-                    style="
-                      color: #64748b;
-                      margin-bottom: 22px;
-                      line-height: 1.7;
-                      font-size: 0.95rem;
-                    "
-                  >
-                    Municipio del departamento de La Guajira con servicios ambientales profesionales de SESPA.
-                  </p>
-                  <ul
-                    style="
-                      list-style: none;
-                      padding: 0;
-                      border-top: 1px solid #e8f5e9;
-                      padding-top: 20px;
-                    "
-                  >
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-phone"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="tel:+57 XXX XXX XXXX"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >+57 XXX XXX XXXX</a
-                      >
-                    </li>
-                    <li style="margin-bottom: 12px; font-size: 0.95rem">
-                      <i
-                        class="fas fa-location-arrow"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      ><a
-                        href="mailto:zona@ejemplo.com"
-                        style="
-                          color: #27753f;
-                          text-decoration: none;
-                          font-weight: 500;
-                          transition: color 0.3s;
-                        "
-                        onmouseover="this.style.color='#5ec576';"
-                        onmouseout="this.style.color='#27753f';"
-                        >zona@ejemplo.com</a
-                      >
-                    </li>
-                    <li style="font-size: 0.95rem; color: #64748b">
-                      <i
-                        class="fas fa-hourglass-half"
-                        style="
-                          color: #5ec576;
-                          margin-right: 10px;
-                          width: 18px;
-                          display: inline-block;
-                        "
-                      ></i
-                      >Lun - Vie: 8:00 AM - 5:00 PM
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    style="
-                      display: inline-flex;
-                      align-items: center;
-                      margin-top: 25px;
-                      color: #27753f;
-                      text-decoration: none;
-                      font-weight: 600;
-                      font-size: 0.95rem;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.color='#5ec576'; this.querySelector('i').style.transform='translateX(4px)';"
-                    onmouseout="this.style.color='#27753f'; this.querySelector('i').style.transform='translateX(0)';"
-                    >Ver Detalles
-                    <i
-                      class="fas fa-arrow-circle-right"
-                      style="margin-left: 8px; transition: transform 0.3s"
-                    ></i
-                  ></a>
-                </div>
+            <div class="municipality-tabs-nav">
+              <button class="mun-tab active" data-municipality="socorro">
+                <i class="fas fa-landmark"></i>
+                <span>Socorro</span>
+              </button>
+              <button class="mun-tab" data-municipality="palmas">
+                <i class="fas fa-tree"></i>
+                <span>Palmas del Socorro</span>
+              </button>
+              <button class="mun-tab" data-municipality="moniquira">
+                <i class="fas fa-church"></i>
+                <span>Moniquirá</span>
+              </button>
+              <button class="mun-tab" data-municipality="barrancas">
+                <i class="fas fa-mountain-sun"></i>
+                <span>Barrancas</span>
+              </button>
+            </div>
 
-            <!-- Servicios por Municipio -->
-            <section
-              style="
-                margin-top: 60px;
-                padding-top: 50px;
-                border-top: 2px solid #e8f5e9;
-              "
+            <!-- Socorro -->
+            <div
+              class="municipality-content active"
+              data-municipality="socorro"
             >
-              <div style="text-align: center; margin-bottom: 45px">
-                <h2
-                  style="
-                    color: #27753f;
-                    font-size: 2rem;
-                    margin-bottom: 10px;
-                    font-weight: 800;
-                    letter-spacing: -0.5px;
-                  "
-                >
-                  Servicios por Municipio
-                </h2>
-                <p
-                  style="
-                    color: #64748b;
-                    font-size: 1rem;
-                    max-width: 600px;
-                    margin: 0 auto;
-                  "
-                >
-                  Soluciones integrales de servicios adaptadas a cada localidad
-                </p>
+              <div class="mun-header">
+                <div class="mun-title-section">
+                  <h3>Socorro, Santander</h3>
+                  <p class="mun-subtitle">Ciudad Histórica y Cultural</p>
+                </div>
+                <div class="mun-badge">
+                  <i class="fas fa-circle-check"></i> Operativo
+                </div>
               </div>
-              <div
-                style="
-                  display: grid;
-                  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                  gap: 30px;
-                "
-              >
-                <div
-                  style="
-                    background: linear-gradient(135deg, #f9fafb, #ffffff);
-                    border: 1px solid #d1e7d4;
-                    border-radius: 12px;
-                    padding: 35px;
-                    text-align: center;
-                    box-shadow: 0 2px 8px rgba(39, 117, 63, 0.06);
-                    transition: all 0.3s ease;
-                  "
-                  onmouseover="this.style.boxShadow='0 6px 16px rgba(39, 117, 63, 0.12)'; this.style.transform='translateY(-3px)';"
-                  onmouseout="this.style.boxShadow='0 2px 8px rgba(39, 117, 63, 0.06)'; this.style.transform='translateY(0)';"
-                >
-                  <div
-                    style="
-                      background: linear-gradient(135deg, #27753f, #5ec576);
-                      width: 60px;
-                      height: 60px;
-                      border-radius: 12px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      margin: 0 auto 20px;
-                      box-shadow: 0 4px 12px rgba(39, 117, 63, 0.2);
-                    "
-                  >
-                    <i
-                      class="fas fa-trash-alt"
-                      style="font-size: 1.8rem; color: white"
-                    ></i>
+
+              <div class="mun-grid">
+                <div class="mun-info-card">
+                  <h4>
+                    <i class="fas fa-info-circle"></i> Información General
+                  </h4>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-users"></i> Población:</span
+                    >
+                    <span class="info-value">~30,000 habitantes</span>
                   </div>
-                  <h3
-                    style="
-                      color: #1e293b;
-                      margin-bottom: 12px;
-                      font-size: 1.25rem;
-                      font-weight: 700;
-                      letter-spacing: -0.2px;
-                    "
-                  >
-                    Servicio 1
-                  </h3>
-                  <p
-                    style="color: #64748b; line-height: 1.7; font-size: 0.95rem"
-                  >
-                    Descripción del servicio 1 disponible en todas nuestras zonas operativas. Servicio de calidad certificada con estándares internacionales.
-                  </p>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-ruler"></i> Área Urbana:</span
+                    >
+                    <span class="info-value">15 km²</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-home"></i> Usuarios:</span
+                    >
+                    <span class="info-value">~9,500 suscriptores</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-percentage"></i> Cobertura:</span
+                    >
+                    <span class="info-value">99% Zona Urbana</span>
+                  </div>
                 </div>
-                <div
-                  style="
-                    background: linear-gradient(135deg, #f9fafb, #ffffff);
-                    border: 2px solid #e8f5e9;
-                    border-radius: 16px;
-                    padding: 30px;
-                    text-align: center;
-                  "
-                >
-                  <i
-                    class="fas fa-broom"
-                    style="
-                      font-size: 2.8rem;
-                      color: #27753f;
-                      margin-bottom: 15px;
-                      display: block;
-                    "
-                  ></i>
-                  <h3
-                    style="
-                      color: #1e293b;
-                      margin-bottom: 15px;
-                      font-size: 1.3rem;
-                    "
-                  >
-                    Servicio 2
-                  </h3>
-                  <p style="color: #64748b; line-height: 1.6">
-                    Descripción del servicio 2 con cobertura en todas nuestras áreas de operación. Nuestros especialistas están capacitados para brindar un servicio de excelencia.
-                  </p>
+
+                <div class="mun-services-card">
+                  <h4>
+                    <i class="fas fa-list-check"></i> Servicios Disponibles
+                  </h4>
+                  <ul class="services-list">
+                    <li>
+                      <i class="fas fa-truck"></i> Recolección de Residuos
+                      Domiciliaria
+                    </li>
+                    <li>
+                      <i class="fas fa-broom"></i> Barrido y Limpieza de Vías
+                    </li>
+                    <li>
+                      <i class="fas fa-recycle"></i> Aprovechamiento de Residuos
+                    </li>
+                    <li><i class="fas fa-dumpster"></i> Disposición Final</li>
+                    <li>
+                      <i class="fas fa-leaf"></i> Jornadas de Limpieza Ambiental
+                    </li>
+                  </ul>
                 </div>
-                <div
-                  style="
-                    background: linear-gradient(135deg, #f9fafb, #ffffff);
-                    border: 2px solid #e8f5e9;
-                    border-radius: 16px;
-                    padding: 30px;
-                    text-align: center;
-                  "
-                >
-                  <i
-                    class="fas fa-calendar-day-week"
-                    style="
-                      font-size: 2.8rem;
-                      color: #27753f;
-                      margin-bottom: 15px;
-                      display: block;
-                    "
-                  ></i>
-                  <h3
-                    style="
-                      color: #1e293b;
-                      margin-bottom: 15px;
-                      font-size: 1.3rem;
-                    "
-                  >
-                    Servicio 3
-                  </h3>
-                  <p style="color: #64748b; line-height: 1.6">
-                    Descripción del servicio 3 personalizado según las necesidades de cada zona. Contamos con un equipo profesional dedicado a la satisfacción del cliente.
-                  </p>
+
+                <div class="mun-contact-card">
+                  <h4><i class="fas fa-headset"></i> Contacto Local</h4>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                      <p class="contact-label">Teléfono</p>
+                      <a href="tel:+577236789">+57 (7) 723-6789</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                      <p class="contact-label">Correo</p>
+                      <a href="mailto:socorro@sespa.com.co"
+                        >socorro@sespa.com.co</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                      <p class="contact-label">Horario</p>
+                      <p>Lun - Vie: 8:00 AM - 5:00 PM</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </section>
-          </main>
-
-          <!-- Sidebar -->
-          <aside class="sidebar">
-            <div class="sidebar-widget">
-              <h3>Municipios</h3>
-              <ul class="sidebar-links">
-                <li>
-                  <a href="#socorro"
-                    ><i class="fas fa-angle-right"></i> Socorro</a
-                  >
-                </li>
-                <li>
-                  <a href="#palmas"
-                    ><i class="fas fa-angle-right"></i> Palmas del Socorro</a
-                  >
-                </li>
-                <li>
-                  <a href="#moniquira"
-                    ><i class="fas fa-angle-right"></i> Moniquirá</a
-                  >
-                </li>
-                <li>
-                  <a href="#barrancas"
-                    ><i class="fas fa-angle-right"></i> Barrancas</a
-                  >
-                </li>
-              </ul>
             </div>
 
-            <div class="sidebar-widget cta-widget">
-              <h3>¿Necesitas Ayuda?</h3>
-              <p>
-                Contáctanos para obtener más información sobre nuestros
-                servicios
-              </p>
-              <a
-                href="../usuario/contacto.html"
-                class="btn btn-secondary btn-block"
-                >Contáctanos</a
-              >
+            <!-- Palmas del Socorro -->
+            <div class="municipality-content" data-municipality="palmas">
+              <div class="mun-header">
+                <div class="mun-title-section">
+                  <h3>Palmas del Socorro, Santander</h3>
+                  <p class="mun-subtitle">Municipio Verde y Sostenible</p>
+                </div>
+                <div class="mun-badge">
+                  <i class="fas fa-circle-check"></i> Operativo
+                </div>
+              </div>
+
+              <div class="mun-grid">
+                <div class="mun-info-card">
+                  <h4>
+                    <i class="fas fa-info-circle"></i> Información General
+                  </h4>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-users"></i> Población:</span
+                    >
+                    <span class="info-value">~3,500 habitantes</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-ruler"></i> Área Urbana:</span
+                    >
+                    <span class="info-value">5 km²</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-home"></i> Usuarios:</span
+                    >
+                    <span class="info-value">~1,200 suscriptores</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-percentage"></i> Cobertura:</span
+                    >
+                    <span class="info-value">97% Zona Urbana</span>
+                  </div>
+                </div>
+
+                <div class="mun-services-card">
+                  <h4>
+                    <i class="fas fa-list-check"></i> Servicios Disponibles
+                  </h4>
+                  <ul class="services-list">
+                    <li>
+                      <i class="fas fa-truck"></i> Recolección de Residuos
+                      Domiciliaria
+                    </li>
+                    <li>
+                      <i class="fas fa-broom"></i> Barrido y Limpieza de Vías
+                    </li>
+                    <li>
+                      <i class="fas fa-recycle"></i> Aprovechamiento de Residuos
+                    </li>
+                    <li><i class="fas fa-dumpster"></i> Disposición Final</li>
+                    <li><i class="fas fa-leaf"></i> Programas Ambientales</li>
+                  </ul>
+                </div>
+
+                <div class="mun-contact-card">
+                  <h4><i class="fas fa-headset"></i> Contacto Local</h4>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                      <p class="contact-label">Teléfono</p>
+                      <a href="tel:+577234567">+57 (7) 723-4567</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                      <p class="contact-label">Correo</p>
+                      <a href="mailto:palmas@sespa.com.co"
+                        >palmas@sespa.com.co</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                      <p class="contact-label">Horario</p>
+                      <p>Lun - Vie: 8:00 AM - 5:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </aside>
-        </div>
+
+            <!-- Moniquirá -->
+            <div class="municipality-content" data-municipality="moniquira">
+              <div class="mun-header">
+                <div class="mun-title-section">
+                  <h3>Moniquirá, Boyacá</h3>
+                  <p class="mun-subtitle">Valle de Tenza - Tierra Productiva</p>
+                </div>
+                <div class="mun-badge">
+                  <i class="fas fa-circle-check"></i> Operativo
+                </div>
+              </div>
+
+              <div class="mun-grid">
+                <div class="mun-info-card">
+                  <h4>
+                    <i class="fas fa-info-circle"></i> Información General
+                  </h4>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-users"></i> Población:</span
+                    >
+                    <span class="info-value">~24,000 habitantes</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-ruler"></i> Área Urbana:</span
+                    >
+                    <span class="info-value">12 km²</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-home"></i> Usuarios:</span
+                    >
+                    <span class="info-value">~7,800 suscriptores</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-percentage"></i> Cobertura:</span
+                    >
+                    <span class="info-value">98% Zona Urbana</span>
+                  </div>
+                </div>
+
+                <div class="mun-services-card">
+                  <h4>
+                    <i class="fas fa-list-check"></i> Servicios Disponibles
+                  </h4>
+                  <ul class="services-list">
+                    <li>
+                      <i class="fas fa-truck"></i> Recolección de Residuos
+                      Domiciliaria
+                    </li>
+                    <li>
+                      <i class="fas fa-broom"></i> Barrido y Limpieza de Vías
+                    </li>
+                    <li>
+                      <i class="fas fa-recycle"></i> Aprovechamiento de Residuos
+                    </li>
+                    <li><i class="fas fa-dumpster"></i> Disposición Final</li>
+                    <li>
+                      <i class="fas fa-hands-helping"></i> Campañas de
+                      Sensibilización
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mun-contact-card">
+                  <h4><i class="fas fa-headset"></i> Contacto Local</h4>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                      <p class="contact-label">Teléfono</p>
+                      <a href="tel:+578731234">+57 (8) 873-1234</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                      <p class="contact-label">Correo</p>
+                      <a href="mailto:moniquira@sespa.com.co"
+                        >moniquira@sespa.com.co</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                      <p class="contact-label">Horario</p>
+                      <p>Lun - Vie: 8:00 AM - 5:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Barrancas -->
+            <div class="municipality-content" data-municipality="barrancas">
+              <div class="mun-header">
+                <div class="mun-title-section">
+                  <h3>Barrancas, La Guajira</h3>
+                  <p class="mun-subtitle">Puerta del Cerrejón</p>
+                </div>
+                <div class="mun-badge">
+                  <i class="fas fa-circle-check"></i> Operativo
+                </div>
+              </div>
+
+              <div class="mun-grid">
+                <div class="mun-info-card">
+                  <h4>
+                    <i class="fas fa-info-circle"></i> Información General
+                  </h4>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-users"></i> Población:</span
+                    >
+                    <span class="info-value">~32,000 habitantes</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-ruler"></i> Área Urbana:</span
+                    >
+                    <span class="info-value">18 km²</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-home"></i> Usuarios:</span
+                    >
+                    <span class="info-value">~10,500 suscriptores</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label"
+                      ><i class="fas fa-percentage"></i> Cobertura:</span
+                    >
+                    <span class="info-value">96% Zona Urbana</span>
+                  </div>
+                </div>
+
+                <div class="mun-services-card">
+                  <h4>
+                    <i class="fas fa-list-check"></i> Servicios Disponibles
+                  </h4>
+                  <ul class="services-list">
+                    <li>
+                      <i class="fas fa-truck"></i> Recolección de Residuos
+                      Domiciliaria
+                    </li>
+                    <li>
+                      <i class="fas fa-broom"></i> Barrido y Limpieza de Vías
+                    </li>
+                    <li>
+                      <i class="fas fa-recycle"></i> Aprovechamiento de Residuos
+                    </li>
+                    <li><i class="fas fa-dumpster"></i> Disposición Final</li>
+                    <li>
+                      <i class="fas fa-industry"></i> Servicios Especiales
+                      Industriales
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mun-contact-card">
+                  <h4><i class="fas fa-headset"></i> Contacto Local</h4>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                      <p class="contact-label">Teléfono</p>
+                      <a href="tel:+575777123">+57 (5) 777-5123</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                      <p class="contact-label">Correo</p>
+                      <a href="mailto:barrancas@sespa.com.co"
+                        >barrancas@sespa.com.co</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                      <p class="contact-label">Horario</p>
+                      <p>Lun - Vie: 7:30 AM - 5:30 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="cta-section">
+            <h2>¿Tu municipio necesita servicios ambientales?</h2>
+            <p>
+              Estamos en constante expansión. Contáctanos para llevar nuestros
+              servicios de calidad a tu región
+            </p>
+            <div class="cta-buttons">
+              <a href="../usuario/contacto.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-envelope"></i> Contáctanos
+              </a>
+              <a href="../usuario/pqr.html" class="btn btn-secondary btn-lg">
+                <i class="fas fa-file-alt"></i> Enviar PQR
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-
+    </main>
 
     <!-- Footer y Componentes -->
     <site-footer></site-footer>
@@ -824,6 +567,30 @@
     <script src="../../assets/js/components.js"></script>
     <script src="../../assets/js/config-sespa.js"></script>
     <script src="../../assets/js/script.js"></script>
-</body>
-</html>
+    <script>
+      // Tabs de Municipios
+      document.querySelectorAll(".mun-tab").forEach((tab) => {
+        tab.addEventListener("click", function () {
+          const municipality = this.dataset.municipality;
 
+          // Actualizar tabs
+          document
+            .querySelectorAll(".mun-tab")
+            .forEach((t) => t.classList.remove("active"));
+          this.classList.add("active");
+
+          // Mostrar contenido correspondiente
+          document
+            .querySelectorAll(".municipality-content")
+            .forEach((content) => {
+              if (content.dataset.municipality === municipality) {
+                content.classList.add("active");
+              } else {
+                content.classList.remove("active");
+              }
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
