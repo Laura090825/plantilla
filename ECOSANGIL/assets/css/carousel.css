@@ -115,34 +115,12 @@
   z-index: 100;
 }
 
-/* Indicador de carrusel expandido */
-.carousel-controls::before {
-  content: "🎯";
-  position: absolute;
-  top: -35px;
-  font-size: 1.6rem;
-  opacity: 0.4;
-  animation: expandPulse 2s ease-in-out infinite;
-}
-
-@keyframes expandPulse {
-  0%,
-  100% {
-    opacity: 0.4;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scale(1.1);
-  }
-}
-
 .carousel-btn {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   border: none;
-  background: linear-gradient(135deg, #FF9933 0%, #FF7F2A 100%);
+  background: linear-gradient(135deg, #ff9933 0%, #ff7f2a 100%);
   color: white;
   font-size: 1.3rem;
   cursor: pointer;
@@ -200,7 +178,7 @@
 .carousel-dot.active {
   width: 32px;
   border-radius: 6px;
-  background: linear-gradient(135deg, #FF9933 0%, #FF7F2A 100%);
+  background: linear-gradient(135deg, #ff9933 0%, #ff7f2a 100%);
   box-shadow: 0 2px 10px rgba(30, 64, 175, 0.4);
 }
 
@@ -212,7 +190,7 @@
 /* Contador de slides */
 .carousel-counter {
   font-size: 0.95rem;
-  color: #FF9933;
+  color: #ff9933;
   font-weight: 600;
   min-width: 60px;
   text-align: center;
@@ -330,7 +308,7 @@
 /* Mejoras de accesibilidad */
 .carousel-btn:focus,
 .carousel-dot:focus {
-  outline: 3px solid #FF9933;
+  outline: 3px solid #ff9933;
   outline-offset: 3px;
 }
 

@@ -91,6 +91,7 @@ const sespaConfig = {
           label: "Rendición de Cuentas",
           url: "pages/transparencia/transparencia.html",
         },
+        { label: "CCU", url: "pages/corporativo/ccu.html" },
       ],
     },
     {
@@ -112,8 +113,8 @@ const sespaConfig = {
 
   // Colores corporativos de SESPA (diferentes a la plantilla principal)
   colors: {
-    primary: "#27ae60", // Verde principal
-    secondary: "#16a085", // Verde azulado
+    primary: "#52c77a", // Verde principal
+    secondary: "#48c9b0", // Verde azulado
     accent: "#f39c12", // Naranja/Amarillo
     dark: "#2c3e50",
     light: "#ecf0f1",

@@ -1087,17 +1087,45 @@ section h2 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: var(--transition);
   font-size: 1.1rem;
+  color: white;
+}
+
+/* Colores originales de fondo para cada red social */
+.footer-social a[aria-label="Facebook"] {
+  background: #1877f2 !important;
+}
+
+.footer-social a[aria-label="Twitter"] {
+  background: #1da1f2 !important;
+}
+
+.footer-social a[aria-label="Instagram"] {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  ) !important;
+}
+
+.footer-social a[aria-label="LinkedIn"] {
+  background: #0a66c2 !important;
+}
+
+.footer-social a[aria-label="YouTube"] {
+  background: #ff0000 !important;
 }
 
 .footer-social a:hover {
-  background-color: var(--accent-color);
   transform: translateY(-4px) scale(1.1);
+  filter: brightness(1.2);
 }
 
 .footer-divider {

@@ -884,6 +884,44 @@
   transition: var(--transition-normal);
 }
 
+/* Colores originales específicos para footer */
+.footer-social a[aria-label="Facebook"],
+.footer .footer-social a[aria-label="Facebook"] {
+  background: #1877f2 !important;
+  color: white !important;
+}
+
+.footer-social a[aria-label="Twitter"],
+.footer .footer-social a[aria-label="Twitter"] {
+  background: #1da1f2 !important;
+  color: white !important;
+}
+
+.footer-social a[aria-label="Instagram"],
+.footer .footer-social a[aria-label="Instagram"] {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  ) !important;
+  color: white !important;
+}
+
+.footer-social a[aria-label="LinkedIn"],
+.footer .footer-social a[aria-label="LinkedIn"] {
+  background: #0a66c2 !important;
+  color: white !important;
+}
+
+.footer-social a[aria-label="YouTube"],
+.footer .footer-social a[aria-label="YouTube"] {
+  background: #ff0000 !important;
+  color: white !important;
+}
+
 .social-link-modern:hover {
   background: var(--gradient-1);
   transform: translateY(-4px);

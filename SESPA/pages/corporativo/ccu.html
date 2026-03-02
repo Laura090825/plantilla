@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contrato de Condiciones Uniformes - SESPA | Transparencia</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/sespa-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .document-page {
+        background: linear-gradient(135deg, #f0f9f4 0%, #e8f5ed 100%);
+        min-height: 100vh;
+        padding: 40px 0;
+      }
+
+      .document-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .document-header {
+        background: linear-gradient(135deg, #27ae60 0%, #16a085 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(39, 174, 96, 0.2);
+      }
+
+      .document-header h1 {
+        margin: 0 0 15px 0;
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .document-header p {
+        margin: 0;
+        opacity: 0.95;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      .document-wrapper {
+        background: white;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      .document-actions {
+        padding: 25px;
+        background: #f8fdf9;
+        border-bottom: 2px solid #e0f2e8;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .action-btn {
+        padding: 14px 28px;
+        background: linear-gradient(135deg, #27ae60 0%, #16a085 100%);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+      }
+
+      .action-btn:hover {
+        background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(39, 174, 96, 0.3);
+      }
+
+      .action-btn i {
+        font-size: 1.2rem;
+      }
+
+      .action-btn.secondary {
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+      }
+
+      .action-btn.secondary:hover {
+        background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+        box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+      }
+
+      .document-viewer {
+        width: 100%;
+        height: 850px;
+        border: none;
+        display: block;
+        background: #f8f8f8;
+      }
+
+      .document-info {
+        padding: 35px;
+        background: linear-gradient(135deg, #e8f8f0 0%, #d4f1e3 100%);
+        border-left: 5px solid #27ae60;
+        margin: 35px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(39, 174, 96, 0.1);
+      }
+
+      .document-info h3 {
+        color: #16a085;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+
+      .document-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .document-info li {
+        padding: 10px 0 10px 35px;
+        position: relative;
+        color: #2c3e50;
+        line-height: 1.7;
+        font-size: 1.05rem;
+      }
+
+      .document-info li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #27ae60;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .no-document-message {
+        padding: 60px 40px;
+        text-align: center;
+        background: linear-gradient(135deg, #f8fdf9 0%, #e8f5ed 100%);
+      }
+
+      .no-document-message i {
+        font-size: 5rem;
+        color: #27ae60;
+        margin-bottom: 20px;
+        opacity: 0.5;
+      }
+
+      .no-document-message h3 {
+        color: #2c3e50;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+
+      .no-document-message p {
+        color: #7f8c8d;
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        .document-header h1 {
+          font-size: 1.8rem;
+        }
+
+        .document-header p {
+          font-size: 1rem;
+        }
+
+        .document-viewer {
+          height: 650px;
+        }
+
+        .document-actions {
+          padding: 20px;
+        }
+
+        .action-btn {
+          padding: 12px 22px;
+          font-size: 0.95rem;
+        }
+
+        .document-info {
+          margin: 20px;
+          padding: 25px;
+        }
+
+        .document-info h3 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Topbar -->
+    <site-topbar></site-topbar>
+
+    <!-- Header con Navegación -->
+    <site-header></site-header>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL - CCU
+         ============================================ -->
+    <main class="document-page">
+      <div class="document-container">
+        <div class="document-header">
+          <h1>Contrato de Condiciones Uniformes</h1>
+          <p>Normativa y Regulaciones del Servicio</p>
+        </div>
+
+        <div class="document-wrapper">
+          <div class="document-actions">
+            <a href="#" class="action-btn" id="downloadBtn">
+              <i class="fas fa-download"></i>
+              Descargar PDF
+            </a>
+            <a href="#" class="action-btn secondary" id="printBtn">
+              <i class="fas fa-print"></i>
+              Imprimir
+            </a>
+          </div>
+
+          <!-- Mensaje cuando no hay documento disponible -->
+          <div class="no-document-message">
+            <i class="fas fa-file-contract"></i>
+            <h3>Documento en Preparación</h3>
+            <p>
+              El Contrato de Condiciones Uniformes (CCU) de SESPA UNIVERSAL S.A
+              E.S.P está actualmente siendo preparado y será publicado
+              próximamente. Este documento contendrá los términos y condiciones
+              del servicio público de aseo.
+            </p>
+          </div>
+
+          <!-- Información sobre el CCU -->
+          <div class="document-info">
+            <h3>¿Qué es el Contrato de Condiciones Uniformes?</h3>
+            <ul>
+              <li>
+                Documento que regula la prestación del servicio público de aseo
+              </li>
+              <li>
+                Establece los derechos y obligaciones de la empresa y los
+                usuarios
+              </li>
+              <li>
+                Define las condiciones técnicas, comerciales y operativas del
+                servicio
+              </li>
+              <li>
+                Cumple con la normatividad vigente en materia de servicios
+                públicos
+              </li>
+              <li>Garantiza transparencia en la relación prestador-usuario</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <!-- Scripts -->
+    <script src="../../assets/js/components.js"></script>
+    <script src="../../assets/js/config-sespa.js"></script>
+    <script src="../../assets/js/script.js"></script>
+
+    <script>
+      // Funcionalidad de botones (deshabilitados por ahora)
+      document.getElementById("downloadBtn").addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("El documento CCU estará disponible para descarga próximamente.");
+      });
+
+      document.getElementById("printBtn").addEventListener("click", (e) => {
+        e.preventDefault();
+        alert(
+          "El documento CCU estará disponible para impresión próximamente.",
+        );
+      });
+    </script>
+  </body>
+</html>
